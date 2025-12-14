@@ -1,0 +1,902 @@
+[
+  {
+    "rank": 1,
+    "title": "소년이 온다",
+    "author": "한강(지은이) |창비| 2014년 5월",
+    "isbn13": "40869703",
+    "cover_url": "https://image.aladin.co.kr/product/4086/97/cover200/8936434128_2.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 2,
+    "title": "작별하지 않는다",
+    "author": "한강(지은이) |문학동네| 2021년 9월",
+    "isbn13": "278770576",
+    "cover_url": "https://image.aladin.co.kr/product/27877/5/cover200/8954682154_3.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 3,
+    "title": "채식주의자 (리마스터판)",
+    "author": "한강(지은이) |창비| 2022년 3월",
+    "isbn13": "291370219",
+    "cover_url": "https://image.aladin.co.kr/product/29137/2/cover200/8936434594_2.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 4,
+    "title": "흰",
+    "author": "한강(지은이) |문학동네| 2025년 3월",
+    "isbn13": "360994667",
+    "cover_url": "https://image.aladin.co.kr/product/36099/46/cover200/k252038964_2.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 5,
+    "title": "희랍어 시간",
+    "author": "한강(지은이) |문학동네| 2011년 11월",
+    "isbn13": "13849130",
+    "cover_url": "https://image.aladin.co.kr/product/1384/91/cover200/8954616518_2.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 6,
+    "title": "모순",
+    "author": "양귀자(지은이) |쓰다| 2013년 4월",
+    "isbn13": "25843736",
+    "cover_url": "https://image.aladin.co.kr/product/2584/37/cover200/8998441012_3.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 7,
+    "title": "언젠가 우리가 같은 별을 바라본다면",
+    "author": "차인표(지은이),제딧(그림) |해결책| 2021년 12월",
+    "isbn13": "285132160",
+    "cover_url": "https://image.aladin.co.kr/product/28513/21/cover200/k882835835_1.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 8,
+    "title": "디 에센셜 한강 (무선 보급판)",
+    "author": "한강(지은이) |문학동네| 2023년 6월",
+    "isbn13": "317840073",
+    "cover_url": "https://image.aladin.co.kr/product/31784/0/cover200/8954693466_2.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 9,
+    "title": "영원한 천국",
+    "author": "정유정(지은이) |은행나무| 2024년 8월",
+    "isbn13": "344998179",
+    "cover_url": "https://image.aladin.co.kr/product/34499/81/cover200/k712932751_2.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 10,
+    "title": "바람이 분다, 가라",
+    "author": "한강(지은이) |문학과지성사| 2010년 2월",
+    "isbn13": "6467598",
+    "cover_url": "https://image.aladin.co.kr/product/646/75/cover200/8932020000_2.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 11,
+    "title": "두 사람의 인터내셔널",
+    "author": "김기태(지은이) |문학동네| 2024년 5월",
+    "isbn13": "338990710",
+    "cover_url": "https://image.aladin.co.kr/product/33899/7/cover200/s272038473_1.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 12,
+    "title": "2024 제15회 젊은작가상 수상작품집",
+    "author": "김멜라,공현진,김기태,김남숙,김지연,성해나,전지영(지은이) |문학동네| 2024년 3월",
+    "isbn13": "337111317",
+    "cover_url": "https://image.aladin.co.kr/product/33711/13/cover200/8954638740_2.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 13,
+    "title": "여수의 사랑",
+    "author": "한강(지은이) |문학과지성사| 2018년 11월",
+    "isbn13": "173930433",
+    "cover_url": "https://image.aladin.co.kr/product/17393/4/cover200/8932034818_2.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 14,
+    "title": "구의 증명",
+    "author": "최진영(지은이) |은행나무| 2023년 4월",
+    "isbn13": "315614621",
+    "cover_url": "https://image.aladin.co.kr/product/31561/46/cover200/k782832854_1.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 15,
+    "title": "대온실 수리 보고서",
+    "author": "김금희(지은이) |창비| 2024년 10월",
+    "isbn13": "347122460",
+    "cover_url": "https://image.aladin.co.kr/product/34712/24/cover200/8936439650_2.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 16,
+    "title": "아주 희미한 빛으로도",
+    "author": "최은영(지은이) |문학동네| 2023년 8월",
+    "isbn13": "321294005",
+    "cover_url": "https://image.aladin.co.kr/product/32129/40/cover200/s672937436_1.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 17,
+    "title": "내 여자의 열매",
+    "author": "한강(지은이) |문학과지성사| 2018년 11월",
+    "isbn13": "173930726",
+    "cover_url": "https://image.aladin.co.kr/product/17393/7/cover200/s932034826_1.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 18,
+    "title": "급류",
+    "author": "정대건(지은이) |민음사| 2022년 12월",
+    "isbn13": "307692409",
+    "cover_url": "https://image.aladin.co.kr/product/30769/24/cover200/8937473402_1.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 19,
+    "title": "음악소설집 音樂小說集",
+    "author": "김애란,김연수,윤성희,은희경,편혜영(지은이) |프란츠| 2024년 6월",
+    "isbn13": "341306474",
+    "cover_url": "https://image.aladin.co.kr/product/34130/64/cover200/k222931917_2.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 20,
+    "title": "홍학의 자리",
+    "author": "정해연(지은이) |엘릭시르| 2021년 7월",
+    "isbn13": "275879438",
+    "cover_url": "https://image.aladin.co.kr/product/27587/94/cover200/8954681158_1.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 21,
+    "title": "검은 사슴",
+    "author": "한강(지은이) |문학동네| 2017년 12월",
+    "isbn13": "126069723",
+    "cover_url": "https://image.aladin.co.kr/product/12606/97/cover200/8954648908_3.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 22,
+    "title": "불편한 편의점 (벚꽃 에디션)",
+    "author": "김호연(지은이) |나무옆의자| 2021년 4월",
+    "isbn13": "290457417",
+    "cover_url": "https://image.aladin.co.kr/product/29045/74/cover200/k192836746_2.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 23,
+    "title": "메리골드 마음 사진관",
+    "author": "윤정은(지은이) |북로망스| 2024년 1월",
+    "isbn13": "331161522",
+    "cover_url": "https://image.aladin.co.kr/product/33116/15/cover200/s392035710_1.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 24,
+    "title": "철도원 삼대",
+    "author": "황석영(지은이) |창비| 2020년 6월",
+    "isbn13": "240581875",
+    "cover_url": "https://image.aladin.co.kr/product/24058/18/cover200/8936434438_3.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 25,
+    "title": "빛이 이끄는 곳으로",
+    "author": "백희성(지은이) |북로망스| 2024년 8월",
+    "isbn13": "344497704",
+    "cover_url": "https://image.aladin.co.kr/product/34449/77/cover200/k052932333_1.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 26,
+    "title": "모우어",
+    "author": "천선란(지은이) |문학동네| 2024년 11월",
+    "isbn13": "350996819",
+    "cover_url": "https://image.aladin.co.kr/product/35099/68/cover200/k442934507_1.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 27,
+    "title": "나는 소망한다 내게 금지된 것을",
+    "author": "양귀자(지은이) |쓰다| 2019년 4월",
+    "isbn13": "189365205",
+    "cover_url": "https://image.aladin.co.kr/product/18936/52/cover200/8998441071_1.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 28,
+    "title": "눈물상자",
+    "author": "한강(지은이),봄로야(그림) |문학동네| 2008년 5월",
+    "isbn13": "2173713",
+    "cover_url": "https://image.aladin.co.kr/product/217/37/cover200/8954605818_2.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 29,
+    "title": "대도시의 사랑법",
+    "author": "박상영(지은이) |창비| 2019년 6월",
+    "isbn13": "195439115",
+    "cover_url": "https://image.aladin.co.kr/product/19543/91/cover200/8936437976_3.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 30,
+    "title": "파과 (리커버)",
+    "author": "구병모(지은이) |위즈덤하우스| 2018년 4월",
+    "isbn13": "337280601",
+    "cover_url": "https://image.aladin.co.kr/product/33728/6/cover200/k312039010_2.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 31,
+    "title": "탕비실",
+    "author": "이미예(지은이) |한끼| 2024년 7월",
+    "isbn13": "341934125",
+    "cover_url": "https://image.aladin.co.kr/product/34193/41/cover200/k602931315_1.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 32,
+    "title": "불편한 편의점 2 (단풍 에디션)",
+    "author": "김호연(지은이) |나무옆의자| 2022년 8월",
+    "isbn13": "303706448",
+    "cover_url": "https://image.aladin.co.kr/product/30370/64/cover200/s122834213_1.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 33,
+    "title": "그대의 차가운 손",
+    "author": "한강(지은이) |문학과지성사| 2002년 1월",
+    "isbn13": "326987",
+    "cover_url": "https://image.aladin.co.kr/product/32/69/cover200/8932013047_3.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 34,
+    "title": "밝은 밤",
+    "author": "최은영(지은이) |문학동네| 2021년 7월",
+    "isbn13": "275419192",
+    "cover_url": "https://image.aladin.co.kr/product/27541/91/cover200/k312835925_1.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 35,
+    "title": "한강 스페셜 에디션 (작별하지 않는다 + 흰 + 검은 사슴 + 필사 노트)",
+    "author": "한강(지은이) |문학동네| 2024년 12월",
+    "isbn13": "353355937",
+    "cover_url": "https://image.aladin.co.kr/product/35335/59/cover200/k272035582_1.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 36,
+    "title": "천 개의 파랑",
+    "author": "천선란(지은이) |허블| 2020년 8월",
+    "isbn13": "248956900",
+    "cover_url": "https://image.aladin.co.kr/product/24895/69/cover200/k882632470_2.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 37,
+    "title": "한강 : 회복하는 인간 Convalescence",
+    "author": "한강(지은이),전승희(옮긴이),K. E. 더핀(감수) |도서출판 아시아| 2013년 6월",
+    "isbn13": "27786822",
+    "cover_url": "https://image.aladin.co.kr/product/2778/68/cover200/s312934675_1.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 38,
+    "title": "내가 키운 S급들 1~5 + 굿즈 패키지 세트",
+    "author": "근서(지은이) |JAYPLEMEDIA| 2024년 12월",
+    "isbn13": "351975355",
+    "cover_url": "https://image.aladin.co.kr/product/35197/53/cover200/k182934520_1.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 39,
+    "title": "오로라",
+    "author": "최진영(지은이) |위즈덤하우스| 2024년 2월",
+    "isbn13": "334641006",
+    "cover_url": "https://image.aladin.co.kr/product/33464/10/cover200/k652938849_1.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 40,
+    "title": "칵테일, 러브, 좀비 (리커버)",
+    "author": "조예은(지은이) |안전가옥| 2020년 4월",
+    "isbn13": "295437240",
+    "cover_url": "https://image.aladin.co.kr/product/29543/72/cover200/k502837053_1.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 41,
+    "title": "황금종이 2",
+    "author": "조정래(지은이) |해냄| 2023년 11월",
+    "isbn13": "328756886",
+    "cover_url": "https://image.aladin.co.kr/product/32875/68/cover200/k612936112_1.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 42,
+    "title": "광인",
+    "author": "이혁진(지은이) |민음사| 2023년 11월",
+    "isbn13": "330014510",
+    "cover_url": "https://image.aladin.co.kr/product/33001/45/cover200/893745467x_1.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 43,
+    "title": "황금종이 1",
+    "author": "조정래(지은이) |해냄| 2023년 11월",
+    "isbn13": "328756885",
+    "cover_url": "https://image.aladin.co.kr/product/32875/68/cover200/k682936112_1.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 44,
+    "title": "사랑과 결함",
+    "author": "예소연(지은이) |문학동네| 2024년 7월",
+    "isbn13": "343669601",
+    "cover_url": "https://image.aladin.co.kr/product/34366/96/cover200/k972932005_1.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 45,
+    "title": "몽고반점",
+    "author": "한강,김경욱,윤영수,이만교,이혜경,천운영,박민규(지은이) |문학사상| 2005년 1월",
+    "isbn13": "538300",
+    "cover_url": "https://image.aladin.co.kr/product/53/83/cover200/8970126740_3.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 46,
+    "title": "쓰게 될 것",
+    "author": "최진영(지은이) |안온북스| 2024년 6월",
+    "isbn13": "341271860",
+    "cover_url": "https://image.aladin.co.kr/product/34127/18/cover200/k202931193_1.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 47,
+    "title": "지구 끝의 온실",
+    "author": "김초엽(지은이) |자이언트북스| 2021년 8월",
+    "isbn13": "276926308",
+    "cover_url": "https://image.aladin.co.kr/product/27692/63/cover200/s222930473_1.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 48,
+    "title": "룬의 아이들",
+    "author": "전민희(지은이) |엘릭시르| 2024년 5월",
+    "isbn13": "340411790",
+    "cover_url": "https://image.aladin.co.kr/product/34041/17/cover200/8954698905_1.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 49,
+    "title": "아몬드",
+    "author": "손원평(지은이) |다즐링| 2023년 7월",
+    "isbn13": "318933239",
+    "cover_url": "https://image.aladin.co.kr/product/31893/32/cover200/k212833749_2.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 50,
+    "title": "마지막 마음이 들리는 공중전화",
+    "author": "이수연(지은이) |클레이하우스| 2024년 1월",
+    "isbn13": "332058591",
+    "cover_url": "https://image.aladin.co.kr/product/33205/85/cover200/k912937954_1.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 51,
+    "title": "메리골드 마음 세탁소 (30만 부 기념 한정 플라워 에디션)",
+    "author": "윤정은(지은이) |북로망스| 2023년 3월",
+    "isbn13": "329514317",
+    "cover_url": "https://image.aladin.co.kr/product/32951/43/cover200/k032936141_1.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 52,
+    "title": "원도",
+    "author": "최진영(지은이) |한겨레출판| 2024년 3월",
+    "isbn13": "336578465",
+    "cover_url": "https://image.aladin.co.kr/product/33657/84/cover200/k232939529_1.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 53,
+    "title": "회색 인간",
+    "author": "김동식(지은이) |요다| 2017년 12월",
+    "isbn13": "127608044",
+    "cover_url": "https://image.aladin.co.kr/product/12760/80/cover200/k882532678_1.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 54,
+    "title": "내 이름은 태양꽃",
+    "author": "한강(지은이),김세현(그림) |문학동네| 2002년 3월",
+    "isbn13": "334125",
+    "cover_url": "https://image.aladin.co.kr/product/33/41/cover200/8982814795_2.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 55,
+    "title": "오렌지와 빵칼",
+    "author": "청예(지은이) |허블| 2024년 7월",
+    "isbn13": "342597735",
+    "cover_url": "https://image.aladin.co.kr/product/34259/77/cover200/k852932962_1.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 56,
+    "title": "종의 기원",
+    "author": "정유정(지은이) |은행나무| 2016년 5월",
+    "isbn13": "74920934",
+    "cover_url": "https://image.aladin.co.kr/product/7492/9/cover200/8956609950_2.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 57,
+    "title": "우리가 빛의 속도로 갈 수 없다면",
+    "author": "김초엽(지은이) |허블| 2019년 6월",
+    "isbn13": "193591681",
+    "cover_url": "https://image.aladin.co.kr/product/19359/16/cover200/s722039767_1.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 58,
+    "title": "달러구트 꿈 백화점",
+    "author": "이미예(지은이) |팩토리나인| 2020년 7월",
+    "isbn13": "245127051",
+    "cover_url": "https://image.aladin.co.kr/product/24512/70/cover200/k392630952_2.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 59,
+    "title": "사바삼사라 서 세트",
+    "author": "J. 김보영(지은이) |디플롯| 2024년 9월",
+    "isbn13": "344689647",
+    "cover_url": "https://image.aladin.co.kr/product/34468/96/cover200/k572932530_2.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 60,
+    "title": "입속 지느러미",
+    "author": "조예은(지은이) |한겨레출판| 2024년 5월",
+    "isbn13": "340025499",
+    "cover_url": "https://image.aladin.co.kr/product/34002/54/cover200/k462930652_1.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 61,
+    "title": "난장이가 쏘아올린 작은 공",
+    "author": "조세희(지은이) |이성과힘| 2024년 2월",
+    "isbn13": "334157624",
+    "cover_url": "https://image.aladin.co.kr/product/33415/76/cover200/8995151226_1.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 62,
+    "title": "단 한 사람",
+    "author": "최진영(지은이) |한겨레출판| 2023년 9월",
+    "isbn13": "324968136",
+    "cover_url": "https://image.aladin.co.kr/product/32496/81/cover200/k382935719_1.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 63,
+    "title": "우리가 겨울을 지나온 방식 (리커버)",
+    "author": "문미순(지은이) |나무옆의자| 2023년 5월",
+    "isbn13": "329015526",
+    "cover_url": "https://image.aladin.co.kr/product/32901/55/cover200/k602936626_2.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 64,
+    "title": "아가미 (리커버)",
+    "author": "구병모(지은이) |위즈덤하우스| 2018년 3월",
+    "isbn13": "337280683",
+    "cover_url": "https://image.aladin.co.kr/product/33728/6/cover200/k282939544_1.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 65,
+    "title": "동경",
+    "author": "김화진(지은이) |문학동네| 2024년 6월",
+    "isbn13": "341329610",
+    "cover_url": "https://image.aladin.co.kr/product/34132/96/cover200/k852931293_1.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 66,
+    "title": "다 하지 못한 말",
+    "author": "임경선(지은이) |토스트| 2024년 3월",
+    "isbn13": "336575890",
+    "cover_url": "https://image.aladin.co.kr/product/33657/58/cover200/k162939528_1.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 67,
+    "title": "적산가옥의 유령",
+    "author": "조예은(지은이) |현대문학| 2024년 6월",
+    "isbn13": "342863840",
+    "cover_url": "https://image.aladin.co.kr/product/34286/38/cover200/k592932077_1.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 68,
+    "title": "우리에게 남은 시간 46일",
+    "author": "이설(지은이) |하이스트| 2024년 2월",
+    "isbn13": "334082794",
+    "cover_url": "https://image.aladin.co.kr/product/33408/27/cover200/k762938238_2.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 69,
+    "title": "빛과 멜로디",
+    "author": "조해진(지은이) |문학동네| 2024년 8월",
+    "isbn13": "345924386",
+    "cover_url": "https://image.aladin.co.kr/product/34592/43/cover200/k402933577_1.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 70,
+    "title": "일러두기",
+    "author": "조경란,김기태,박민정,박솔뫼,성혜령,최미래(지은이) |문학사상| 2024년 4월",
+    "isbn13": "338120740",
+    "cover_url": "https://image.aladin.co.kr/product/33812/7/cover200/8970125949_1.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 71,
+    "title": "고래",
+    "author": "천명관(지은이) |문학동네| 2004년 12월",
+    "isbn13": "532835",
+    "cover_url": "https://image.aladin.co.kr/product/53/28/cover200/s772832909_1.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 72,
+    "title": "눈부신 안부",
+    "author": "백수린(지은이) |문학동네| 2023년 5월",
+    "isbn13": "316886280",
+    "cover_url": "https://image.aladin.co.kr/product/31688/62/cover200/8954699375_2.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 73,
+    "title": "속삭임 우묵한 정원",
+    "author": "배수아(지은이) |은행나무| 2024년 7월",
+    "isbn13": "343166605",
+    "cover_url": "https://image.aladin.co.kr/product/34316/66/cover200/s322932503_1.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 74,
+    "title": "분실물이 돌아왔습니다",
+    "author": "김혜정(지은이) |오리지널스| 2024년 2월",
+    "isbn13": "335137318",
+    "cover_url": "https://image.aladin.co.kr/product/33513/73/cover200/k072938554_2.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 75,
+    "title": "아버지의 해방일지",
+    "author": "정지아(지은이) |창비| 2022년 9월",
+    "isbn13": "300485187",
+    "cover_url": "https://image.aladin.co.kr/product/30048/51/cover200/8936438832_2.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 76,
+    "title": "사랑 후에 오는 것들 + 다이어리 세트",
+    "author": "공지영,츠지 히토나리(지은이),김훈아(옮긴이) |(주)태일소담출판사| 2024년 12월",
+    "isbn13": "353983445",
+    "cover_url": "https://image.aladin.co.kr/product/35398/34/cover200/k622035010_1.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 77,
+    "title": "저주토끼",
+    "author": "정보라(지은이) |래빗홀| 2023년 4월",
+    "isbn13": "314843468",
+    "cover_url": "https://image.aladin.co.kr/product/31484/34/cover200/k712832622_2.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 78,
+    "title": "파쇄",
+    "author": "구병모(지은이) |위즈덤하우스| 2023년 3월",
+    "isbn13": "312732931",
+    "cover_url": "https://image.aladin.co.kr/product/31273/29/cover200/k592832565_1.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 79,
+    "title": "소설 보다 : 여름 2024",
+    "author": "서장원,예소연,함윤이(지은이) |문학과지성사| 2024년 6월",
+    "isbn13": "340702414",
+    "cover_url": "https://image.aladin.co.kr/product/34070/24/cover200/8932042829_1.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 80,
+    "title": "살인자의 쇼핑몰",
+    "author": "강지영(지은이) |자음과모음| 2020년 2월",
+    "isbn13": "231784310",
+    "cover_url": "https://image.aladin.co.kr/product/23178/43/cover200/8954442145_2.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 81,
+    "title": "지구 생물체는 항복하라",
+    "author": "정보라(지은이) |래빗홀| 2024년 1월",
+    "isbn13": "332996851",
+    "cover_url": "https://image.aladin.co.kr/product/33299/68/cover200/k362938385_1.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 82,
+    "title": "조금 망한 사랑",
+    "author": "김지연(지은이) |문학동네| 2024년 10월",
+    "isbn13": "350525168",
+    "cover_url": "https://image.aladin.co.kr/product/35052/51/cover200/k462934890_1.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 83,
+    "title": "파견자들",
+    "author": "김초엽(지은이) |퍼블리온| 2023년 10월",
+    "isbn13": "325912999",
+    "cover_url": "https://image.aladin.co.kr/product/32591/29/cover200/k352935549_2.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 84,
+    "title": "어서 오세요, 휴남동 서점입니다 (일본서점대상 수상기념 리커버)",
+    "author": "황보름(지은이) |클레이하우스| 2022년 1월",
+    "isbn13": "337835320",
+    "cover_url": "https://image.aladin.co.kr/product/33783/53/cover200/k872930470_1.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 85,
+    "title": "바깥은 여름",
+    "author": "김애란(지은이) |문학동네| 2017년 6월",
+    "isbn13": "111454737",
+    "cover_url": "https://image.aladin.co.kr/product/11145/47/cover200/s532932793_1.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 86,
+    "title": "해가 지는 곳으로",
+    "author": "최진영(지은이) |민음사| 2017년 6월",
+    "isbn13": "112811885",
+    "cover_url": "https://image.aladin.co.kr/product/11281/18/cover200/893747316x_1.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 87,
+    "title": "달러구트 꿈 백화점 2",
+    "author": "이미예(지은이) |팩토리나인| 2021년 7월",
+    "isbn13": "275874708",
+    "cover_url": "https://image.aladin.co.kr/product/27587/47/cover200/k962733015_2.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 88,
+    "title": "로기완을 만났다 (리마스터판)",
+    "author": "조해진(지은이) |창비| 2024년 2월",
+    "isbn13": "334066144",
+    "cover_url": "https://image.aladin.co.kr/product/33406/61/cover200/8936434640_1.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 89,
+    "title": "소설 보다 : 봄 2024",
+    "author": "김채원,이선진,이연지(지은이) |문학과지성사| 2024년 3월",
+    "isbn13": "335869992",
+    "cover_url": "https://image.aladin.co.kr/product/33586/99/cover200/8932042632_1.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 90,
+    "title": "재와 물거품",
+    "author": "김청귤(지은이) |안전가옥| 2021년 5월",
+    "isbn13": "272568192",
+    "cover_url": "https://image.aladin.co.kr/product/27256/81/cover200/k192732699_1.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 91,
+    "title": "너무나 많은 여름이",
+    "author": "김연수(지은이) |레제| 2023년 6월",
+    "isbn13": "319554350",
+    "cover_url": "https://image.aladin.co.kr/product/31955/43/cover200/k372833255_1.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 92,
+    "title": "사서함 110호의 우편물",
+    "author": "이도우(지은이) |수박설탕| 2022년 7월",
+    "isbn13": "298290264",
+    "cover_url": "https://image.aladin.co.kr/product/29829/2/cover200/k702838510_1.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 93,
+    "title": "눈사람 자살 사건",
+    "author": "최승호(지은이) |달아실| 2019년 3월",
+    "isbn13": "186384394",
+    "cover_url": "https://image.aladin.co.kr/product/18638/43/cover200/k532635264_1.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 94,
+    "title": "살인자의 쇼핑몰 2",
+    "author": "강지영(지은이) |자음과모음| 2023년 7월",
+    "isbn13": "321305336",
+    "cover_url": "https://image.aladin.co.kr/product/32130/53/cover200/8954449298_2.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 95,
+    "title": "직장 상사 악령 퇴치부",
+    "author": "이사구(지은이) |황금가지| 2024년 2월",
+    "isbn13": "334641692",
+    "cover_url": "https://image.aladin.co.kr/product/33464/16/cover200/k882938849_2.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 96,
+    "title": "날씨가 좋으면 찾아가겠어요",
+    "author": "이도우(지은이) |수박설탕| 2023년 11월",
+    "isbn13": "329160213",
+    "cover_url": "https://image.aladin.co.kr/product/32916/2/cover200/k572936830_2.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 97,
+    "title": "살인자의 기억법",
+    "author": "김영하(지은이) |복복서가| 2020년 8월",
+    "isbn13": "249404000",
+    "cover_url": "https://image.aladin.co.kr/product/24940/40/cover200/k732632690_1.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 98,
+    "title": "인성에 비해 잘 풀린 사람",
+    "author": "남궁인,손원평,이정연,임현석,정아은,천현우,최유안,한은형(지은이) |문학동네| 2024년 5월",
+    "isbn13": "338559095",
+    "cover_url": "https://image.aladin.co.kr/product/33855/90/cover200/k152930309_1.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 99,
+    "title": "전지적 독자 시점 Part 1 01",
+    "author": "싱숑(지은이) |비채| 2022년 1월",
+    "isbn13": "287281261",
+    "cover_url": "https://image.aladin.co.kr/product/28728/12/cover200/8934967315_2.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 100,
+    "title": "트로피컬 나이트",
+    "author": "조예은(지은이) |한겨레출판| 2022년 8월",
+    "isbn13": "299460785",
+    "cover_url": "https://image.aladin.co.kr/product/29946/7/cover200/k962838741_1.jpg",
+    "publisher": "",
+    "pubdate": ""
+  }
+]

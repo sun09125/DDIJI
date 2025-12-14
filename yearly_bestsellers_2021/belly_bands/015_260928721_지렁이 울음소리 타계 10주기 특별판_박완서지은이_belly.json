@@ -1,0 +1,31 @@
+{
+  "image_path": "yearly_bestsellers_2021\\covers\\015_260928721_지렁이 울음소리 타계 10주기 특별판_박완서지은이.jpg",
+  "timestamp": "2025-11-12T01:09:55.890839",
+  "has_belly_band": false,
+  "belly_band": null,
+  "all_texts": [
+    {
+      "text": "#면",
+      "confidence": 0.0057183602567691715,
+      "bbox": [
+        [
+          19.0,
+          499.0
+        ],
+        [
+          181.0,
+          499.0
+        ],
+        [
+          181.0,
+          673.0
+        ],
+        [
+          19.0,
+          673.0
+        ]
+      ]
+    }
+  ],
+  "total_text_blocks": 1
+}

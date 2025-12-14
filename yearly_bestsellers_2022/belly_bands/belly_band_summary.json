@@ -1,0 +1,608 @@
+{
+  "timestamp": "2025-11-12T01:09:47.099320",
+  "total_images": 100,
+  "belly_bands_found": 84,
+  "percentage": 84.0,
+  "results": [
+    {
+      "file": "001_290457417_불편한 편의점 벚꽃 에디션_김호연지은이.jpg",
+      "has_belly_band": true,
+      "text": "*+ * * * 주요서점80주연속 전세계 18개국 전국37개도시 2022 공공도서관 판권수출 올해의책 최다대출도서 공합네스트Top10",
+      "total_texts": 16
+    },
+    {
+      "file": "002_298570092_하얼빈_김훈지은이.jpg",
+      "has_belly_band": true,
+      "text": "2022 2022 최고의베스 올해의 책",
+      "total_texts": 7
+    },
+    {
+      "file": "003_300485187_아버지의 해방일지_정지아지은이.jpg",
+      "has_belly_band": true,
+      "text": "아버 지의 방 해 지",
+      "total_texts": 10
+    },
+    {
+      "file": "004_292816855_작별인사_김영하지은이.jpg",
+      "has_belly_band": true,
+      "text": "벼군 이사 자, 경영하",
+      "total_texts": 6
+    },
+    {
+      "file": "005_292067158_2022 제13회 젊은작가상 수상작품집_임솔아김멜라김병운김지연김혜진서수진서이.jpg",
+      "has_belly_band": true,
+      "text": "수상작품집",
+      "total_texts": 22
+    },
+    {
+      "file": "006_301045967_데뷔 못 하면 죽는 병 걸림 1부 초판 한정 굿즈박스 _백덕수지은이.jpg",
+      "has_belly_band": true,
+      "text": "박문대 데부해",
+      "total_texts": 6
+    },
+    {
+      "file": "007_286859586_어서 오세요 휴남동 서점입니다_황보름지은이.jpg",
+      "has_belly_band": true,
+      "text": "어서 오세요 휴남동 서점입니다",
+      "total_texts": 20
+    },
+    {
+      "file": "008_302118006_이토록 평범한 미래_김연수지은이.jpg",
+      "has_belly_band": true,
+      "text": "이토록 평 범 한   미래",
+      "total_texts": 7
+    },
+    {
+      "file": "009_314843468_저주토끼_정보라지은이.jpg",
+      "has_belly_band": true,
+      "text": "2022년 2023년 (저주토끼) 부기상 인터내서널 최초 창작 버전 복원 전미도서상 최종 주보 선정 최종 주보 선정 전면 개정판",
+      "total_texts": 14
+    },
+    {
+      "file": "010_276926308_지구 끝의 온실_김초엽지은이.jpg",
+      "has_belly_band": true,
+      "text": "6개국 20만부 영상화 출간 계약 판매돌파 그;",
+      "total_texts": 11
+    },
+    {
+      "file": "011_303706448_불편한 편의점 2 단풍 에디션_김호연지은이.jpg",
+      "has_belly_band": true,
+      "text": "***** 주요서점80주연속 전세계 18개국 전국37 종합베스트 Top10 판권수준 올해의",
+      "total_texts": 15
+    },
+    {
+      "file": "012_275419192_밝은 밤_최은영지은이.jpg",
+      "has_belly_band": true,
+      "text": "알라단 \"슬픔올 위로하고 감싸주는",
+      "total_texts": 9
+    },
+    {
+      "file": "013_298076583_튜브_손원평지은이.jpg",
+      "has_belly_band": true,
+      "text": "1이이만부 베스트엘러 '아본드] 작가 손원평 신작",
+      "total_texts": 8
+    },
+    {
+      "file": "014_293773169_애쓰지 않아도_최은영지은이김세희그림.jpg",
+      "has_belly_band": true,
+      "text": "애쓰지 않아도",
+      "total_texts": 6
+    },
+    {
+      "file": "015_193591681_우리가 빛의 속도로 갈 수 없다면_김초엽지은이.jpg",
+      "has_belly_band": true,
+      "text": "중국 양대 SF 문학상 석권",
+      "total_texts": 11
+    },
+    {
+      "file": "016_352924466_달러구트 꿈 백화점 200만 부 기념 합본호  아메리칸_이미예지은이.jpg",
+      "has_belly_band": false,
+      "text": null,
+      "total_texts": 8
+    },
+    {
+      "file": "017_25843736_모순_양귀자지은이.jpg",
+      "has_belly_band": false,
+      "text": null,
+      "total_texts": 1
+    },
+    {
+      "file": "018_295654389_저만치 혼자서_김훈지은이.jpg",
+      "has_belly_band": true,
+      "text": "저만치 혼자서",
+      "total_texts": 9
+    },
+    {
+      "file": "019_305204156_크리스마스 타일_김금희지은이.jpg",
+      "has_belly_band": false,
+      "text": null,
+      "total_texts": 3
+    },
+    {
+      "file": "020_315614621_구의 증명_최진영지은이.jpg",
+      "has_belly_band": true,
+      "text": "소 선 최 진 영 구의 증명",
+      "total_texts": 3
+    },
+    {
+      "file": "021_299460785_트로피컬 나이트_조예은지은이.jpg",
+      "has_belly_band": false,
+      "text": null,
+      "total_texts": 6
+    },
+    {
+      "file": "022_295437240_칵테일 러브 좀비 리커버_조예은지은이.jpg",
+      "has_belly_band": true,
+      "text": "각테일; 러브 좀비 조예은",
+      "total_texts": 2
+    },
+    {
+      "file": "023_40869703_소년이 온다_한강지은이.jpg",
+      "has_belly_band": false,
+      "text": null,
+      "total_texts": 4
+    },
+    {
+      "file": "024_302611096_가녀장의 시대_이슬아지은이.jpg",
+      "has_belly_band": true,
+      "text": "2023 젊은 작가 1위- 드리마 제작 확정 이야기집수",
+      "total_texts": 9
+    },
+    {
+      "file": "025_299808707_아라의 소설_정세랑지은이.jpg",
+      "has_belly_band": true,
+      "text": "정세량 월드의 다이제스트",
+      "total_texts": 4
+    },
+    {
+      "file": "026_298087324_믿음에 대하여_박상영지은이.jpg",
+      "has_belly_band": true,
+      "text": "박상영 믿음에 대하여 연작소실",
+      "total_texts": 9
+    },
+    {
+      "file": "027_287089545_장미의 이름은 장미_은희경지은이.jpg",
+      "has_belly_band": true,
+      "text": "은회경이라는 이름의 새로운 지도 뉴욕-여행자 소설 4부작 은리경이 오늘 다다른 우주는 깊고 아름다위",
+      "total_texts": 16
+    },
+    {
+      "file": "028_119453297_친밀한 이방인_정한아지은이.jpg",
+      "has_belly_band": true,
+      "text": "수지 정은채 김준한 박예영 출연 쿠장플레이 시리즈 <안냐> 원작 소설! 아냐",
+      "total_texts": 9
+    },
+    {
+      "file": "029_287367114_다섯 번째 감각_김보영지은이.jpg",
+      "has_belly_band": true,
+      "text": "오래도록 한국 SF에는 김보영이 빛나고 있없다 김보영 초기 결작 10편올",
+      "total_texts": 9
+    },
+    {
+      "file": "030_295363309_룬의 아이들_전민희지은이.jpg",
+      "has_belly_band": true,
+      "text": "CHILDREN",
+      "total_texts": 10
+    },
+    {
+      "file": "031_272252933_완전한 행복_정유정지은이.jpg",
+      "has_belly_band": true,
+      "text": "2021 다시 정유정 입도적 서사 위 올해의 정교하고 서늘한 공포",
+      "total_texts": 10
+    },
+    {
+      "file": "032_272568192_재와 물거품_김청귤지은이.jpg",
+      "has_belly_band": true,
+      "text": "재와 물거품 김청굴",
+      "total_texts": 2
+    },
+    {
+      "file": "033_284254515_작별하지 않는다 눈꽃 에디션_한강지은이.jpg",
+      "has_belly_band": true,
+      "text": "작 별하지 않 논다",
+      "total_texts": 7
+    },
+    {
+      "file": "034_281702287_방금 떠나온 세계_김초엽지은이.jpg",
+      "has_belly_band": true,
+      "text": "한국 문학의 눈부신 미래, 김초업 두 번째 소설집 출간",
+      "total_texts": 9
+    },
+    {
+      "file": "035_290202593_마음에 없는 소리_김지연지은이.jpg",
+      "has_belly_band": true,
+      "text": "2022 젊은작가상 수상작 공원에서 , 2027 젊은작가상 수상작 '사랑하는 일_ 수록 문학동네",
+      "total_texts": 10
+    },
+    {
+      "file": "036_285549774_므레모사_김초엽지은이.jpg",
+      "has_belly_band": true,
+      "text": "= 드레모사 ?",
+      "total_texts": 5
+    },
+    {
+      "file": "037_302252412_2022 김승옥문학상 수상작품집_편혜영김연수김애란정한아문지혁백수린지은.jpg",
+      "has_belly_band": true,
+      "text": "김승옥문학상",
+      "total_texts": 11
+    },
+    {
+      "file": "038_295093328_2022 제5회 한국과학문학상 수상작품집_서윤빈김혜윤김쿠만김필산성수나이멍지은이.jpg",
+      "has_belly_band": true,
+      "text": "한국과학문학상",
+      "total_texts": 9
+    },
+    {
+      "file": "039_189365205_나는 소망한다 내게 금지된 것을_양귀자지은이.jpg",
+      "has_belly_band": false,
+      "text": null,
+      "total_texts": 7
+    },
+    {
+      "file": "040_241313700_시선으로부터_정세랑지은이.jpg",
+      "has_belly_band": true,
+      "text": "2020 최고의 한국문드 2020 2020 올해의 책(교보문고 예스고L , 알라다 올해의 책",
+      "total_texts": 10
+    },
+    {
+      "file": "041_296479776_노랜드_천선란지은이.jpg",
+      "has_belly_band": true,
+      "text": "노랜드 천 선 칸 소 설 집",
+      "total_texts": 7
+    },
+    {
+      "file": "042_277214767_피프티 피플 리마스터판_정세랑지은이.jpg",
+      "has_belly_band": false,
+      "text": null,
+      "total_texts": 4
+    },
+    {
+      "file": "043_248956900_천 개의 파랑_천선란지은이.jpg",
+      "has_belly_band": true,
+      "text": "파랑 환",
+      "total_texts": 11
+    },
+    {
+      "file": "044_298290264_사서함 110호의 우편물_이도우지은이.jpg",
+      "has_belly_band": true,
+      "text": "세상의 모든 사랑이 무사하기루",
+      "total_texts": 7
+    },
+    {
+      "file": "045_299822611_재수사 1_장강명지은이.jpg",
+      "has_belly_band": true,
+      "text": "\"마침내 나는 상상 속의 소설올 만낫다.",
+      "total_texts": 9
+    },
+    {
+      "file": "046_105651245_아몬드 양장_손원평지은이.jpg",
+      "has_belly_band": true,
+      "text": "출 알",
+      "total_texts": 6
+    },
+    {
+      "file": "047_298955354_달러구트 꿈 백화점 1 레인보우 에디션_이미예지은이.jpg",
+      "has_belly_band": true,
+      "text": "표백화점? 달러구트",
+      "total_texts": 5
+    },
+    {
+      "file": "048_342975130_망원동 브라더스_김호연지은이.jpg",
+      "has_belly_band": true,
+      "text": "밀리언엘러'불편한 편의점_김호연작가의 유직드라마 세계문학상 수상 데뒤직! <망원동브라더스)",
+      "total_texts": 16
+    },
+    {
+      "file": "049_298955453_달러구트 꿈 백화점 2 레인보우 에디션_이미예지은이.jpg",
+      "has_belly_band": true,
+      "text": "꿀백화점? 달러구트",
+      "total_texts": 5
+    },
+    {
+      "file": "050_74920934_종의 기원_정유정지은이.jpg",
+      "has_belly_band": false,
+      "text": null,
+      "total_texts": 5
+    },
+    {
+      "file": "051_303951831_랑과 나의 사막_천선란지은이.jpg",
+      "has_belly_band": true,
+      "text": "= 광과 나의 사막 $",
+      "total_texts": 5
+    },
+    {
+      "file": "052_299822948_재수사 2_장강명지은이.jpg",
+      "has_belly_band": true,
+      "text": "-박혜진 문학평혼가) 장강명, 6년 만의 신작 장편 은행나무",
+      "total_texts": 11
+    },
+    {
+      "file": "053_287161284_불장난_손보미강화길백수린서이제염승숙이장욱최은.jpg",
+      "has_belly_band": true,
+      "text": "대상 수상작 불장난",
+      "total_texts": 17
+    },
+    {
+      "file": "054_198048203_지구에서 한아뿐_정세랑지은이.jpg",
+      "has_belly_band": true,
+      "text": "외계인 경민과 지구인 한아의 아주 희귀한 종류의 사랑 이야기!",
+      "total_texts": 8
+    },
+    {
+      "file": "055_86799537_쇼코의 미소_최은영지은이.jpg",
+      "has_belly_band": true,
+      "text": "제5회 젊은작가상 수상!",
+      "total_texts": 8
+    },
+    {
+      "file": "056_285291798_전지적 독자 시점 Part 1  제4의 벽 에디션 세트_싱숑지은이.jpg",
+      "has_belly_band": true,
+      "text": "01 8",
+      "total_texts": 11
+    },
+    {
+      "file": "057_142244075_파과_구병모지은이.jpg",
+      "has_belly_band": false,
+      "text": null,
+      "total_texts": 2
+    },
+    {
+      "file": "058_287791901_백의 그림자_황정은지은이.jpg",
+      "has_belly_band": false,
+      "text": null,
+      "total_texts": 5
+    },
+    {
+      "file": "059_334157624_난장이가 쏘아올린 작은 공_조세희지은이.jpg",
+      "has_belly_band": true,
+      "text": "작은 공 조세희",
+      "total_texts": 6
+    },
+    {
+      "file": "060_195439115_대도시의 사랑법_박상영지은이.jpg",
+      "has_belly_band": true,
+      "text": "토론토 국제영화제 공식 초청작",
+      "total_texts": 14
+    },
+    {
+      "file": "061_307712483_전지적 독자 시점 Part 2  3  굿즈키트 세트_싱숑지은이.jpg",
+      "has_belly_band": true,
+      "text": "Omniscient Reader s 독자 Viewpoint",
+      "total_texts": 11
+    },
+    {
+      "file": "062_282188797_나인 양장_천선란지은이.jpg",
+      "has_belly_band": true,
+      "text": "\"어느날 식물들의 목소리가 들리기 시작해다\" 독보적 상상력, 폭발하는 스토리텔량!",
+      "total_texts": 7
+    },
+    {
+      "file": "063_127608044_회색 인간_김동식지은이.jpg",
+      "has_belly_band": true,
+      "text": "꽃 회",
+      "total_texts": 7
+    },
+    {
+      "file": "064_287281261_전지적 독자 시점 Part 1 01_싱숑지은이.jpg",
+      "has_belly_band": true,
+      "text": "01 8",
+      "total_texts": 11
+    },
+    {
+      "file": "065_291370219_채식주의자 리마스터판_한강지은이.jpg",
+      "has_belly_band": false,
+      "text": null,
+      "total_texts": 3
+    },
+    {
+      "file": "066_139258912_아가미_구병모지은이.jpg",
+      "has_belly_band": false,
+      "text": null,
+      "total_texts": 4
+    },
+    {
+      "file": "067_304352624_재벌집 막내아들 1_산경지은이.jpg",
+      "has_belly_band": true,
+      "text": "JTBC 드라마 <재벌집 막내아들> 원작",
+      "total_texts": 7
+    },
+    {
+      "file": "068_14628764_칼의 노래_김훈지은이.jpg",
+      "has_belly_band": false,
+      "text": null,
+      "total_texts": 4
+    },
+    {
+      "file": "069_297454037_여름과 루비_박연준지은이.jpg",
+      "has_belly_band": true,
+      "text": "박연준 시인의 첫 장편소설 \"위는 내내 오갑이 근무서 끊이 열리고 이야기들이",
+      "total_texts": 7
+    },
+    {
+      "file": "070_219471296_페인트 양장_이희영지은이.jpg",
+      "has_belly_band": true,
+      "text": "'부모릎 선택할 수 있다면 아시야권 올해의 누구름 고르시켓습니까?\" 4개국 수출_ 빠스트센러",
+      "total_texts": 11
+    },
+    {
+      "file": "071_186384394_눈사람 자살 사건_최승호지은이.jpg",
+      "has_belly_band": true,
+      "text": "눈사람 자살 사건",
+      "total_texts": 3
+    },
+    {
+      "file": "072_291546056_유령의 마음으로_임선우지은이.jpg",
+      "has_belly_band": false,
+      "text": null,
+      "total_texts": 5
+    },
+    {
+      "file": "073_291779377_소설 보다  봄 2022_김병운위수정이주혜지은이.jpg",
+      "has_belly_band": true,
+      "text": "문광호 | 김병문 아무도 | 위수정 그 고양이의 이름은 길다 이주데",
+      "total_texts": 7
+    },
+    {
+      "file": "074_282199385_행성어 서점_김초엽지은이최인호그림.jpg",
+      "has_belly_band": true,
+      "text": "낯설고도 감각적인 열네 편의 이야기",
+      "total_texts": 9
+    },
+    {
+      "file": "075_296986835_소설 보다  여름 2022_김지연이미상함윤이지은이.jpg",
+      "has_belly_band": true,
+      "text": "모래 고모와 목경과 무경의 모럼 | 이미상",
+      "total_texts": 6
+    },
+    {
+      "file": "076_280895914_가짜 모범생_손현주지은이.jpg",
+      "has_belly_band": false,
+      "text": null,
+      "total_texts": 3
+    },
+    {
+      "file": "077_249404000_살인자의 기억법_김영하지은이.jpg",
+      "has_belly_band": true,
+      "text": "살인자의 기억법",
+      "total_texts": 3
+    },
+    {
+      "file": "078_298853356_악마의 계약서는 만기 되지 않는다_리러하지은이.jpg",
+      "has_belly_band": true,
+      "text": "대상 수상작! ~김초업 심사위원-",
+      "total_texts": 12
+    },
+    {
+      "file": "079_291689954_안녕 주정뱅이 리커버 특별판_권여선지은이.jpg",
+      "has_belly_band": true,
+      "text": "병 권 여 선 소 설 집 빵",
+      "total_texts": 8
+    },
+    {
+      "file": "080_275879438_홍학의 자리_정해연지은이.jpg",
+      "has_belly_band": true,
+      "text": "예측 불가! 한국 미스터리 사상 전무후무한 반전!",
+      "total_texts": 6
+    },
+    {
+      "file": "081_268552539_2021 제12회 젊은작가상 수상작품집_전하영김멜라김지연김혜진박서련서이제한정.jpg",
+      "has_belly_band": true,
+      "text": "젊은작가상",
+      "total_texts": 26
+    },
+    {
+      "file": "082_287281385_전지적 독자 시점 Part 1 02_싱숑지은이.jpg",
+      "has_belly_band": true,
+      "text": "Omniscient Reader s 독자 Viewipoint PART",
+      "total_texts": 10
+    },
+    {
+      "file": "083_303470907_나주에 대하여_김화진지은이.jpg",
+      "has_belly_band": true,
+      "text": "앞으로기다러야 할 세계가 하나더 내계로 온것 같다 ~최은영소설가)",
+      "total_texts": 7
+    },
+    {
+      "file": "084_296563246_여자들의 왕_정보라지은이.jpg",
+      "has_belly_band": true,
+      "text": "들의 왕 야직 정보라 소설집",
+      "total_texts": 15
+    },
+    {
+      "file": "085_287281548_전지적 독자 시점 Part 1 06_싱숑지은이.jpg",
+      "has_belly_band": true,
+      "text": "06 8",
+      "total_texts": 12
+    },
+    {
+      "file": "086_282105147_브로콜리 펀치_이유리지은이.jpg",
+      "has_belly_band": false,
+      "text": null,
+      "total_texts": 4
+    },
+    {
+      "file": "087_287281514_전지적 독자 시점 Part 1 05_싱숑지은이.jpg",
+      "has_belly_band": true,
+      "text": "05 8",
+      "total_texts": 11
+    },
+    {
+      "file": "088_287281670_전지적 독자 시점 Part 1 07_싱숑지은이.jpg",
+      "has_belly_band": true,
+      "text": "07 8",
+      "total_texts": 11
+    },
+    {
+      "file": "089_56869296_언제나 밤인 세계_하지은지은이.jpg",
+      "has_belly_band": true,
+      "text": "광금가지 한국 환상 문학의 중흥기록 이끈 '얼음나무 숲 하지은 작가의 7년 만의 귀환!",
+      "total_texts": 7
+    },
+    {
+      "file": "090_301974196_이토록 아름다운 세상에서_고호관곽유진김백상김정혜진남유하문이소문.jpg",
+      "has_belly_band": true,
+      "text": "김초업 -정세량 추천! 구병모 - 김보영 다시 오지 않을 한국 SF의 기념비적 엔습러지",
+      "total_texts": 10
+    },
+    {
+      "file": "091_260678235_그 많던 싱아는 누가 다 먹었을까_박완서지은이.jpg",
+      "has_belly_band": true,
+      "text": "\"어떤 문장은 처음 듣는 순간 영원히 한국 문학의 거목 기억하계 된다 이 책의 제목움 들없운 때 박완서 타계 10주기 나는 이보다 더 좋은 성장소설의 제목은",
+      "total_texts": 15
+    },
+    {
+      "file": "092_298069174_1차원이 되고 싶어 0차원 에디션_박상영지은이.jpg",
+      "has_belly_band": true,
+      "text": "지독하 사랑을 향한 이 여름의 답 다이방 박상영 베스트설러 더차원이 되고 싶어 0차원 에디선 출간!",
+      "total_texts": 6
+    },
+    {
+      "file": "093_287281409_전지적 독자 시점 Part 1 03_싱숑지은이.jpg",
+      "has_belly_band": true,
+      "text": "03 8",
+      "total_texts": 11
+    },
+    {
+      "file": "094_287281759_전지적 독자 시점 Part 1 08_싱숑지은이.jpg",
+      "has_belly_band": true,
+      "text": "08 8",
+      "total_texts": 11
+    },
+    {
+      "file": "095_111454737_바깥은 여름_김애란지은이.jpg",
+      "has_belly_band": true,
+      "text": "여름 바깥은",
+      "total_texts": 4
+    },
+    {
+      "file": "096_304352912_재벌집 막내아들 2_산경지은이.jpg",
+      "has_belly_band": true,
+      "text": "JTBC 드라마 <재벌집 막내아들> 원작",
+      "total_texts": 7
+    },
+    {
+      "file": "097_287281486_전지적 독자 시점 Part 1 04_싱숑지은이.jpg",
+      "has_belly_band": true,
+      "text": "Omniscient Reader s 독자 Viewpoint PART",
+      "total_texts": 11
+    },
+    {
+      "file": "098_244899880_여름의 빌라_백수린지은이.jpg",
+      "has_belly_band": true,
+      "text": "현대문학상 문지문학상 젊은작가상 수상작 수록!",
+      "total_texts": 6
+    },
+    {
+      "file": "099_305082617_재벌집 막내아들 3_산경지은이.jpg",
+      "has_belly_band": true,
+      "text": "JTBC 드라마 <재벌집 막내아들> 원작",
+      "total_texts": 7
+    },
+    {
+      "file": "100_301692128_소설 보다  가을 2022_김기태위수정이서수지은이.jpg",
+      "has_belly_band": true,
+      "text": "오후만 있 일요일 | 위수정",
+      "total_texts": 7
+    }
+  ]
+}

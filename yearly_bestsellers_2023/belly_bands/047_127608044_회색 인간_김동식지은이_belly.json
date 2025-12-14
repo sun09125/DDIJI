@@ -1,0 +1,31 @@
+{
+  "image_path": "yearly_bestsellers_2023\\covers\\047_127608044_회색 인간_김동식지은이.jpg",
+  "timestamp": "2025-11-12T01:08:36.411600",
+  "has_belly_band": false,
+  "belly_band": null,
+  "all_texts": [
+    {
+      "text": "#",
+      "confidence": 0.034757903324874384,
+      "bbox": [
+        [
+          0.0,
+          9.0
+        ],
+        [
+          72.0,
+          9.0
+        ],
+        [
+          72.0,
+          300.0
+        ],
+        [
+          0.0,
+          300.0
+        ]
+      ]
+    }
+  ],
+  "total_text_blocks": 1
+}

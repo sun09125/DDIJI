@@ -1,0 +1,902 @@
+[
+  {
+    "rank": 1,
+    "title": "달러구트 꿈 백화점",
+    "author": "이미예(지은이) |팩토리나인| 2020년 7월",
+    "isbn13": "245127051",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 2,
+    "title": "달러구트 꿈 백화점 2",
+    "author": "이미예(지은이) |팩토리나인| 2021년 7월",
+    "isbn13": "275874708",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 3,
+    "title": "완전한 행복",
+    "author": "정유정(지은이) |은행나무| 2021년 6월",
+    "isbn13": "272252933",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 4,
+    "title": "2021 제12회 젊은작가상 수상작품집",
+    "author": "전하영,김멜라,김지연,김혜진,박서련,서이제,한정현(지은이) |문학동네| 2021년 4월",
+    "isbn13": "268552539",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 5,
+    "title": "지구 끝의 온실",
+    "author": "김초엽(지은이) |자이언트북스| 2021년 8월",
+    "isbn13": "276926308",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 6,
+    "title": "불편한 편의점",
+    "author": "김호연(지은이) |나무옆의자| 2021년 4월",
+    "isbn13": "269428498",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 7,
+    "title": "아몬드 (양장)",
+    "author": "손원평(지은이) |창비| 2017년 3월",
+    "isbn13": "105651245",
+    "cover_url": "https://image.aladin.co.kr/product/10565/12/cover200/8936434268_1.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 8,
+    "title": "방금 떠나온 세계",
+    "author": "김초엽(지은이) |한겨레출판| 2021년 10월",
+    "isbn13": "281702287",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 9,
+    "title": "우리가 빛의 속도로 갈 수 없다면",
+    "author": "김초엽(지은이) |허블| 2019년 6월",
+    "isbn13": "193591681",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 10,
+    "title": "시선으로부터,",
+    "author": "정세랑(지은이) |문학동네| 2020년 6월",
+    "isbn13": "241313700",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 11,
+    "title": "달까지 가자",
+    "author": "장류진(지은이) |창비| 2021년 4월",
+    "isbn13": "259678611",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 12,
+    "title": "모순",
+    "author": "양귀자(지은이) |쓰다| 2013년 4월",
+    "isbn13": "25843736",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 13,
+    "title": "밤의 여행자들",
+    "author": "윤고은(지은이) |민음사| 2013년 10월",
+    "isbn13": "32250088",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 14,
+    "title": "소년이 온다",
+    "author": "한강(지은이) |창비| 2014년 5월",
+    "isbn13": "40869703",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 15,
+    "title": "지렁이 울음소리 (타계 10주기 특별판)",
+    "author": "박완서(지은이) |민음사| 2021년 1월",
+    "isbn13": "260928721",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 16,
+    "title": "재인, 재욱, 재훈 (리커버 에디션)",
+    "author": "정세랑(지은이) |은행나무| 2021년 9월",
+    "isbn13": "278027056",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 17,
+    "title": "1차원이 되고 싶어",
+    "author": "박상영(지은이) |문학동네| 2021년 10월",
+    "isbn13": "280318207",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 18,
+    "title": "종의 기원",
+    "author": "정유정(지은이) |은행나무| 2016년 5월",
+    "isbn13": "74920934",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 19,
+    "title": "룬의 아이들",
+    "author": "전민희(지은이) |엘릭시르| 2021년 4월",
+    "isbn13": "270011623",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 20,
+    "title": "행성어 서점",
+    "author": "김초엽(지은이),최인호(그림) |마음산책| 2021년 11월",
+    "isbn13": "282199385",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 21,
+    "title": "피프티 피플 (리마스터판)",
+    "author": "정세랑(지은이) |창비| 2021년 8월",
+    "isbn13": "277214767",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 22,
+    "title": "칵테일, 러브, 좀비",
+    "author": "조예은(지은이) |안전가옥| 2020년 4월",
+    "isbn13": "237368570",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 23,
+    "title": "전지적 독자 시점 Part 1 : 제4의 벽 에디션 세트",
+    "author": "싱숑(지은이) |비채| 2022년 1월",
+    "isbn13": "285291798",
+    "cover_url": "https://image.aladin.co.kr/product/28529/17/cover200/8934967579_2.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 24,
+    "title": "보건교사 안은영 (특별판)",
+    "author": "정세랑(지은이) |민음사| 2020년 9월",
+    "isbn13": "251281173",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 25,
+    "title": "나는 소망한다 내게 금지된 것을",
+    "author": "양귀자(지은이) |쓰다| 2019년 4월",
+    "isbn13": "189365205",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 26,
+    "title": "페인트 (양장)",
+    "author": "이희영(지은이) |창비| 2019년 11월",
+    "isbn13": "219471296",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 27,
+    "title": "지구에서 한아뿐",
+    "author": "정세랑(지은이) |난다| 2019년 7월",
+    "isbn13": "198048203",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 28,
+    "title": "7년의 밤",
+    "author": "정유정(지은이) |은행나무| 2011년 3월",
+    "isbn13": "9886703",
+    "cover_url": "https://image.aladin.co.kr/product/988/67/cover200/8956604991_3.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 29,
+    "title": "달러구트 꿈 백화점 (200만 부 기념 합본호 : 아메리칸드림 에디션)",
+    "author": "이미예(지은이) |팩토리나인| 2024년 12월",
+    "isbn13": "352924466",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 30,
+    "title": "대불호텔의 유령",
+    "author": "강화길(지은이) |문학동네| 2021년 8월",
+    "isbn13": "277170864",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 31,
+    "title": "우리는 페퍼로니에서 왔어",
+    "author": "김금희(지은이) |창비| 2021년 5월",
+    "isbn13": "271088835",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 32,
+    "title": "바늘과 가죽의 시",
+    "author": "구병모(지은이) |현대문학| 2021년 4월",
+    "isbn13": "260214589",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 33,
+    "title": "어쩌면 스무 번",
+    "author": "편혜영(지은이) |문학동네| 2021년 3월",
+    "isbn13": "266555498",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 34,
+    "title": "아버지에게 갔었어",
+    "author": "신경숙(지은이) |창비| 2021년 3월",
+    "isbn13": "266023721",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 35,
+    "title": "연년세세",
+    "author": "황정은(지은이) |창비| 2020년 9월",
+    "isbn13": "247906081",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 36,
+    "title": "고구려 7",
+    "author": "김진명(지은이) |이타북스| 2021년 6월",
+    "isbn13": "272421636",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 37,
+    "title": "천 개의 파랑 (리커버)",
+    "author": "천선란(지은이) |허블| 2020년 8월",
+    "isbn13": "281570121",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 38,
+    "title": "환한 숨",
+    "author": "조해진(지은이) |문학과지성사| 2021년 3월",
+    "isbn13": "265377110",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 39,
+    "title": "밝은 밤 (별밤 에디션)",
+    "author": "최은영(지은이) |문학동네| 2021년 7월",
+    "isbn13": "284698902",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 40,
+    "title": "나인 (양장)",
+    "author": "천선란(지은이) |창비| 2021년 11월",
+    "isbn13": "282188797",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 41,
+    "title": "소설 보다 : 여름 2021",
+    "author": "서이제,이서수,한정현(지은이) |문학과지성사| 2021년 6월",
+    "isbn13": "273050935",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 42,
+    "title": "여름의 빌라",
+    "author": "백수린(지은이) |문학동네| 2020년 7월",
+    "isbn13": "244899880",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 43,
+    "title": "쇼코의 미소",
+    "author": "최은영(지은이) |문학동네| 2016년 7월",
+    "isbn13": "86799537",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 44,
+    "title": "밤에 찾아오는 구원자",
+    "author": "천선란(지은이) |안전가옥| 2021년 6월",
+    "isbn13": "271437690",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 45,
+    "title": "나의 아름다운 이웃 (타계 10주기 특별판)",
+    "author": "박완서(지은이) |작가정신| 2021년 1월",
+    "isbn13": "259613422",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 46,
+    "title": "타인의 집",
+    "author": "손원평(지은이) |창비| 2021년 6월",
+    "isbn13": "274046530",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 47,
+    "title": "내가 되는 꿈",
+    "author": "최진영(지은이) |현대문학| 2021년 2월",
+    "isbn13": "260212159",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 48,
+    "title": "날마다 만우절",
+    "author": "윤성희(지은이) |문학동네| 2021년 7월",
+    "isbn13": "274785251",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 49,
+    "title": "눈으로 만든 사람",
+    "author": "최은미(지은이) |문학동네| 2021년 6월",
+    "isbn13": "272864870",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 50,
+    "title": "목소리를 드릴게요",
+    "author": "정세랑(지은이) |아작| 2020년 1월",
+    "isbn13": "222461169",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 51,
+    "title": "일의 기쁨과 슬픔",
+    "author": "장류진(지은이) |창비| 2019년 10월",
+    "isbn13": "212921347",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 52,
+    "title": "소설 보다 : 봄 2021",
+    "author": "김멜라,나일선,위수정(지은이) |문학과지성사| 2021년 3월",
+    "isbn13": "267257334",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 53,
+    "title": "마음의 부력",
+    "author": "이승우,박형서,윤성희,장은진,천운영,한지수(지은이) |문학사상사| 2021년 1월",
+    "isbn13": "261799831",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 54,
+    "title": "스노볼 드라이브",
+    "author": "조예은(지은이) |민음사| 2021년 2월",
+    "isbn13": "264119337",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 55,
+    "title": "내게 무해한 사람",
+    "author": "최은영(지은이) |문학동네| 2018년 6월",
+    "isbn13": "151335169",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 56,
+    "title": "구의 증명 (리커버 특별판)",
+    "author": "최진영(지은이) |은행나무| 2015년 3월",
+    "isbn13": "282895312",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 57,
+    "title": "난장이가 쏘아올린 작은 공",
+    "author": "조세희(지은이) |이성과힘| 2024년 2월",
+    "isbn13": "334157624",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 58,
+    "title": "너를 닮은 사람",
+    "author": "정소현(지은이) |문학과지성사| 2021년 10월",
+    "isbn13": "279705519",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 59,
+    "title": "그 많던 싱아는 누가 다 먹었을까",
+    "author": "박완서(지은이) |웅진지식하우스| 2021년 1월",
+    "isbn13": "260678235",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 60,
+    "title": "위저드 베이커리",
+    "author": "구병모(지은이) |창비| 2009년 3월",
+    "isbn13": "3460099",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 61,
+    "title": "두 번째 엔딩 (양장)",
+    "author": "김려령,배미주,이현,김중미,손원평,구병모,이희영,백온유(지은이) |창비| 2021년 2월",
+    "isbn13": "263670836",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 62,
+    "title": "팔꿈치를 주세요",
+    "author": "황정은,안윤,박서련,김멜라,서수진,김초엽(지은이) |큐큐| 2021년 9월",
+    "isbn13": "276099853",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 63,
+    "title": "돌이킬 수 있는",
+    "author": "문목하(지은이) |아작| 2018년 12월",
+    "isbn13": "175316311",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 64,
+    "title": "사서함 110호의 우편물",
+    "author": "이도우(지은이) |시공사| 2016년 3월",
+    "isbn13": "79476997",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 65,
+    "title": "아가미",
+    "author": "구병모(지은이) |위즈덤하우스| 2018년 3월",
+    "isbn13": "139258912",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 66,
+    "title": "홍학의 자리",
+    "author": "정해연(지은이) |엘릭시르| 2021년 7월",
+    "isbn13": "275879438",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 67,
+    "title": "소마",
+    "author": "채사장(지은이) |웨일북| 2021년 12월",
+    "isbn13": "284262982",
+    "cover_url": "https://image.aladin.co.kr/product/28426/29/cover200/k052835317_2.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 68,
+    "title": "부서진 여름",
+    "author": "이정명(지은이) |은행나무| 2021년 5월",
+    "isbn13": "270621687",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 69,
+    "title": "눈사람 자살 사건",
+    "author": "최승호(지은이) |달아실| 2019년 3월",
+    "isbn13": "186384394",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 70,
+    "title": "28",
+    "author": "정유정(지은이) |은행나무| 2013년 6월",
+    "isbn13": "27128005",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 71,
+    "title": "일곱 번째 달 일곱 번째 밤",
+    "author": "켄 리우,왕콴유,홍지운,남유하,남세오,후지이 다이요,곽재식,이영인,윤여경,이경희(지은이),박산호,이홍이(옮긴이) |알마| 2021년 5월",
+    "isbn13": "272254917",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 72,
+    "title": "상아의 문으로",
+    "author": "구병모(지은이) |문학과지성사| 2021년 11월",
+    "isbn13": "283838333",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 73,
+    "title": "2020 제11회 젊은작가상 수상작품집",
+    "author": "강화길,최은영,이현석,김초엽,장류진,장희원(지은이) |문학동네| 2020년 8월",
+    "isbn13": "248169469",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 74,
+    "title": "날씨가 좋으면 찾아가겠어요",
+    "author": "이도우(지은이) |시공사| 2018년 6월",
+    "isbn13": "154118491",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 75,
+    "title": "모든 비밀에는 이름이 있다",
+    "author": "서미애(지은이) |엘릭시르| 2021년 3월",
+    "isbn13": "267222496",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 76,
+    "title": "바깥은 여름",
+    "author": "김애란(지은이) |문학동네| 2017년 6월",
+    "isbn13": "111454737",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 77,
+    "title": "엄마의 말뚝",
+    "author": "박완서(지은이) |세계사| 2012년 1월",
+    "isbn13": "14944743",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 78,
+    "title": "므레모사",
+    "author": "김초엽(지은이) |현대문학| 2021년 12월",
+    "isbn13": "285549774",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 79,
+    "title": "해가 지는 곳으로",
+    "author": "최진영(지은이) |민음사| 2017년 6월",
+    "isbn13": "112811885",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 80,
+    "title": "회색 인간",
+    "author": "김동식(지은이) |요다| 2017년 12월",
+    "isbn13": "127608044",
+    "cover_url": "https://image.aladin.co.kr/product/12760/80/cover200/k882532678_1.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 81,
+    "title": "파과",
+    "author": "구병모(지은이) |위즈덤하우스| 2018년 4월",
+    "isbn13": "142244075",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 82,
+    "title": "피프티 피플 (리마스터판)",
+    "author": "정세랑(지은이) |창비| 2021년 8월",
+    "isbn13": "277214767",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 83,
+    "title": "소설 보다 : 가을 2021",
+    "author": "구소현,권혜영,이주란(지은이) |문학과지성사| 2021년 9월",
+    "isbn13": "279736609",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 84,
+    "title": "2021 김승옥문학상 수상작품집",
+    "author": "문진영,윤대녕,손홍규,안보윤,진연주,정용준,황현진(지은이) |문학동네| 2021년 10월",
+    "isbn13": "280557239",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 85,
+    "title": "알로하, 나의 엄마들 (양장)",
+    "author": "이금이(지은이) |창비| 2020년 3월",
+    "isbn13": "236466932",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 86,
+    "title": "영원한 유산",
+    "author": "심윤경(지은이) |문학동네| 2021년 1월",
+    "isbn13": "258727551",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 87,
+    "title": "우아한 거짓말",
+    "author": "김려령(지은이) |창비| 2009년 11월",
+    "isbn13": "5820877",
+    "cover_url": "https://image.aladin.co.kr/product/582/8/cover200/8936456229_1.jpg",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 88,
+    "title": "모든 것은 영원했다",
+    "author": "정지돈(지은이) |문학과지성사| 2020년 12월",
+    "isbn13": "258918256",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 89,
+    "title": "채식주의자 (리마스터판)",
+    "author": "한강(지은이) |창비| 2022년 3월",
+    "isbn13": "291370219",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 90,
+    "title": "우리는 이 별을 떠나기로 했어",
+    "author": "천선란,박해울,박문영,오정연,이루카(지은이) |허블| 2021년 3월",
+    "isbn13": "265649931",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 91,
+    "title": "술과 농담",
+    "author": "편혜영,조해진,김나영,한유주,이주란,이장욱(지은이) |시간의흐름| 2021년 4월",
+    "isbn13": "268386782",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 92,
+    "title": "나나 (양장)",
+    "author": "이희영(지은이) |창비| 2021년 10월",
+    "isbn13": "280535894",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 93,
+    "title": "우리의 사람들",
+    "author": "박솔뫼(지은이) |창비| 2021년 2월",
+    "isbn13": "259678608",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 94,
+    "title": "소설 보다 : 겨울 2020",
+    "author": "이미상,임현,전하영(지은이) |문학과지성사| 2020년 12월",
+    "isbn13": "258367466",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 95,
+    "title": "프리즘",
+    "author": "손원평(지은이) |은행나무| 2020년 9월",
+    "isbn13": "250448603",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 96,
+    "title": "작별하지 않는다 (눈꽃 에디션)",
+    "author": "한강(지은이) |문학동네| 2021년 9월",
+    "isbn13": "284254515",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 97,
+    "title": "최선의 삶",
+    "author": "임솔아(지은이) |문학동네| 2024년 6월",
+    "isbn13": "341278022",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 98,
+    "title": "보건교사 안은영",
+    "author": "정세랑(지은이) |민음사| 2015년 12월",
+    "isbn13": "71643531",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 99,
+    "title": "놀이터는 24시",
+    "author": "김초엽,배명훈,편혜영,장강명,김금희,박상영,김중혁(지은이) |자이언트북스| 2021년 6월",
+    "isbn13": "271381531",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  },
+  {
+    "rank": 100,
+    "title": "비행운",
+    "author": "김애란(지은이) |문학과지성사| 2012년 7월",
+    "isbn13": "18012102",
+    "cover_url": "",
+    "publisher": "",
+    "pubdate": ""
+  }
+]

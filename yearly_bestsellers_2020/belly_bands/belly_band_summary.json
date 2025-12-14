@@ -1,0 +1,608 @@
+{
+  "timestamp": "2025-11-12T01:11:21.186043",
+  "total_images": 100,
+  "belly_bands_found": 71,
+  "percentage": 71.0,
+  "results": [
+    {
+      "file": "001_245127051_달러구트 꿈 백화점_이미예지은이.jpg",
+      "has_belly_band": true,
+      "text": "181296 483 종합 1위 신기\" 긍성 (4주 연)",
+      "total_texts": 18
+    },
+    {
+      "file": "002_251281173_보건교사 안은영 특별판_정세랑지은이.jpg",
+      "has_belly_band": true,
+      "text": "정세랑 보건교사 NETFLIX 장편소선 오리지년 '시리즈",
+      "total_texts": 9
+    },
+    {
+      "file": "003_193591681_우리가 빛의 속도로 갈 수 없다면_김초엽지은이.jpg",
+      "has_belly_band": true,
+      "text": "중국 양대 SF 문학상 석권",
+      "total_texts": 11
+    },
+    {
+      "file": "004_329160213_날씨가 좋으면 찾아가겠어요_이도우지은이.jpg",
+      "has_belly_band": true,
+      "text": "프랑스 출간 즉시 베스트실러!",
+      "total_texts": 15
+    },
+    {
+      "file": "005_105651245_아몬드 양장_손원평지은이.jpg",
+      "has_belly_band": true,
+      "text": "출 알",
+      "total_texts": 6
+    },
+    {
+      "file": "006_239400216_소년이 온다 특별한정판 양장_한강지은이.jpg",
+      "has_belly_band": true,
+      "text": "향 숨",
+      "total_texts": 4
+    },
+    {
+      "file": "007_247906081_연년세세_황정은지은이.jpg",
+      "has_belly_band": true,
+      "text": "항정은 4 연작소설",
+      "total_texts": 18
+    },
+    {
+      "file": "008_277214767_피프티 피플 리마스터판_정세랑지은이.jpg",
+      "has_belly_band": false,
+      "text": null,
+      "total_texts": 4
+    },
+    {
+      "file": "009_222461169_목소리를 드릴게요_정세랑지은이.jpg",
+      "has_belly_band": false,
+      "text": null,
+      "total_texts": 4
+    },
+    {
+      "file": "010_242925601_일곱 해의 마지막_김연수지은이.jpg",
+      "has_belly_band": true,
+      "text": "시인 박준, 소설가 최은영 추천",
+      "total_texts": 13
+    },
+    {
+      "file": "011_212921347_일의 기쁨과 슬픔_장류진지은이.jpg",
+      "has_belly_band": false,
+      "text": null,
+      "total_texts": 6
+    },
+    {
+      "file": "012_79476997_사서함 110호의 우편물_이도우지은이.jpg",
+      "has_belly_band": true,
+      "text": "20만 독자다에게 친구가 되어준 경에 두고 싶은 이야기",
+      "total_texts": 10
+    },
+    {
+      "file": "013_71643531_보건교사 안은영_정세랑지은이.jpg",
+      "has_belly_band": true,
+      "text": "안은영 부",
+      "total_texts": 8
+    },
+    {
+      "file": "014_230965334_아직 멀었다는 말_권여선지은이.jpg",
+      "has_belly_band": true,
+      "text": "\"소설이 주는 위로관 따뜻함이 아니라 정확합에서 오는 건지도 모르젯단 생각이 늘없다 김대란(소설가) 제19회 이효석문학상수상작 r모르는영역, 수록",
+      "total_texts": 10
+    },
+    {
+      "file": "015_248663776_진짜 진짜 얼굴을 찾아서_조용지은이잠산그림.jpg",
+      "has_belly_band": true,
+      "text": "'얼굴 진짜 진짜 찾아서",
+      "total_texts": 3
+    },
+    {
+      "file": "016_244028925_악몽을 먹고 자란 소년_조용지은이잠산그림.jpg",
+      "has_belly_band": false,
+      "text": null,
+      "total_texts": 3
+    },
+    {
+      "file": "017_244899880_여름의 빌라_백수린지은이.jpg",
+      "has_belly_band": true,
+      "text": "현대문학상 문지문학상 젊은작가상 수상작 수록!",
+      "total_texts": 6
+    },
+    {
+      "file": "018_241918742_화이트 호스_강화길지은이.jpg",
+      "has_belly_band": true,
+      "text": "2020 젊은작가상 대상 수상작 '음복_ 수록!",
+      "total_texts": 24
+    },
+    {
+      "file": "019_249770777_복자에게_김금희지은이.jpg",
+      "has_belly_band": false,
+      "text": null,
+      "total_texts": 4
+    },
+    {
+      "file": "020_244029103_좀비 아이_조용지은이잠산그림.jpg",
+      "has_belly_band": false,
+      "text": null,
+      "total_texts": 1
+    },
+    {
+      "file": "021_198048203_지구에서 한아뿐_정세랑지은이.jpg",
+      "has_belly_band": true,
+      "text": "외계인 경민과 지구인 한아의 아주 희귀한 종류의 사랑 이야기!",
+      "total_texts": 8
+    },
+    {
+      "file": "022_248956900_천 개의 파랑_천선란지은이.jpg",
+      "has_belly_band": true,
+      "text": "파랑 환",
+      "total_texts": 11
+    },
+    {
+      "file": "023_250448603_프리즘_손원평지은이.jpg",
+      "has_belly_band": true,
+      "text": "누군가 다가온다면 나는 이렇계 반짝일 수 있올까 아름답고 날카롭게 산란하는 사랑의 빛깔들",
+      "total_texts": 6
+    },
+    {
+      "file": "024_252081821_룬의 아이들_전민희지은이.jpg",
+      "has_belly_band": true,
+      "text": "RUNE 2020 BLOODED",
+      "total_texts": 13
+    },
+    {
+      "file": "025_236466932_알로하 나의 엄마들 양장_이금이지은이.jpg",
+      "has_belly_band": true,
+      "text": "'아프게 기쁘게 뜨겁게 인생의 파도록 넘어서며 실아갈 것이다\"",
+      "total_texts": 7
+    },
+    {
+      "file": "026_240581875_철도원 삼대_황석영지은이.jpg",
+      "has_belly_band": false,
+      "text": null,
+      "total_texts": 6
+    },
+    {
+      "file": "027_219471296_페인트 양장_이희영지은이.jpg",
+      "has_belly_band": true,
+      "text": "'부모릎 선택할 수 있다면 아시야권 올해의 누구름 고르시켓습니까?\" 4개국 수출_ 빠스트센러",
+      "total_texts": 11
+    },
+    {
+      "file": "028_25843736_모순_양귀자지은이.jpg",
+      "has_belly_band": false,
+      "text": null,
+      "total_texts": 1
+    },
+    {
+      "file": "029_246315721_봄날의 개_조용지은이잠산그림.jpg",
+      "has_belly_band": true,
+      "text": "남들과 조금 다른 어른이들올 위로하는 문영의 동화",
+      "total_texts": 6
+    },
+    {
+      "file": "030_241479641_달 너머로 달리는 말_김훈지은이.jpg",
+      "has_belly_band": true,
+      "text": "달리늄 달",
+      "total_texts": 6
+    },
+    {
+      "file": "031_189365205_나는 소망한다 내게 금지된 것을_양귀자지은이.jpg",
+      "has_belly_band": false,
+      "text": null,
+      "total_texts": 7
+    },
+    {
+      "file": "032_175316311_돌이킬 수 있는_문목하지은이.jpg",
+      "has_belly_band": false,
+      "text": null,
+      "total_texts": 7
+    },
+    {
+      "file": "033_231789512_시하와 칸타의 장_이영도지은이.jpg",
+      "has_belly_band": false,
+      "text": null,
+      "total_texts": 7
+    },
+    {
+      "file": "034_225071518_붕대 감기_윤이형지은이.jpg",
+      "has_belly_band": false,
+      "text": null,
+      "total_texts": 4
+    },
+    {
+      "file": "035_238638867_시절과 기분_김봉곤지은이.jpg",
+      "has_belly_band": true,
+      "text": "김봉곧 시절과 소설집",
+      "total_texts": 4
+    },
+    {
+      "file": "036_233073737_먼 바다_공지영지은이.jpg",
+      "has_belly_band": true,
+      "text": "첫사랑 가당지 못한 모든 사랑들에게 바치는 현사",
+      "total_texts": 7
+    },
+    {
+      "file": "037_236218672_소설 보다  봄 2020_김혜진장류진한정현지은이.jpg",
+      "has_belly_band": true,
+      "text": "2020 소설 보다 봄",
+      "total_texts": 9
+    },
+    {
+      "file": "038_40869703_소년이 온다_한강지은이.jpg",
+      "has_belly_band": false,
+      "text": null,
+      "total_texts": 4
+    },
+    {
+      "file": "039_86799537_쇼코의 미소_최은영지은이.jpg",
+      "has_belly_band": true,
+      "text": "제5회 젊은작가상 수상!",
+      "total_texts": 8
+    },
+    {
+      "file": "040_243194140_유원 양장_백온유지은이.jpg",
+      "has_belly_band": true,
+      "text": "하아무드 '완득이  '폐인트 올해는 '유원 ! \"\"진짜 나만의 삶은 살기로 결심한",
+      "total_texts": 6
+    },
+    {
+      "file": "041_243188368_소설 보다  여름 2020_강화길서이제임솔아지은이.jpg",
+      "has_belly_band": true,
+      "text": "2020 여름 소설 보다",
+      "total_texts": 9
+    },
+    {
+      "file": "042_242584741_룬의 아이들_전민희지은이.jpg",
+      "has_belly_band": false,
+      "text": null,
+      "total_texts": 4
+    },
+    {
+      "file": "043_252330658_2020 김승옥문학상 수상작품집_김금희은희경권여선정한아최은미기준영지은.jpg",
+      "has_belly_band": true,
+      "text": "2020 김승 우문학상",
+      "total_texts": 17
+    },
+    {
+      "file": "044_248440881_언니밖에 없네_김지연정소연정세랑조우리조해진천희란한정.jpg",
+      "has_belly_band": true,
+      "text": "규규귀어단편선 언니밖에 없네",
+      "total_texts": 14
+    },
+    {
+      "file": "045_334157624_난장이가 쏘아올린 작은 공_조세희지은이.jpg",
+      "has_belly_band": true,
+      "text": "작은 공 조세희",
+      "total_texts": 6
+    },
+    {
+      "file": "046_3460099_위저드 베이커리_구병모지은이.jpg",
+      "has_belly_band": false,
+      "text": null,
+      "total_texts": 5
+    },
+    {
+      "file": "047_151335169_내게 무해한 사람_최은영지은이.jpg",
+      "has_belly_band": true,
+      "text": "2018 2017 젊은작가상 수상작 올해의 책",
+      "total_texts": 8
+    },
+    {
+      "file": "048_139258912_아가미_구병모지은이.jpg",
+      "has_belly_band": false,
+      "text": null,
+      "total_texts": 4
+    },
+    {
+      "file": "049_142244075_파과_구병모지은이.jpg",
+      "has_belly_band": false,
+      "text": null,
+      "total_texts": 2
+    },
+    {
+      "file": "050_248169469_2020 제11회 젊은작가상 수상작품집_강화길최은영이현석김초엽장류진장희원지은.jpg",
+      "has_belly_band": true,
+      "text": "이현석 다른 세계에서도 김초염 인지 공간",
+      "total_texts": 8
+    },
+    {
+      "file": "051_248188704_손 아귀_조용지은이잠산그림.jpg",
+      "has_belly_band": false,
+      "text": null,
+      "total_texts": 5
+    },
+    {
+      "file": "052_195439115_대도시의 사랑법_박상영지은이.jpg",
+      "has_belly_band": true,
+      "text": "토론토 국제영화제 공식 초청작",
+      "total_texts": 14
+    },
+    {
+      "file": "053_94764887_82년생 김지영_조남주지은이.jpg",
+      "has_belly_band": true,
+      "text": "김지영 =",
+      "total_texts": 8
+    },
+    {
+      "file": "054_247906126_별뜨기에 관하여_이영도지은이.jpg",
+      "has_belly_band": true,
+      "text": "우주로 나아가려는 인류가 마주할 미래는 어떤 모습인가? 작가 이영도의 도전적 상상력올 담아맨 단편소설집",
+      "total_texts": 7
+    },
+    {
+      "file": "055_241291424_나는 절대 저렇게 추하게 늙지 말아야지_심너울지은이.jpg",
+      "has_belly_band": true,
+      "text": "숲 야직",
+      "total_texts": 6
+    },
+    {
+      "file": "056_239375881_나의 할머니에게_윤성희백수린강화길손보미최은미손원평지은.jpg",
+      "has_belly_band": true,
+      "text": "우리가 기억해야 할 여자 어른의 이야기\"",
+      "total_texts": 6
+    },
+    {
+      "file": "057_177297207_디디의 우산_황정은지은이.jpg",
+      "has_belly_band": false,
+      "text": null,
+      "total_texts": 4
+    },
+    {
+      "file": "058_247068451_사라지는 건 여자들뿐이거든요_강화길손보미임솔아지혜천희란최영건최진영.jpg",
+      "has_belly_band": true,
+      "text": "여성의 '불안올 매혹적으로 형상화한 고덕-스럽레! 한국문학올 이끌어가는 여성 소설가 8인의 테마 소설집",
+      "total_texts": 13
+    },
+    {
+      "file": "059_253666141_바이러스 X_김진명지은이.jpg",
+      "has_belly_band": true,
+      "text": "치사율 10096, 출현과 동시에 인류 멸종!",
+      "total_texts": 7
+    },
+    {
+      "file": "060_111454737_바깥은 여름_김애란지은이.jpg",
+      "has_belly_band": true,
+      "text": "여름 바깥은",
+      "total_texts": 4
+    },
+    {
+      "file": "061_253658692_얼마나 닮았는가_김보영지은이.jpg",
+      "has_belly_band": false,
+      "text": null,
+      "total_texts": 3
+    },
+    {
+      "file": "062_235776777_심장에 수놓은 이야기_구병모지은이.jpg",
+      "has_belly_band": true,
+      "text": "arte 심장에 수농은 이야기",
+      "total_texts": 3
+    },
+    {
+      "file": "063_112811885_해가 지는 곳으로_최진영지은이.jpg",
+      "has_belly_band": false,
+      "text": null,
+      "total_texts": 7
+    },
+    {
+      "file": "064_249441091_더 셜리 클럽_박서련지은이.jpg",
+      "has_belly_band": false,
+      "text": null,
+      "total_texts": 8
+    },
+    {
+      "file": "065_237368570_칵테일 러브 좀비_조예은지은이.jpg",
+      "has_belly_band": true,
+      "text": "조예은 각테일, 러브 좀비",
+      "total_texts": 2
+    },
+    {
+      "file": "066_246058934_어떤 물질의 사랑_천선란지은이.jpg",
+      "has_belly_band": true,
+      "text": "천선관 소설집 어떤 물질의 사랑",
+      "total_texts": 3
+    },
+    {
+      "file": "067_221327091_최선의 삶 어나더커버 특별판_임솔아지은이.jpg",
+      "has_belly_band": true,
+      "text": "수상작 임손야",
+      "total_texts": 9
+    },
+    {
+      "file": "068_291370219_채식주의자 리마스터판_한강지은이.jpg",
+      "has_belly_band": false,
+      "text": null,
+      "total_texts": 3
+    },
+    {
+      "file": "069_187789982_젊은작가상 수상작품집 10주년 특별판_편혜영김애란손보미이장욱황정은정지돈강화.jpg",
+      "has_belly_band": true,
+      "text": "가 상 직",
+      "total_texts": 17
+    },
+    {
+      "file": "070_360804280_옥상에서 만나요_정세랑지은이.jpg",
+      "has_belly_band": true,
+      "text": "상에서 만나요 유",
+      "total_texts": 3
+    },
+    {
+      "file": "071_236388569_순이삼촌 출간 40주년 기념 특별 한정판_현기영지은이.jpg",
+      "has_belly_band": false,
+      "text": null,
+      "total_texts": 2
+    },
+    {
+      "file": "072_247906164_가만히 부르는 이름_임경선지은이.jpg",
+      "has_belly_band": true,
+      "text": "가만히 부르는 이름 임경선 장편소실",
+      "total_texts": 3
+    },
+    {
+      "file": "073_18012102_비행운_김애란지은이.jpg",
+      "has_belly_band": false,
+      "text": null,
+      "total_texts": 2
+    },
+    {
+      "file": "074_356428462_잠옷을 입으렴_이도우지은이.jpg",
+      "has_belly_band": true,
+      "text": "년 스웨터롬 까고 난 만기1울 취젓켓지 '잠옷 입으럼",
+      "total_texts": 5
+    },
+    {
+      "file": "075_235702011_얼음나무 숲_하지은지은이.jpg",
+      "has_belly_band": true,
+      "text": "완전판 네이버 오디오클림에서 만나보세요",
+      "total_texts": 9
+    },
+    {
+      "file": "076_244104832_타오르는 마음_이두온지은이.jpg",
+      "has_belly_band": true,
+      "text": "이두온 타오르는 장편소설",
+      "total_texts": 8
+    },
+    {
+      "file": "077_220694397_신이 쉼표를 넣은 곳에 마침표를 찍지 말라_류시화지은이.jpg",
+      "has_belly_band": false,
+      "text": null,
+      "total_texts": 5
+    },
+    {
+      "file": "078_5820877_우아한 거짓말_김려령지은이.jpg",
+      "has_belly_band": false,
+      "text": null,
+      "total_texts": 4
+    },
+    {
+      "file": "079_127608044_회색 인간_김동식지은이.jpg",
+      "has_belly_band": true,
+      "text": "꽃 회",
+      "total_texts": 7
+    },
+    {
+      "file": "080_243989829_내가 말하고 있잖아_정용준지은이.jpg",
+      "has_belly_band": true,
+      "text": "68 6+ Dusy구7다 BiGSjoi 5a 34m1 KIDm + +ue 민음사",
+      "total_texts": 33
+    },
+    {
+      "file": "081_251002087_소설 보다  가을 2020_서장원신종원우다영지은이.jpg",
+      "has_belly_band": true,
+      "text": "[이 인용 개임] 시상원 [밀로다 웬 텍스치] 신종원",
+      "total_texts": 9
+    },
+    {
+      "file": "082_259093293_시선으로부터 10만 부 기념 새해 에디션_정세랑지은이.jpg",
+      "has_belly_band": true,
+      "text": "2020 2020 올해의 책(교보문고 올해의 책",
+      "total_texts": 10
+    },
+    {
+      "file": "083_154118491_날씨가 좋으면 찾아가겠어요_이도우지은이.jpg",
+      "has_belly_band": true,
+      "text": "6년의 기다림 끝에 만나는 (사서함 110호의 우편물> 이도우의 최신 장편소설",
+      "total_texts": 5
+    },
+    {
+      "file": "084_253989088_내일의 연인들_정영수지은이.jpg",
+      "has_belly_band": true,
+      "text": "제g회, 제기0회 젊은작가상 수상작가 정영수 신작 소설",
+      "total_texts": 9
+    },
+    {
+      "file": "085_315614621_구의 증명_최진영지은이.jpg",
+      "has_belly_band": true,
+      "text": "소 선 최 진 영 구의 증명",
+      "total_texts": 3
+    },
+    {
+      "file": "086_209577210_2019 김승옥문학상 수상작품집_윤성희권여선편혜영조해진황정은최은미김금.jpg",
+      "has_belly_band": true,
+      "text": "김승옥문학상",
+      "total_texts": 21
+    },
+    {
+      "file": "087_255002163_사랑이 한 일_이승우지은이.jpg",
+      "has_belly_band": true,
+      "text": "작가인생 40년 이승 그 시간 속 궁극적 물음들",
+      "total_texts": 20
+    },
+    {
+      "file": "088_207828076_룬의 아이들_전민희지은이.jpg",
+      "has_belly_band": true,
+      "text": "CHILDREN",
+      "total_texts": 10
+    },
+    {
+      "file": "089_21874073_원미동 사람들_양귀자지은이.jpg",
+      "has_belly_band": true,
+      "text": "원미동 햇 약",
+      "total_texts": 5
+    },
+    {
+      "file": "090_187789500_2019 제10회 젊은작가상 수상작품집_박상영김희선백수린이주란정영수김봉곤이미.jpg",
+      "has_belly_band": true,
+      "text": "이주란 년 쉽계 만햇지만 정영수 우리문 하긴 김봉곧 데이 포 나이트 이미상",
+      "total_texts": 10
+    },
+    {
+      "file": "091_74920934_종의 기원_정유정지은이.jpg",
+      "has_belly_band": false,
+      "text": null,
+      "total_texts": 5
+    },
+    {
+      "file": "092_252103654_팬데믹  여섯 개의 세계_김초엽듀나정소연김이환배명훈이종산지은이.jpg",
+      "has_belly_band": true,
+      "text": "여섯 개의 세계 이종산",
+      "total_texts": 11
+    },
+    {
+      "file": "093_192375095_진이 지니_정유정지은이.jpg",
+      "has_belly_band": true,
+      "text": "정유정 3년 만의 신작 따스하고 다정하고",
+      "total_texts": 10
+    },
+    {
+      "file": "094_179261218_아무도 들어오지 마시오_최나미지은이.jpg",
+      "has_belly_band": true,
+      "text": "아무도 들어오지 마시오",
+      "total_texts": 2
+    },
+    {
+      "file": "095_214338858_덧니가 보고 싶어_정세랑지은이.jpg",
+      "has_belly_band": true,
+      "text": "\"키스할 때마다 어쩐지 덧니 위주로 햇없다. 뒤가 그렇게 종은 거지?",
+      "total_texts": 8
+    },
+    {
+      "file": "096_198322382_빛의 과거_은희경지은이.jpg",
+      "has_belly_band": false,
+      "text": null,
+      "total_texts": 3
+    },
+    {
+      "file": "097_218338951_한 사람을 위한 마음_이주란지은이.jpg",
+      "has_belly_band": true,
+      "text": "그지 바라보 숲 아는 이주관의 소실운 나는 사랑하다;_막상양(소선가) 문화동네",
+      "total_texts": 10
+    },
+    {
+      "file": "098_251518176_너라는 생활_김혜진지은이.jpg",
+      "has_belly_band": true,
+      "text": "썰 김혜진 소설",
+      "total_texts": 5
+    },
+    {
+      "file": "099_229634746_땡스 갓 잇츠 프라이데이_심너울지은이.jpg",
+      "has_belly_band": true,
+      "text": "땅스 갖, 잇츠 프라이데이 심너울",
+      "total_texts": 2
+    },
+    {
+      "file": "100_197115168_단순한 진심_조해진지은이.jpg",
+      "has_belly_band": true,
+      "text": "단 순한",
+      "total_texts": 7
+    }
+  ]
+}

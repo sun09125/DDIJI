@@ -1,0 +1,31 @@
+{
+  "image_path": "yearly_bestsellers_2020\\covers\\020_244029103_좀비 아이_조용지은이잠산그림.jpg",
+  "timestamp": "2025-11-12T01:10:45.459706",
+  "has_belly_band": false,
+  "belly_band": null,
+  "all_texts": [
+    {
+      "text": "좀비 아이",
+      "confidence": 0.30767409367276966,
+      "bbox": [
+        [
+          41.0,
+          197.0
+        ],
+        [
+          221.0,
+          197.0
+        ],
+        [
+          221.0,
+          257.0
+        ],
+        [
+          41.0,
+          257.0
+        ]
+      ]
+    }
+  ],
+  "total_text_blocks": 1
+}

@@ -1,0 +1,608 @@
+{
+  "timestamp": "2025-11-12T01:08:13.595462",
+  "total_images": 100,
+  "belly_bands_found": 77,
+  "percentage": 77.0,
+  "results": [
+    {
+      "file": "001_40869703_소년이 온다_한강지은이.jpg",
+      "has_belly_band": false,
+      "text": null,
+      "total_texts": 4
+    },
+    {
+      "file": "002_278770576_작별하지 않는다_한강지은이.jpg",
+      "has_belly_band": true,
+      "text": "한국 최초 노발문학상 수상! 한강 최신작",
+      "total_texts": 9
+    },
+    {
+      "file": "003_291370219_채식주의자 리마스터판_한강지은이.jpg",
+      "has_belly_band": false,
+      "text": null,
+      "total_texts": 3
+    },
+    {
+      "file": "004_360994667_흰_한강지은이.jpg",
+      "has_belly_band": true,
+      "text": "역사직 느라우마: 싱면으로 마주하고 인간 삶의 인약함운 드러내논 강렬하고 시적인 산문. 노업문학상 선정 이유",
+      "total_texts": 6
+    },
+    {
+      "file": "005_13849130_희랍어 시간_한강지은이.jpg",
+      "has_belly_band": true,
+      "text": "한국 최초 노발문학상 수상!",
+      "total_texts": 12
+    },
+    {
+      "file": "006_25843736_모순_양귀자지은이.jpg",
+      "has_belly_band": false,
+      "text": null,
+      "total_texts": 1
+    },
+    {
+      "file": "007_285132160_언젠가 우리가 같은 별을 바라본다면_차인표지은이제딧그림.jpg",
+      "has_belly_band": true,
+      "text": "화제의 도서 (잘가요 언덕) , 만은 독자있의 성원으로 개정 국간! 임본 궁국 수타작!",
+      "total_texts": 10
+    },
+    {
+      "file": "008_317840073_디 에센셜 한강 무선 보급판_한강지은이.jpg",
+      "has_belly_band": true,
+      "text": "한국 최초 노발문학상 수상!",
+      "total_texts": 5
+    },
+    {
+      "file": "009_344998179_영원한 천국_정유정지은이.jpg",
+      "has_belly_band": true,
+      "text": "현실 너머로 질주하는 인간의 욕망울 담구하다! 소설가 정유정이 도달한 인간성의 가장 먼 미래",
+      "total_texts": 8
+    },
+    {
+      "file": "010_6467598_바람이 분다 가라_한강지은이.jpg",
+      "has_belly_band": true,
+      "text": "2024 노발문학상 수상 작가 한강",
+      "total_texts": 10
+    },
+    {
+      "file": "011_338990710_두 사람의 인터내셔널_김기태지은이.jpg",
+      "has_belly_band": true,
+      "text": "제42회 제55회 젊은작가상 신동업문화상 동인문화상 수상 수상 수상",
+      "total_texts": 16
+    },
+    {
+      "file": "012_337111317_2024 제15회 젊은작가상 수상작품집_김멜라공현진김기태김남숙김지연성해나전지.jpg",
+      "has_belly_band": true,
+      "text": "수상작품집",
+      "total_texts": 21
+    },
+    {
+      "file": "013_173930433_여수의 사랑_한강지은이.jpg",
+      "has_belly_band": true,
+      "text": "2024 노발문학상 수상 작가 한강",
+      "total_texts": 9
+    },
+    {
+      "file": "014_315614621_구의 증명_최진영지은이.jpg",
+      "has_belly_band": true,
+      "text": "소 선 최 진 영 구의 증명",
+      "total_texts": 3
+    },
+    {
+      "file": "015_347122460_대온실 수리 보고서_김금희지은이.jpg",
+      "has_belly_band": true,
+      "text": "보고서",
+      "total_texts": 5
+    },
+    {
+      "file": "016_321294005_아주 희미한 빛으로도_최은영지은이.jpg",
+      "has_belly_band": true,
+      "text": "2023 교보문고 소설가 50인이 뽑은 올해의 소설 2위 문학동네",
+      "total_texts": 10
+    },
+    {
+      "file": "017_173930726_내 여자의 열매_한강지은이.jpg",
+      "has_belly_band": true,
+      "text": "2024 노발문학상 수상 작가 한강",
+      "total_texts": 9
+    },
+    {
+      "file": "018_307692409_급류_정대건지은이.jpg",
+      "has_belly_band": false,
+      "text": null,
+      "total_texts": 7
+    },
+    {
+      "file": "019_341306474_음악소설집 音樂小說集_김애란김연수윤성희은희경편혜영지은이.jpg",
+      "has_belly_band": false,
+      "text": null,
+      "total_texts": 7
+    },
+    {
+      "file": "020_275879438_홍학의 자리_정해연지은이.jpg",
+      "has_belly_band": true,
+      "text": "예측 불가! 한국 미스터리 사상 전무후무한 반전!",
+      "total_texts": 7
+    },
+    {
+      "file": "021_126069723_검은 사슴_한강지은이.jpg",
+      "has_belly_band": true,
+      "text": "한국 최초 노발문학상 수상! 한강 첫 장편소설",
+      "total_texts": 10
+    },
+    {
+      "file": "022_290457417_불편한 편의점 벚꽃 에디션_김호연지은이.jpg",
+      "has_belly_band": true,
+      "text": "***** ***** ***** ***** 전국37개도시 주요서점80주연속 전세계 18개국 2022 공공도서관 올해의책 종합베스트Top 1O 판권수출 최다대출도서",
+      "total_texts": 18
+    },
+    {
+      "file": "023_331161522_메리골드 마음 사진관_윤정은지은이.jpg",
+      "has_belly_band": true,
+      "text": "\"사진 한 장으로 인생올 바뀌드럽니다\" 소설 베스트설러 1위! 30만 부판매 돌파의 메리골드 시리즈",
+      "total_texts": 29
+    },
+    {
+      "file": "024_240581875_철도원 삼대_황석영지은이.jpg",
+      "has_belly_band": false,
+      "text": null,
+      "total_texts": 7
+    },
+    {
+      "file": "025_344497704_빛이 이끄는 곳으로_백희성지은이.jpg",
+      "has_belly_band": true,
+      "text": "프망스 젊은건숙가상 장 누껑 사무소 프망m ,르느 도서전 수상 작가 #j 디택터 하이라이드",
+      "total_texts": 22
+    },
+    {
+      "file": "026_350996819_모우어_천선란지은이.jpg",
+      "has_belly_band": true,
+      "text": "내 안의 용기에 대한 이야기",
+      "total_texts": 5
+    },
+    {
+      "file": "027_189365205_나는 소망한다 내게 금지된 것을_양귀자지은이.jpg",
+      "has_belly_band": false,
+      "text": null,
+      "total_texts": 7
+    },
+    {
+      "file": "028_2173713_눈물상자_한강지은이봄로야그림.jpg",
+      "has_belly_band": true,
+      "text": "한국 최초 노발문학상 수상!",
+      "total_texts": 12
+    },
+    {
+      "file": "029_195439115_대도시의 사랑법_박상영지은이.jpg",
+      "has_belly_band": true,
+      "text": "토론토 국제영화제 공식 초청작",
+      "total_texts": 14
+    },
+    {
+      "file": "030_337280601_파과 리커버_구병모지은이.jpg",
+      "has_belly_band": true,
+      "text": "전 세계 13개국 수출, 뉴용타임스 선정 '주목활 만한 책 100선'",
+      "total_texts": 6
+    },
+    {
+      "file": "031_341934125_탕비실_이미예지은이.jpg",
+      "has_belly_band": false,
+      "text": null,
+      "total_texts": 8
+    },
+    {
+      "file": "032_303706448_불편한 편의점 2 단풍 에디션_김호연지은이.jpg",
+      "has_belly_band": true,
+      "text": "***** ***** *+*+* +**+* 주요서점80주연속 전세계 18개국 전국37개도시 2022 공공도서관 종합베스트 Top10 판권수준 올해의책 최다대출도서",
+      "total_texts": 18
+    },
+    {
+      "file": "033_326987_그대의 차가운 손_한강지은이.jpg",
+      "has_belly_band": true,
+      "text": "삶의 고단함과 속 깊은 상처클 향해 손올 내미는 작가 한강의 두번째 장편소설",
+      "total_texts": 6
+    },
+    {
+      "file": "034_275419192_밝은 밤_최은영지은이.jpg",
+      "has_belly_band": true,
+      "text": "\"슬픔올 위로하고 감싸주는 더 근 슬픔의 힘\" 오정회 (소선가)",
+      "total_texts": 6
+    },
+    {
+      "file": "035_353355937_한강 스페셜 에디션 작별하지 않는다  흰  검은 사슴 _한강지은이.jpg",
+      "has_belly_band": false,
+      "text": null,
+      "total_texts": 3
+    },
+    {
+      "file": "036_248956900_천 개의 파랑_천선란지은이.jpg",
+      "has_belly_band": true,
+      "text": "파랑 환",
+      "total_texts": 11
+    },
+    {
+      "file": "037_27786822_한강  회복하는 인간 Convalescence_한강지은이전승희옮긴이K E 더핀감수.jpg",
+      "has_belly_band": true,
+      "text": "'회복하는 인간 에서 고통은 사라지는 고통으로 환원되지 않는 노번문학상 수상 작가 근본적 실존 경험으로 나타나다",
+      "total_texts": 14
+    },
+    {
+      "file": "038_351975355_내가 키운 S급들 15  굿즈 패키지 세트_근서지은이.jpg",
+      "has_belly_band": false,
+      "text": null,
+      "total_texts": 10
+    },
+    {
+      "file": "039_334641006_오로라_최진영지은이.jpg",
+      "has_belly_band": true,
+      "text": "되나요",
+      "total_texts": 8
+    },
+    {
+      "file": "040_295437240_칵테일 러브 좀비 리커버_조예은지은이.jpg",
+      "has_belly_band": true,
+      "text": "각테일; 러브 좀비 조예은",
+      "total_texts": 2
+    },
+    {
+      "file": "041_328756886_황금종이 2_조정래지은이.jpg",
+      "has_belly_band": true,
+      "text": "'태백산맥; '정금만리; '천년의 질문 올 잇는 작가 조정래 신작",
+      "total_texts": 7
+    },
+    {
+      "file": "042_330014510_광인_이혁진지은이.jpg",
+      "has_belly_band": false,
+      "text": null,
+      "total_texts": 4
+    },
+    {
+      "file": "043_328756885_황금종이 1_조정래지은이.jpg",
+      "has_belly_band": true,
+      "text": "'태백산맥; '정금만리; '천년의 질문 올 잇는 작가 조정래 신작",
+      "total_texts": 6
+    },
+    {
+      "file": "044_343669601_사랑과 결함_예소연지은이.jpg",
+      "has_belly_band": true,
+      "text": "이효석문학상 . 문지문학상 . 항금드래곤문학상 수상 작가 예소연 첫 소설집",
+      "total_texts": 9
+    },
+    {
+      "file": "045_538300_몽고반점_한강김경욱윤영수이만교이혜경천운영박민규.jpg",
+      "has_belly_band": true,
+      "text": "대상 수상작 동고반점 한강",
+      "total_texts": 16
+    },
+    {
+      "file": "046_341271860_쓰게 될 것_최진영지은이.jpg",
+      "has_belly_band": true,
+      "text": "이상문학상 . 만해문-학상 . 신동업문학상 . 한거레문학상 수상 작가 최진영 신작 소설집",
+      "total_texts": 5
+    },
+    {
+      "file": "047_276926308_지구 끝의 온실_김초엽지은이.jpg",
+      "has_belly_band": true,
+      "text": "6개국 20만부 영상화 출간 계약 판매돌피 확정 의;",
+      "total_texts": 13
+    },
+    {
+      "file": "048_340411790_룬의 아이들_전민희지은이.jpg",
+      "has_belly_band": true,
+      "text": "RUNE",
+      "total_texts": 11
+    },
+    {
+      "file": "049_318933239_아몬드_손원평지은이.jpg",
+      "has_belly_band": true,
+      "text": "30개국 판매 베스트북 서점대상 외전 단편 초간 베스트썹러 선정 수상 수록",
+      "total_texts": 23
+    },
+    {
+      "file": "050_332058591_마지막 마음이 들리는 공중전화_이수연지은이.jpg",
+      "has_belly_band": true,
+      "text": "프망크프프 현외 3개국 버스무러 번역가 사나 만 도서전 화제작 관권 수르 소선 1위 강력 추천",
+      "total_texts": 25
+    },
+    {
+      "file": "051_329514317_메리골드 마음 세탁소 30만 부 기념 한정 플라워 에디_윤정은지은이.jpg",
+      "has_belly_band": true,
+      "text": "2023 교육청 선정 도서 청소년이 선정한 추천 도세 No.1 만부",
+      "total_texts": 16
+    },
+    {
+      "file": "052_336578465_원도_최진영지은이.jpg",
+      "has_belly_band": false,
+      "text": null,
+      "total_texts": 3
+    },
+    {
+      "file": "053_127608044_회색 인간_김동식지은이.jpg",
+      "has_belly_band": true,
+      "text": "꽃 회",
+      "total_texts": 7
+    },
+    {
+      "file": "054_334125_내 이름은 태양꽃_한강지은이김세현그림.jpg",
+      "has_belly_band": true,
+      "text": "한국 최초 노발문학상 수상!",
+      "total_texts": 7
+    },
+    {
+      "file": "055_342597735_오렌지와 빵칼_청예지은이.jpg",
+      "has_belly_band": false,
+      "text": null,
+      "total_texts": 7
+    },
+    {
+      "file": "056_74920934_종의 기원_정유정지은이.jpg",
+      "has_belly_band": false,
+      "text": null,
+      "total_texts": 5
+    },
+    {
+      "file": "057_193591681_우리가 빛의 속도로 갈 수 없다면_김초엽지은이.jpg",
+      "has_belly_band": true,
+      "text": "중국 양대 SF 문학상 석권",
+      "total_texts": 11
+    },
+    {
+      "file": "058_245127051_달러구트 꿈 백화점_이미예지은이.jpg",
+      "has_belly_band": true,
+      "text": "전지색 최초 독자 법점 팀:벽 편팅 독자 요청 쇠모로 181296 4.8점-집만제 종합 1위 전격 출래 단성 신기록 (주 연;",
+      "total_texts": 21
+    },
+    {
+      "file": "059_344689647_사바삼사라 서 세트_J 김보영지은이.jpg",
+      "has_belly_band": false,
+      "text": null,
+      "total_texts": 2
+    },
+    {
+      "file": "060_340025499_입속 지느러미_조예은지은이.jpg",
+      "has_belly_band": true,
+      "text": "움 도 텅",
+      "total_texts": 8
+    },
+    {
+      "file": "061_334157624_난장이가 쏘아올린 작은 공_조세희지은이.jpg",
+      "has_belly_band": true,
+      "text": "작은 공 조세희",
+      "total_texts": 6
+    },
+    {
+      "file": "062_324968136_단 한 사람_최진영지은이.jpg",
+      "has_belly_band": true,
+      "text": "단 정 한",
+      "total_texts": 6
+    },
+    {
+      "file": "063_329015526_우리가 겨울을 지나온 방식 리커버_문미순지은이.jpg",
+      "has_belly_band": true,
+      "text": "바닥으로 떨어진 인생올 가까스로 일으켜 세우는 안간림",
+      "total_texts": 9
+    },
+    {
+      "file": "064_337280683_아가미 리커버_구병모지은이.jpg",
+      "has_belly_band": false,
+      "text": null,
+      "total_texts": 2
+    },
+    {
+      "file": "065_341329610_동경_김화진지은이.jpg",
+      "has_belly_band": true,
+      "text": "오늘의작가상 (-나주데 대하여 ) 수상 작가 김화진 첫 장편소설",
+      "total_texts": 10
+    },
+    {
+      "file": "066_336575890_다 하지 못한 말_임경선지은이.jpg",
+      "has_belly_band": true,
+      "text": "가능하기나 한가?\"",
+      "total_texts": 5
+    },
+    {
+      "file": "067_342863840_적산가옥의 유령_조예은지은이.jpg",
+      "has_belly_band": false,
+      "text": null,
+      "total_texts": 3
+    },
+    {
+      "file": "068_334082794_우리에게 남은 시간 46일_이설지은이.jpg",
+      "has_belly_band": true,
+      "text": "우리에게 46일 남은 시간",
+      "total_texts": 18
+    },
+    {
+      "file": "069_345924386_빛과 멜로디_조해진지은이.jpg",
+      "has_belly_band": true,
+      "text": "순도 높은 간절함으로 조해진 5년 만의 신작 장편",
+      "total_texts": 8
+    },
+    {
+      "file": "070_338120740_일러두기_조경란김기태박민정박솔뫼성혜령최미래지은.jpg",
+      "has_belly_band": true,
+      "text": "대상 수상작 일러두기",
+      "total_texts": 16
+    },
+    {
+      "file": "071_532835_고래_천명관지은이.jpg",
+      "has_belly_band": true,
+      "text": "천명관 장편소설",
+      "total_texts": 2
+    },
+    {
+      "file": "072_316886280_눈부신 안부_백수린지은이.jpg",
+      "has_belly_band": true,
+      "text": "문학동너 백수린 첫 장편소설 30주년",
+      "total_texts": 11
+    },
+    {
+      "file": "073_343166605_속삭임 우묵한 정원_배수아지은이.jpg",
+      "has_belly_band": true,
+      "text": "배수아 속삭임 우육한 정원 장관소설",
+      "total_texts": 6
+    },
+    {
+      "file": "074_335137318_분실물이 돌아왔습니다_김혜정지은이.jpg",
+      "has_belly_band": true,
+      "text": "밀리의 서재 종합 베스트 1위",
+      "total_texts": 11
+    },
+    {
+      "file": "075_300485187_아버지의 해방일지_정지아지은이.jpg",
+      "has_belly_band": true,
+      "text": "아 버 지의 해 지",
+      "total_texts": 5
+    },
+    {
+      "file": "076_353983445_사랑 후에 오는 것들  다이어리 세트_공지영츠지 히토나리지은이김훈아옮긴이.jpg",
+      "has_belly_band": true,
+      "text": "ODR NXIID) 온 온 줄 줄",
+      "total_texts": 18
+    },
+    {
+      "file": "077_314843468_저주토끼_정보라지은이.jpg",
+      "has_belly_band": true,
+      "text": "\"정보라는 환상적이고 초현실적인 요소홀 활용해 현대의 가부장제와 자본주의의 참흑한 공포와 잔혹함올 이야기하다\" 부러 라이브러리",
+      "total_texts": 14
+    },
+    {
+      "file": "078_312732931_파쇄_구병모지은이.jpg",
+      "has_belly_band": false,
+      "text": null,
+      "total_texts": 9
+    },
+    {
+      "file": "079_340702414_소설 보다  여름 2024_서장원예소연함윤이지은이.jpg",
+      "has_belly_band": false,
+      "text": null,
+      "total_texts": 13
+    },
+    {
+      "file": "080_231784310_살인자의 쇼핑몰_강지영지은이.jpg",
+      "has_belly_band": true,
+      "text": "살인자의",
+      "total_texts": 10
+    },
+    {
+      "file": "081_332996851_지구 생물체는 항복하라_정보라지은이.jpg",
+      "has_belly_band": true,
+      "text": "2022 부커상 2023 전미도서상 최종 후보 작가 신작 최종 후보 작가 신작",
+      "total_texts": 10
+    },
+    {
+      "file": "082_350525168_조금 망한 사랑_김지연지은이.jpg",
+      "has_belly_band": true,
+      "text": "사랑 김지연 소설",
+      "total_texts": 6
+    },
+    {
+      "file": "083_325912999_파견자들_김초엽지은이.jpg",
+      "has_belly_band": true,
+      "text": "김초업 신작 장편소설",
+      "total_texts": 11
+    },
+    {
+      "file": "084_337835320_어서 오세요 휴남동 서점입니다 일본서점대상 수상기념 리_황보름지은이.jpg",
+      "has_belly_band": true,
+      "text": "2024 일본 서점대상 1위 번역소설부문",
+      "total_texts": 9
+    },
+    {
+      "file": "085_111454737_바깥은 여름_김애란지은이.jpg",
+      "has_belly_band": true,
+      "text": "바깥은 여름",
+      "total_texts": 4
+    },
+    {
+      "file": "086_112811885_해가 지는 곳으로_최진영지은이.jpg",
+      "has_belly_band": false,
+      "text": null,
+      "total_texts": 9
+    },
+    {
+      "file": "087_275874708_달러구트 꿈 백화점 2_이미예지은이.jpg",
+      "has_belly_band": true,
+      "text": "달러구트",
+      "total_texts": 6
+    },
+    {
+      "file": "088_334066144_로기완을 만났다 리마스터판_조해진지은이.jpg",
+      "has_belly_band": false,
+      "text": null,
+      "total_texts": 3
+    },
+    {
+      "file": "089_335869992_소설 보다  봄 2024_김채원이선진이연지지은이.jpg",
+      "has_belly_band": false,
+      "text": null,
+      "total_texts": 13
+    },
+    {
+      "file": "090_272568192_재와 물거품_김청귤지은이.jpg",
+      "has_belly_band": true,
+      "text": "재와 물거품 김청굴",
+      "total_texts": 2
+    },
+    {
+      "file": "091_319554350_너무나 많은 여름이_김연수지은이.jpg",
+      "has_belly_band": true,
+      "text": "\"오직 이유 없는 다정함만으로\" 렌위",
+      "total_texts": 7
+    },
+    {
+      "file": "092_298290264_사서함 110호의 우편물_이도우지은이.jpg",
+      "has_belly_band": true,
+      "text": "세상의 모든 사랑이 무사하기루",
+      "total_texts": 7
+    },
+    {
+      "file": "093_186384394_눈사람 자살 사건_최승호지은이.jpg",
+      "has_belly_band": true,
+      "text": "눈사람 자살 사건",
+      "total_texts": 4
+    },
+    {
+      "file": "094_321305336_살인자의 쇼핑몰 2_강지영지은이.jpg",
+      "has_belly_band": true,
+      "text": "이동욱 . 김혜준 주연",
+      "total_texts": 8
+    },
+    {
+      "file": "095_334641692_직장 상사 악령 퇴치부_이사구지은이.jpg",
+      "has_belly_band": true,
+      "text": "직장상사악령퇴치부",
+      "total_texts": 8
+    },
+    {
+      "file": "096_329160213_날씨가 좋으면 찾아가겠어요_이도우지은이.jpg",
+      "has_belly_band": true,
+      "text": "7u 프랑스 출간 즉시 베스트실러! '구운 꿀 냄새' 갈은 감성-",
+      "total_texts": 13
+    },
+    {
+      "file": "097_249404000_살인자의 기억법_김영하지은이.jpg",
+      "has_belly_band": true,
+      "text": "살인자의 기억법",
+      "total_texts": 3
+    },
+    {
+      "file": "098_338559095_인성에 비해 잘 풀린 사람_남궁인손원평이정연임현석정아은천현우최유.jpg",
+      "has_belly_band": true,
+      "text": "잘 풀린 사람",
+      "total_texts": 7
+    },
+    {
+      "file": "099_287281261_전지적 독자 시점 Part 1 01_싱숑지은이.jpg",
+      "has_belly_band": true,
+      "text": "01 8",
+      "total_texts": 11
+    },
+    {
+      "file": "100_299460785_트로피컬 나이트_조예은지은이.jpg",
+      "has_belly_band": false,
+      "text": null,
+      "total_texts": 6
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "image_path": "yearly_bestsellers_2023\\covers\\025_323744006_전지적 독자 시점 Part 4  5  굿즈키트 세트_싱숑지은이.jpg",
+  "timestamp": "2025-11-12T01:08:26.443903",
+  "has_belly_band": false,
+  "belly_band": null,
+  "all_texts": [
+    {
+      "text": "가7",
+      "confidence": 0.0593681239051974,
+      "bbox": [
+        [
+          107.0,
+          45.0
+        ],
+        [
+          135.0,
+          45.0
+        ],
+        [
+          135.0,
+          59.0
+        ],
+        [
+          107.0,
+          59.0
+        ]
+      ]
+    }
+  ],
+  "total_text_blocks": 1
+}

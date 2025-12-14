@@ -1,0 +1,31 @@
+{
+  "image_path": "yearly_bestsellers_2020\\covers\\028_25843736_모순_양귀자지은이.jpg",
+  "timestamp": "2025-11-12T01:10:49.147542",
+  "has_belly_band": false,
+  "belly_band": null,
+  "all_texts": [
+    {
+      "text": "#",
+      "confidence": 0.16410129185919775,
+      "bbox": [
+        [
+          119.0,
+          51.0
+        ],
+        [
+          229.0,
+          51.0
+        ],
+        [
+          229.0,
+          193.0
+        ],
+        [
+          119.0,
+          193.0
+        ]
+      ]
+    }
+  ],
+  "total_text_blocks": 1
+}
