@@ -1,0 +1,167 @@
+# ============================================================
+# OBI 띠지·표지 권위 온톨로지 — SPARQL 질의 모음 (7종)
+#   대상 그래프: OBI_샘플데이터_ABox.ttl  (+ 스키마 OBI_온톨로지_스키마_v2.3.owl)
+#   각 질의는 독립적으로 복사·실행 가능 (블록마다 PREFIX 포함).
+#   01 작가별 띠지 시점 | 02 영상화작품 추천인 직군 | 03 출판사별 직군 다양성
+#   04 시리즈별 카피 패턴 | 05 다년도 띠지 변화 | 06 신뢰도 높은 인물 링크
+#   07 표면별 권위 분업 (띠지 vs 뒷표지)
+# ============================================================
+
+
+
+#############################################################
+# ============================================================
+# 01. 한 작가의 모든 띠지 시점
+#   특정 작가(예: 한강)가 창작한 작품을 두른 모든 띠지를
+#   ISBN·수집연도와 함께 시계열로 나열한다.
+#   대상 그래프: OBI_통합그래프_전수.ttl
+# ============================================================
+PREFIX obi: <http://aks.ac.kr/ontologies/obi#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX bibo: <http://purl.org/ontology/bibo/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?work_label ?isbn ?year WHERE {
+  obi:Person_한강 ^dcterms:creator ?work .
+  ?work rdfs:label ?work_label ;
+        obi:hasManifestation ?mani .
+  ?mani bibo:isbn13 ?isbn ;
+        obi:hasImage ?img .
+  ?img obi:hasObi/obi:collectionDate ?year .
+}
+ORDER BY ?work_label ?year
+
+
+
+#############################################################
+# ============================================================
+# 02. 영상화된 작품의 추천인 직군 분포
+#   드라마·영화 등으로 영상화(AdaptationMention)된 작품의
+#   띠지 추천인 직군(endorserRole)별 빈도를 집계한다.
+#   대상 그래프: OBI_통합그래프_전수.ttl
+# ============================================================
+PREFIX obi: <http://aks.ac.kr/ontologies/obi#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?role (COUNT(*) AS ?n) WHERE {
+  ?work obi:hasManifestation/obi:hasImage/obi:hasObi ?obi .
+  ?obi obi:hasAdaptationMention [] .
+  ?obi obi:hasEndorsement/obi:endorserRole/skos:prefLabel ?role .
+}
+GROUP BY ?role
+ORDER BY DESC(?n)
+
+
+
+#############################################################
+# ============================================================
+# 03. 출판사별 추천인 직군 다양성
+#   출판사마다 띠지 추천인의 직군(endorserRole)이
+#   얼마나 다양한지(distinct count) 상위 20곳을 집계한다.
+#   대상 그래프: OBI_통합그래프_전수.ttl
+# ============================================================
+PREFIX obi: <http://aks.ac.kr/ontologies/obi#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+
+SELECT ?publisher (COUNT(DISTINCT ?role) AS ?role_diversity) WHERE {
+  ?mani dcterms:publisher/foaf:name ?publisher ;
+        obi:hasImage/obi:hasObi/obi:hasEndorsement/obi:endorserRole/skos:prefLabel ?role .
+}
+GROUP BY ?publisher
+ORDER BY DESC(?role_diversity)
+LIMIT 20
+
+
+
+#############################################################
+# ============================================================
+# 04. 시리즈별 마케팅 카피 패턴
+#   특정 시리즈(예: 위픽시리즈) 소속 작품들의 띠지에서
+#   어떤 마케팅 블록 유형(hasMarketingCopy 하위 속성)이
+#   얼마나 쓰였는지 집계한다.
+#   대상 그래프: OBI_통합그래프_전수.ttl
+# ============================================================
+PREFIX obi: <http://aks.ac.kr/ontologies/obi#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+
+SELECT ?block_type (COUNT(*) AS ?n) WHERE {
+  obi:Series_위픽시리즈 dcterms:hasPart ?work .
+  ?work obi:hasManifestation/obi:hasImage/obi:hasObi ?obi .
+  ?obi ?p ?b .
+  ?p rdfs:subPropertyOf+ obi:hasMarketingCopy .
+  BIND(REPLACE(STR(?p), "^.*#", "") AS ?block_type)
+}
+GROUP BY ?block_type
+ORDER BY DESC(?n)
+
+
+
+#############################################################
+# ============================================================
+# 05. 다년도 띠지 변화 추적
+#   같은 ISBN(동일 판본)의 책이 여러 해에 걸쳐
+#   서로 다른 띠지를 두른 경우를 식별한다.
+#   대상 그래프: OBI_통합그래프_전수.ttl
+# ============================================================
+PREFIX obi: <http://aks.ac.kr/ontologies/obi#>
+PREFIX bibo: <http://purl.org/ontology/bibo/>
+
+SELECT ?isbn (COUNT(DISTINCT ?obi) AS ?n_obi) WHERE {
+  ?mani bibo:isbn13 ?isbn ;
+        obi:hasImage/obi:hasObi ?obi .
+}
+GROUP BY ?isbn
+HAVING (COUNT(DISTINCT ?obi) > 1)
+ORDER BY DESC(?n_obi)
+
+
+
+#############################################################
+# ============================================================
+# 06. 신뢰도 높은 인물 KAC 링크만 선별
+#   분석·시각화 시 저신뢰(review) 노드를 제외하고
+#   검증된(high) KAC 외부연결만 추출한다.
+#   ※ 미검수 큐를 보려면 "high" → "review" 로 변경.
+#   대상 그래프: OBI_통합그래프_전수.ttl
+# ============================================================
+PREFIX obi: <http://aks.ac.kr/ontologies/obi#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+
+SELECT ?person ?name ?kac WHERE {
+  ?person a foaf:Person ;
+          obi:linkageConfidence "high" ;
+          foaf:name ?name ;
+          owl:sameAs ?kac .
+  FILTER(CONTAINS(STR(?kac), "/resource/KAC"))
+}
+
+
+
+#############################################################
+# ============================================================
+# 07. 표면별 권위 분업 (띠지 vs 뒷표지)
+#   띠지(Obi)와 뒷표지(BCover)가 각 표면(printedOn)에서
+#   어떤 마케팅 블록을 얼마나 싣는지 비교 집계한다.
+#   → "띠지=시장·수상 선언 / 뒷표지=비평 논증" 분업 검증.
+#   ※ 무reasoner 환경: hasCoverCopy/hasMarketingCopy 의
+#     subPropertyOf* 경로로 상속을 명시 탐색.
+#   대상 그래프: OBI_통합그래프_전수.ttl + 뒷표지_ABox.ttl
+#              + 표지권위_확장스키마.ttl(TBox)
+# ============================================================
+PREFIX obi: <http://aks.ac.kr/ontologies/obi#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?carrierType ?surface (COUNT(*) AS ?n) WHERE {
+  ?img ?hasCarrier ?carrier .
+  ?hasCarrier rdfs:subPropertyOf* obi:hasCoverCopy .
+  ?carrier a ?carrierType ;
+           ?p ?blk .
+  ?p rdfs:subPropertyOf* obi:hasMarketingCopy .
+  OPTIONAL { ?blk obi:printedOn ?surface }
+  FILTER(?carrierType IN (obi:Obi, obi:BCover))
+}
+GROUP BY ?carrierType ?surface

@@ -1,0 +1,1772 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OBI 띠지·표지 권위 온톨로지 v2.3 — 설계 명세</title>
+<meta name="description" content="한국 도서 띠지·뒷표지의 마케팅 카피·권위·서지 정보를 RDF로 표현하는 OWL 온톨로지(OBI) 설계 명세서.">
+<style>
+:root{--ink:#1f2a37;--muted:#5b6b7b;--line:#e3e8ee;--bg:#f7f9fb;
+ --gold:#caa023;--green:#4e7a3c;--blue:#3e78b2;--pink:#c5707f;--accent:#1f3a5f;}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;scroll-padding-top:64px;}
+body{margin:0;font-family:"Malgun Gothic","맑은 고딕","Apple SD Gothic Neo",system-ui,sans-serif;
+ color:var(--ink);background:var(--bg);line-height:1.65;font-size:16px;}
+a{color:var(--blue);}
+header.top{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);
+ backdrop-filter:saturate(180%) blur(6px);border-bottom:1px solid var(--line);}
+.topin{max-width:1180px;margin:0 auto;display:flex;align-items:center;gap:14px;padding:10px 20px;}
+.brand{font-weight:800;color:var(--accent);white-space:nowrap;}
+.brand b{color:var(--gold);}
+nav.sec{display:flex;gap:4px;flex-wrap:wrap;overflow:auto;}
+nav.sec a{font-size:12.5px;color:var(--muted);text-decoration:none;padding:4px 8px;border-radius:6px;white-space:nowrap;}
+nav.sec a:hover{background:#eef3f8;color:var(--accent);}
+.hero{background:linear-gradient(135deg,#1f3a5f,#2e6b4f);color:#fff;}
+.heroin{max-width:1180px;margin:0 auto;padding:48px 20px 40px;}
+.heroin .v{display:inline-block;background:rgba(255,255,255,.16);padding:3px 12px;border-radius:999px;font-size:13px;margin-bottom:14px;}
+.heroin h1{margin:.1em 0;font-size:34px;line-height:1.25;}
+.heroin p{max-width:760px;color:#e7eef5;font-size:16.5px;}
+.cta{margin-top:18px;display:flex;gap:10px;flex-wrap:wrap;}
+.cta a{text-decoration:none;font-weight:700;font-size:14px;padding:10px 16px;border-radius:8px;}
+.cta .p{background:var(--gold);color:#3a2c00;}
+.cta .s{background:rgba(255,255,255,.14);color:#fff;border:1px solid rgba(255,255,255,.35);}
+main{max-width:1180px;margin:0 auto;padding:0 20px 80px;}
+.diagram{margin:30px 0;text-align:center;background:#fff;border:1px solid var(--line);
+ border-radius:14px;padding:18px;box-shadow:0 4px 18px rgba(20,40,70,.06);}
+.diagram img{max-width:100%;height:auto;border-radius:8px;}
+.diagram figcaption{margin-top:12px;color:var(--muted);font-size:13.5px;}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:26px 0;}
+.dl{display:flex;flex-direction:column;gap:4px;text-decoration:none;background:#fff;
+ border:1px solid var(--line);border-radius:12px;padding:16px 18px;transition:.15s;}
+.dl:hover{border-color:var(--gold);transform:translateY(-2px);box-shadow:0 6px 18px rgba(20,40,70,.08);}
+.dl-t{font-weight:800;color:var(--accent);}
+.dl-d{font-size:13px;color:var(--muted);}
+.dl-f{font-size:11.5px;color:#9aa6b2;font-family:Consolas,monospace;margin-top:4px;}
+.spec{background:#fff;border:1px solid var(--line);border-radius:14px;padding:8px 34px 34px;margin-top:24px;}
+.spec h1{font-size:26px;border-bottom:3px solid var(--gold);padding-bottom:8px;margin-top:30px;}
+.spec h2{font-size:21px;color:var(--accent);margin-top:42px;padding-top:10px;border-top:1px solid var(--line);}
+.spec h3{font-size:17px;color:#2b4a6f;margin-top:26px;}
+.spec h4{font-size:15px;color:#34507a;}
+.spec table{border-collapse:collapse;width:100%;margin:14px 0;font-size:13.5px;display:block;overflow-x:auto;}
+.spec th,.spec td{border:1px solid var(--line);padding:7px 10px;text-align:left;vertical-align:top;}
+.spec th{background:#dce6f1;color:var(--accent);}
+.spec tr:nth-child(even) td{background:#fafcfe;}
+.spec code{background:#eef2f6;padding:1px 5px;border-radius:4px;font-family:Consolas,monospace;font-size:13px;color:#15406b;}
+.spec pre{background:#f2f4f7;border:1px solid var(--line);border-radius:8px;padding:14px 16px;overflow:auto;}
+.spec pre code{background:none;padding:0;color:#243b53;font-size:12.5px;}
+.spec blockquote{margin:14px 0;padding:10px 16px;background:#fbf6e9;border-left:4px solid var(--gold);
+ color:#5a4a20;font-size:14px;border-radius:0 8px 8px 0;}
+.spec h2[id]{scroll-margin-top:70px;}
+footer{max-width:1180px;margin:0 auto;padding:24px 20px 60px;color:var(--muted);font-size:13px;border-top:1px solid var(--line);}
+@media(max-width:720px){.heroin h1{font-size:26px;}.topin{flex-wrap:wrap;}}
+</style>
+</head>
+<body>
+<header class="top"><div class="topin">
+  <span class="brand">OB<b>I</b> 온톨로지</span>
+  <nav class="sec"><a href="#diagram">개념도</a>
+<a href="#downloads">다운로드</a>
+<a href="#1">1. 소개</a>
+<a href="#2">2. 데이터 모델 개념도</a>
+<a href="#3-namespace-prefix">3. Namespace · Prefix 일람</a>
+<a href="#4-uri">4. 자원 식별 체계 (URI 패턴)</a>
+<a href="#5">5. 클래스 정의</a>
+<a href="#6">6. 속성 정의</a>
+<a href="#7-11">7. 마케팅 카피 블록 11종 상세</a>
+<a href="#8-lod">8. 외부 LOD 매핑 정책</a>
+<a href="#9">9. 직렬화 변이</a>
+<a href="#10">10. 명명 규약</a>
+<a href="#11-sparql">11. SPARQL 사용 예시</a>
+<a href="#12-2026-06-23-rdflib-76">12. 데이터 통계 (2026-06-23 기준, rdflib 7.6 파싱 검증)</a>
+<a href="#13_1">13. 다운로드·인용</a>
+<a href="#14-cover-authority-extension">14. 표지 권위 확장 (Cover-Authority Extension)</a></nav>
+</div></header>
+
+<section class="hero"><div class="heroin">
+  <span class="v">버전 2.3 · 표지-권위 확장 (띠지 + 뒷표지)</span>
+  <h1>OBI 띠지·표지 권위 온톨로지</h1>
+  <p>한국 도서의 <b>띠지(belly-band)</b>와 <b>뒷표지(back cover)</b>에 실린 마케팅 카피·추천·수상·서지·인물·기관 정보를
+  RDF로 보존·분석하기 위한 OWL 온톨로지의 설계 명세입니다. FRBR 4계층 위에 표지 텍스트 산물(CoverCopy) 상속 구조를 더해
+  띠지(소모성)와 뒷표지(영구성)가 11종 마케팅·권위 블록을 공유 상속합니다.</p>
+  <div class="cta">
+    <a class="p" href="#downloads">제출 파일 4종 내려받기</a>
+    <a class="s" href="#diagram">개념도 보기</a>
+  </div>
+</div></section>
+
+<main>
+  <h2 id="diagram" style="font-size:22px;color:var(--accent);margin-top:34px;">데이터 모델 개념도</h2>
+  
+<figure class="diagram">
+  <a href="개념도_v2.3.png" target="_blank" rel="noopener"><img src="개념도_v2.3.svg" alt="OBI 띠지·뒷표지 온톨로지 데이터 모델 개념도 (v2.3)"></a>
+  <figcaption>그림 1. OBI 띠지·뒷표지 온톨로지 데이터 모델 개념도 (v2.3) — 표지 텍스트 산물(CoverCopy) 상속: 띠지(소모성)·뒷표지(영구성)가 마케팅·권위 블록을 공유 상속. <a href="개념도_v2.3.png" target="_blank" rel="noopener">원본 크게 보기 ↗</a></figcaption>
+</figure>
+
+
+  <h2 id="downloads" style="font-size:22px;color:var(--accent);margin-top:40px;">제출 파일 (4종)</h2>
+  <div class="cards"><a class="dl" href="files/OBI_온톨로지_스키마_v2.3.owl" download><span class="dl-t">① OWL 스키마 (TBox)</span><span class="dl-d">CoverCopy·BCover 포함 단일 OWL · RDF/XML · 433 트리플</span><span class="dl-f">OBI_온톨로지_스키마_v2.3.owl</span></a>
+<a class="dl" href="files/띠지 온톨로지 명세서_최종.docx" download><span class="dl-t">② 설계 명세서 (DOCX)</span><span class="dl-d">본 문서의 원본 · v2.3 · 개념도 포함</span><span class="dl-f">띠지 온톨로지 명세서_최종.docx</span></a>
+<a class="dl" href="files/OBI_샘플데이터_ABox.ttl" download><span class="dl-t">③ 샘플 데이터 (ABox)</span><span class="dl-d">띠지+뒷표지 통합 인스턴스 · Turtle · 약 15만 트리플</span><span class="dl-f">OBI_샘플데이터_ABox.ttl</span></a>
+<a class="dl" href="files/OBI_SPARQL질의.rq" download><span class="dl-t">④ SPARQL 질의 (7종)</span><span class="dl-d">작가별 시점·표면별 권위 분업 등 분석 질의</span><span class="dl-f">OBI_SPARQL질의.rq</span></a></div>
+
+  <h2 style="font-size:22px;color:var(--accent);margin-top:40px;">전체 설계 명세서</h2>
+  <article class="spec"><h1 id="obi-v23">OBI 띠지·표지 권위 온톨로지 — 데이터 명세서 v2.3</h1>
+<blockquote>
+<p>한국 도서 띠지(belly-band)와 <strong>뒷표지(back cover)</strong> 의 마케팅 카피·권위·서지·인물·기관 정보를 RDF 로 표현하는 OWL 온톨로지의 공식 명세서.</p>
+<p><strong>v2.3 변경점</strong>: 띠지 전용에서 <strong>'표지 전체 권위'</strong> 로 확장. 상속 뿌리 <code>obi:CoverCopy</code> 아래 띠지(<code>obi:Obi</code>)·뒷표지(<code>obi:BCover</code>)가 11종 블록 속성을 공유 상속(§14). 뒷표지 ABox 구축 완료(BCover 587책·블록 2,175·추천블록 730, §12.5). 외부 자원 매칭은 인물(Person) 매칭 우선이며 뒷표지 신규 추천인 일부(69명)는 추가 매칭 예정. 표면별 위치(<code>obi:printedOn</code>→<code>SurfaceScheme</code>)·물질성(<code>obi:isEphemeral</code>) 도입. 상세 설계는 별도 문서 <code>표지권위_스키마설명.md</code> 참조.</p>
+<p><strong>v2.2 변경점</strong>: 외부 LOD 링크에 <strong>provenance·신뢰도 주석 체계</strong>(<code>obi:linkageStatus</code>·<code>linkageMethod</code>·<code>linkageConfidence</code>·<code>linkageEvidence</code>) 도입(§6.2.4, §8.2). 알라딘 작가 bio·대표작 기반 disambiguation 및 사람 검수 반영(§8.3). 모든 Person·Org 가 "링크 또는 사유 범주화"로 완성됨(미분류 0).</p>
+</blockquote>
+<p>본 명세서는 OBI 데이터를 활용하려는 외부 사용자가 자원의 구조·URI 패턴·SPARQL 쿼리 방법을 한 문서에서 파악할 수 있도록 작성되었다.</p>
+<hr />
+<h2 id="1">1. 소개</h2>
+<h3 id="11">1.1 목적</h3>
+<p>띠지(belly-band)는 한국 출판 시장에서 가장 가시적인 마케팅 매체이다. 한 권의 책이 시점별로 다른 띠지를 두를 수 있으며, 그 위에 추천사·수상 정보·판매 실적·언론 평·시리즈 브랜딩 등 출판사의 마케팅 전략이 직접 드러난다. 그러나 띠지 텍스트는 ISBN 같은 표준 식별자가 없고, 출판사·시점·인물 관계가 복잡하게 얽혀 있어 구조화된 분석이 어려웠다.</p>
+<p><strong>OBI 띠지 온톨로지</strong> 는 이 텍스트들을 RDF 트리플로 보존·분석하기 위한 어휘 체계이다. 한 작품의 여러 판본, 한 판본의 여러 시점 띠지, 추천인·수상기관·시리즈 등 마케팅 카피 발화자를 모두 명시적으로 모델링한다.</p>
+<h3 id="12">1.2 범위</h3>
+<ul>
+<li>대상 자료: 한국 도서 (소설 중심)</li>
+<li>수집 출처:</li>
+<li>알라딘 OpenAPI 메타데이터</li>
+<li>연도별 베스트셀러 (2000–2024)</li>
+<li>5개 주요 출판사 카테고리 페이지 (문학과지성사·문학동네·민음사·은행나무·창비)</li>
+<li>핵심 차별 기능: 한 판본의 여러 해 띠지 변화를 시점별 Image 인스턴스로 보존</li>
+<li><strong>표지 권위 확장(v2.3)</strong>: 띠지뿐 아니라 <strong>뒷표지</strong> 마케팅·권위 텍스트까지 동일 어휘로 모델링 → "띠지(소모성·시장/수상 선언) vs 뒷표지(영구성·비평 논증)"의 표면별 권위 분업 분석 가능 (§14)</li>
+</ul>
+<h3 id="13">1.3 발행처·라이센스·연락처</h3>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>발행처</td>
+<td>한국학중앙연구원</td>
+</tr>
+<tr>
+<td>기반 URI</td>
+<td><code>http://aks.ac.kr/ontologies/obi#</code></td>
+</tr>
+<tr>
+<td>라이센스</td>
+<td>(추후 결정 — CC BY 4.0 권장)</td>
+</tr>
+<tr>
+<td>인용</td>
+<td>(추후 결정 — DOI 부여 시 명시)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="14">1.4 사용 어휘</h3>
+<p>OBI 는 기존 국제 표준 어휘를 적극 차용하여 자체 어휘 신설을 최소화한다. 사용된 외부 어휘는 다음과 같다.</p>
+<ul>
+<li><strong>DC Terms</strong> (<code>dcterms:</code>) — 저자·출판사·포함 관계 등 범용 서지 어휘</li>
+<li><strong>FOAF</strong> (<code>foaf:</code>) — 사람·기관·행위 주체</li>
+<li><strong>BIBO</strong> (<code>bibo:</code>) — 도서 식별자·편집자·번역자</li>
+<li><strong>schema.org</strong> (<code>schema:</code>) — 출판일·장르</li>
+<li><strong>SKOS</strong> (<code>skos:</code>) — 분류 체계 (Concept·prefLabel·altLabel)</li>
+</ul>
+<p>자체 어휘 <code>obi:</code> 는 띠지 마케팅 카피에 특수한 부분(블록 11종·시점별 Image·외부 LOD 매핑 정책)에만 사용된다.</p>
+<hr />
+<h2 id="2">2. 데이터 모델 개념도</h2>
+<p>데이터 모델 전체 개념도는 본 페이지 상단 <strong><a href="#diagram">데이터 모델 개념도</a></strong> 절에 수록되어 있다. FRBR 4계층(작품→판본→촬영본) 위에 표지 텍스트 산물 <code>obi:CoverCopy</code> 가 띠지(<code>obi:Obi</code>, 소모성)·뒷표지(<code>obi:BCover</code>, 영구성)로 분기하며, 두 면이 11종 마케팅·권위 블록을 공유 상속한다.</p>
+<h2 id="3-namespace-prefix">3. Namespace · Prefix 일람</h2>
+<p>OBI 데이터를 SPARQL 로 조회하거나 RDF 도구에서 직접 다룰 때 사용하는 namespace prefix 일람.</p>
+<table>
+<thead>
+<tr>
+<th>Prefix</th>
+<th>URI</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>obi</code></td>
+<td><code>http://aks.ac.kr/ontologies/obi#</code></td>
+</tr>
+<tr>
+<td><code>foaf</code></td>
+<td><code>http://xmlns.com/foaf/0.1/</code></td>
+</tr>
+<tr>
+<td><code>dcterms</code></td>
+<td><code>http://purl.org/dc/terms/</code></td>
+</tr>
+<tr>
+<td><code>bibo</code></td>
+<td><code>http://purl.org/ontology/bibo/</code></td>
+</tr>
+<tr>
+<td><code>schema</code></td>
+<td><code>http://schema.org/</code></td>
+</tr>
+<tr>
+<td><code>skos</code></td>
+<td><code>http://www.w3.org/2004/02/skos/core#</code></td>
+</tr>
+<tr>
+<td><code>xsd</code></td>
+<td><code>http://www.w3.org/2001/XMLSchema#</code></td>
+</tr>
+<tr>
+<td><code>rdfs</code></td>
+<td><code>http://www.w3.org/2000/01/rdf-schema#</code></td>
+</tr>
+<tr>
+<td><code>owl</code></td>
+<td><code>http://www.w3.org/2002/07/owl#</code></td>
+</tr>
+<tr>
+<td><code>nlk</code></td>
+<td><code>http://lod.nl.go.kr/resource/</code></td>
+</tr>
+<tr>
+<td><code>wd</code></td>
+<td><code>http://www.wikidata.org/entity/</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="4-uri">4. 자원 식별 체계 (URI 패턴)</h2>
+<p>OBI 의 모든 자원은 결정적 URI 슬러그 규칙으로 부여된다. 즉 외부 사용자는 작품 제목·ISBN·인물 이름 등을 알면 해당 URI 를 직접 구성하여 조회할 수 있다.</p>
+<table>
+<thead>
+<tr>
+<th>자원 유형</th>
+<th>URI 패턴</th>
+<th>예시</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>작품</td>
+<td><code>obi:Work_{title_slug}</code></td>
+<td><code>obi:Work_소년이온다</code></td>
+</tr>
+<tr>
+<td>시리즈</td>
+<td><code>obi:Series_{name_slug}</code></td>
+<td><code>obi:Series_위픽시리즈</code></td>
+</tr>
+<tr>
+<td>판본</td>
+<td><code>obi:Mani_{ISBN13}</code></td>
+<td><code>obi:Mani_9788936434120</code></td>
+</tr>
+<tr>
+<td>촬영본</td>
+<td><code>obi:Image_{ISBN}_{year\|pub}</code></td>
+<td><code>obi:Image_9788936434120_2021</code></td>
+</tr>
+<tr>
+<td>띠지</td>
+<td><code>obi:Obi_{ISBN}_{year\|pub}</code></td>
+<td><code>obi:Obi_9788936434120_2021</code></td>
+</tr>
+<tr>
+<td>사람</td>
+<td><code>obi:Person_{name_slug}</code></td>
+<td><code>obi:Person_한강</code></td>
+</tr>
+<tr>
+<td>기관</td>
+<td><code>obi:Org_{name_slug}</code></td>
+<td><code>obi:Org_창비</code>, <code>obi:Org_RHK</code></td>
+</tr>
+<tr>
+<td>익명 독자</td>
+<td><code>obi:AnonymousReader_독자</code></td>
+<td>(단일 인스턴스)</td>
+</tr>
+<tr>
+<td>추천인 직군</td>
+<td><code>obi:Role_{slug}</code></td>
+<td><code>obi:Role_평론가</code></td>
+</tr>
+<tr>
+<td>영상화 유형</td>
+<td><code>obi:AdaptType_{slug}</code></td>
+<td><code>obi:AdaptType_드라마</code></td>
+</tr>
+<tr>
+<td>시리즈 유형</td>
+<td><code>obi:SeriesType_{slug}</code></td>
+<td><code>obi:SeriesType_큐레이션시리즈</code></td>
+</tr>
+<tr>
+<td>수상 상태</td>
+<td><code>obi:AwardStatus_{slug}</code></td>
+<td><code>obi:AwardStatus_수상</code></td>
+</tr>
+<tr>
+<td>기관 역할</td>
+<td><code>obi:OrgRole_{slug}</code></td>
+<td><code>obi:OrgRole_출판사</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>시점 슬롯의 의미</strong></p>
+<ul>
+<li><code>_{year}</code> (예: <code>_2021</code>) — 연도별 베스트셀러 표지에서 검출된 띠지. 같은 ISBN 의 책이 2021·2022·2023 베스트셀러였다면 시점별로 별도 Image 가 생성된다.</li>
+<li><code>_pub</code> — 출판사 카테고리 페이지에서 단일 시점 수집된 띠지. 연도 정보가 없는 경우 사용.</li>
+</ul>
+<hr />
+<h2 id="5">5. 클래스 정의</h2>
+<p>OBI 의 자원은 7개 핵심 클래스로 분류된다. FRBR(Functional Requirements for Bibliographic Records) 의 4계층 모델을 따르되, 띠지의 텍스트 산물을 별도 클래스로 분리하였다.</p>
+<h3 id="51">5.1 핵심 자원 클래스</h3>
+<p>FRBR 4계층 + 시리즈로 구성된다.</p>
+<table>
+<thead>
+<tr>
+<th>클래스</th>
+<th>부모 클래스</th>
+<th>설명</th>
+<th>예시</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>obi:Work</code></td>
+<td>(없음)</td>
+<td>추상적 저작물. ISBN 무관 한 작품의 정체성.</td>
+<td>"소년이 온다"</td>
+</tr>
+<tr>
+<td><code>obi:Series</code></td>
+<td><code>obi:Work</code></td>
+<td>여러 작품을 묶는 시리즈.</td>
+<td>"위픽 시리즈"</td>
+</tr>
+<tr>
+<td><code>obi:Manifestation</code></td>
+<td>(없음)</td>
+<td>ISBN 1:1 의 특정 판본.</td>
+<td>"소년이 온다 (창비, 양장본 2014)"</td>
+</tr>
+<tr>
+<td><code>obi:Image</code></td>
+<td>(없음)</td>
+<td>한 시점의 표지+띠지 디지털 스캔.</td>
+<td>"9788936434120 의 2021 베스트셀러 페이지 표지"</td>
+</tr>
+<tr>
+<td><code>obi:Obi</code></td>
+<td>(없음)</td>
+<td>띠지 텍스트 산물. Image 에서 추출.</td>
+<td>(위 Image 에서 OCR+LLM 으로 추출된 띠지 텍스트)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="52-foaf">5.2 행위 주체 (FOAF 차용 + 자체 확장)</h3>
+<p>저자·추천인·출판사 등 띠지에 등장하는 모든 인물·기관·집단의 상위 클래스 체계.</p>
+<table>
+<thead>
+<tr>
+<th>클래스</th>
+<th>부모</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>foaf:Agent</code></td>
+<td>(없음)</td>
+<td>모든 행위 주체의 상위</td>
+</tr>
+<tr>
+<td><code>foaf:Person</code></td>
+<td><code>foaf:Agent</code></td>
+<td>자연인 (저자·추천인·평론가)</td>
+</tr>
+<tr>
+<td><code>foaf:Organization</code></td>
+<td><code>foaf:Agent</code></td>
+<td>기관 (출판사·언론사·시상기관·대학)</td>
+</tr>
+<tr>
+<td><code>obi:AnonymousReader</code></td>
+<td><code>foaf:Agent</code></td>
+<td>익명 독자 placeholder. 단일 인스턴스 <code>obi:AnonymousReader_독자</code> 로 모든 익명 추천을 통합 표상한다. 식별 가능한 한 사람의 entity 가 아니라 익명 집단을 한 데 묶는 자리표시자다.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="53-skos">5.3 분류 체계 (SKOS)</h3>
+<table>
+<thead>
+<tr>
+<th>클래스</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>skos:Concept</code></td>
+<td>분류 항목 (예: "평론가"·"드라마")</td>
+</tr>
+<tr>
+<td><code>skos:ConceptScheme</code></td>
+<td>분류 체계 자체 (5종, §7.2 참조)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="6">6. 속성 정의</h2>
+<p>OBI 가 사용하는 속성은 자원 간 관계를 표현하는 <strong>Object Property</strong> 와 텍스트·날짜·식별자 등 값을 표현하는 <strong>Datatype Property</strong> 로 나뉜다.</p>
+<h3 id="61-object-properties">6.1 Object Properties</h3>
+<h4 id="611-frbr">6.1.1 FRBR 계층 체인</h4>
+<p>작품에서 띠지까지 4계층을 연결하는 핵심 관계.</p>
+<table>
+<thead>
+<tr>
+<th>속성</th>
+<th>도메인 → 레인지</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>obi:hasManifestation</code></td>
+<td><code>obi:Work</code> → <code>obi:Manifestation</code></td>
+<td>한 작품이 여러 판본을 가질 수 있다</td>
+</tr>
+<tr>
+<td><code>obi:hasImage</code></td>
+<td><code>obi:Manifestation</code> → <code>obi:Image</code></td>
+<td>한 판본이 시점별 여러 촬영본을 가질 수 있다</td>
+</tr>
+<tr>
+<td><code>obi:hasObi</code></td>
+<td><code>obi:Image</code> → <code>obi:Obi</code></td>
+<td>한 촬영본에서 추출된 띠지</td>
+</tr>
+<tr>
+<td><code>obi:extractedFrom</code></td>
+<td><code>obi:Obi</code> → <code>obi:Image</code></td>
+<td><code>hasObi</code> 의 역방향</td>
+</tr>
+</tbody>
+</table>
+<h4 id="612">6.1.2 작품의 기여자</h4>
+<p>저자 외에 편집자·번역자·원작자·기타 기여자를 명시적으로 구분한다.</p>
+<table>
+<thead>
+<tr>
+<th>속성</th>
+<th>도메인 → 레인지</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>dcterms:creator</code></td>
+<td><code>obi:Work</code> → <code>foaf:Person</code></td>
+<td>주 저자 (다중 가능)</td>
+</tr>
+<tr>
+<td><code>bibo:editor</code></td>
+<td><code>obi:Work</code> → <code>foaf:Person</code></td>
+<td>편집자 (선집 엮은이)</td>
+</tr>
+<tr>
+<td><code>bibo:translator</code></td>
+<td><code>obi:Work</code> → <code>foaf:Person</code></td>
+<td>번역자</td>
+</tr>
+<tr>
+<td><code>obi:originalAuthor</code></td>
+<td><code>obi:Work</code> → <code>foaf:Person</code></td>
+<td>원작자 (노벨라이즈·각색의 source)</td>
+</tr>
+<tr>
+<td><code>dcterms:contributor</code></td>
+<td><code>obi:Work</code> → <code>foaf:Person</code></td>
+<td>기타 기여자 (해설·사진작가)</td>
+</tr>
+</tbody>
+</table>
+<h4 id="613">6.1.3 출판사·시리즈</h4>
+<table>
+<thead>
+<tr>
+<th>속성</th>
+<th>도메인 → 레인지</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>dcterms:publisher</code></td>
+<td><code>obi:Manifestation</code> → <code>foaf:Organization</code></td>
+<td>현 판본 출판사</td>
+</tr>
+<tr>
+<td><code>obi:formerPublisher</code></td>
+<td><code>obi:Manifestation</code> → <code>foaf:Organization</code></td>
+<td>이전 출판사 (출판권 이양 이력)</td>
+</tr>
+<tr>
+<td><code>dcterms:hasPart</code></td>
+<td><code>obi:Work</code> → <code>obi:Work</code></td>
+<td>작품/시리즈가 다른 작품을 포함</td>
+</tr>
+<tr>
+<td><code>obi:seriesType</code></td>
+<td><code>obi:Series</code> → <code>skos:Concept</code></td>
+<td>시리즈 유형 (저자연작·큐레이션·전집)</td>
+</tr>
+<tr>
+<td><code>obi:curator</code></td>
+<td><code>obi:Series</code> → <code>foaf:Agent</code></td>
+<td>시리즈 기획자 (저자와 분리)</td>
+</tr>
+<tr>
+<td><code>obi:organizationRole</code></td>
+<td><code>foaf:Organization</code> → <code>skos:Concept</code></td>
+<td>기관의 다중 역할 태그</td>
+</tr>
+</tbody>
+</table>
+<h4 id="614-obi-bnode">6.1.4 마케팅 카피 부착 (Obi → bnode)</h4>
+<p>띠지의 마케팅 카피는 11종 sub-property 로 분류되며 모두 익명 노드(bnode)에 연결된다.</p>
+<table>
+<thead>
+<tr>
+<th>속성</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>obi:hasMarketingCopy</code></td>
+<td>모든 카피 블록의 상위 속성</td>
+</tr>
+<tr>
+<td><code>obi:hasPublisherCopy</code></td>
+<td>① 출판사 카피</td>
+</tr>
+<tr>
+<td><code>obi:hasEndorsement</code></td>
+<td>② 추천사</td>
+</tr>
+<tr>
+<td><code>obi:hasPressCitation</code></td>
+<td>③ 언론 평</td>
+</tr>
+<tr>
+<td><code>obi:hasMediaMention</code></td>
+<td>④ 매체 언급</td>
+</tr>
+<tr>
+<td><code>obi:hasAwardMention</code></td>
+<td>⑤ 수상</td>
+</tr>
+<tr>
+<td><code>obi:hasSelectionMention</code></td>
+<td>⑥ 선정</td>
+</tr>
+<tr>
+<td><code>obi:hasSalesRecord</code></td>
+<td>⑦ 판매 실적</td>
+</tr>
+<tr>
+<td><code>obi:hasAdaptationMention</code></td>
+<td>⑧ 영상화</td>
+</tr>
+<tr>
+<td><code>obi:hasSeriesBranding</code></td>
+<td>⑨ 시리즈 표기</td>
+</tr>
+<tr>
+<td><code>obi:hasAuthorNote</code></td>
+<td>⑩ 작가의 말</td>
+</tr>
+<tr>
+<td><code>obi:hasTextExcerpt</code></td>
+<td>⑪ 본문 발췌</td>
+</tr>
+</tbody>
+</table>
+<h4 id="615">6.1.5 카피 블록 내부 관계</h4>
+<p>각 카피 블록(bnode) 안의 발화자·직군·소속·유형 등을 표현한다.</p>
+<table>
+<thead>
+<tr>
+<th>속성</th>
+<th>도메인 → 레인지</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>obi:issuedBy</code></td>
+<td>bnode → <code>foaf:Agent</code></td>
+<td>발화 주체 (출판사·언론사·시상기관)</td>
+</tr>
+<tr>
+<td><code>obi:endorsedBy</code></td>
+<td>bnode → <code>foaf:Agent</code></td>
+<td>추천인</td>
+</tr>
+<tr>
+<td><code>obi:endorserRole</code></td>
+<td>bnode → <code>skos:Concept</code></td>
+<td>추천인 직군 (배열 허용)</td>
+</tr>
+<tr>
+<td><code>obi:endorserAffiliation</code></td>
+<td>bnode → <code>foaf:Organization</code></td>
+<td>추천인 소속</td>
+</tr>
+<tr>
+<td><code>obi:authoredBy</code></td>
+<td>bnode → <code>foaf:Person</code></td>
+<td>작가의 말 작성자</td>
+</tr>
+<tr>
+<td><code>obi:aggregatedBy</code></td>
+<td>bnode → <code>foaf:Organization</code></td>
+<td>판매 실적 집계 기관</td>
+</tr>
+<tr>
+<td><code>obi:adaptationType</code></td>
+<td>bnode → <code>skos:Concept</code></td>
+<td>영상화 유형</td>
+</tr>
+<tr>
+<td><code>obi:awardStatus</code></td>
+<td>bnode → <code>skos:Concept</code></td>
+<td>수상 상태</td>
+</tr>
+<tr>
+<td><code>obi:refersToSeries</code></td>
+<td>bnode → <code>obi:Series</code></td>
+<td>참조 시리즈</td>
+</tr>
+</tbody>
+</table>
+<h3 id="62-datatype-properties">6.2 Datatype Properties</h3>
+<p>자원의 식별자·라벨·날짜·텍스트 등 값을 표현한다.</p>
+<h4 id="621">6.2.1 자원 식별자·라벨</h4>
+<table>
+<thead>
+<tr>
+<th>속성</th>
+<th>도메인</th>
+<th>xsd 형</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>bibo:isbn13</code></td>
+<td><code>obi:Manifestation</code></td>
+<td><code>string</code></td>
+<td>ISBN13</td>
+</tr>
+<tr>
+<td><code>schema:datePublished</code></td>
+<td><code>obi:Manifestation</code></td>
+<td><code>date</code></td>
+<td>출판일</td>
+</tr>
+<tr>
+<td><code>obi:coverTitle</code></td>
+<td><code>obi:Manifestation</code></td>
+<td><code>string@ko</code></td>
+<td>표지 인쇄 제목</td>
+</tr>
+<tr>
+<td><code>obi:aladinItemId</code></td>
+<td><code>obi:Manifestation</code></td>
+<td><code>string</code></td>
+<td>알라딘 상품 ID</td>
+</tr>
+<tr>
+<td><code>obi:aladinURL</code></td>
+<td><code>obi:Manifestation</code></td>
+<td>URI</td>
+<td>알라딘 상품 페이지</td>
+</tr>
+<tr>
+<td><code>obi:aladinCategoryId</code></td>
+<td><code>obi:Manifestation</code></td>
+<td><code>string</code></td>
+<td>알라딘 카테고리 ID</td>
+</tr>
+<tr>
+<td><code>obi:aladinCategoryName</code></td>
+<td><code>obi:Manifestation</code></td>
+<td><code>string</code></td>
+<td>알라딘 카테고리명 (예: "국내도서&gt;소설/시/희곡&gt;한국소설")</td>
+</tr>
+<tr>
+<td><code>obi:isKoreanNovel</code></td>
+<td><code>obi:Manifestation</code></td>
+<td><code>boolean</code></td>
+<td>한국소설 여부 (알라딘 카테고리 기반)</td>
+</tr>
+<tr>
+<td><code>obi:hasBellyBandVerified</code></td>
+<td><code>obi:Manifestation</code></td>
+<td><code>boolean</code></td>
+<td>띠지 양면 검증 완료 여부</td>
+</tr>
+<tr>
+<td><code>obi:aladinAuthorId</code></td>
+<td><code>foaf:Person</code></td>
+<td><code>string</code></td>
+<td>알라딘 작가 ID</td>
+</tr>
+<tr>
+<td><code>obi:aladinAuthorURL</code></td>
+<td><code>foaf:Person</code></td>
+<td>URI</td>
+<td>알라딘 작가 페이지</td>
+</tr>
+<tr>
+<td><code>obi:seriesName</code></td>
+<td><code>obi:Series</code></td>
+<td><code>string</code></td>
+<td>시리즈 이름</td>
+</tr>
+</tbody>
+</table>
+<h4 id="622-ocr-provenance">6.2.2 이미지·OCR provenance</h4>
+<table>
+<thead>
+<tr>
+<th>속성</th>
+<th>도메인</th>
+<th>xsd 형</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>obi:frontImage</code></td>
+<td><code>obi:Image</code></td>
+<td>URI</td>
+<td>앞면 이미지</td>
+</tr>
+<tr>
+<td><code>obi:backImage</code></td>
+<td><code>obi:Image</code></td>
+<td>URI</td>
+<td>뒷면 이미지</td>
+</tr>
+<tr>
+<td><code>obi:imageSource</code></td>
+<td><code>obi:Image</code></td>
+<td>URI</td>
+<td>원본 출처 (알라딘 cover)</td>
+</tr>
+<tr>
+<td><code>obi:imageCapturedAt</code></td>
+<td><code>obi:Image</code></td>
+<td><code>dateTime</code></td>
+<td>이미지 캡처 일시</td>
+</tr>
+<tr>
+<td><code>obi:collectionDate</code></td>
+<td><code>obi:Image</code></td>
+<td><code>date</code></td>
+<td>수집 일자</td>
+</tr>
+<tr>
+<td><code>obi:rawText</code></td>
+<td><code>obi:Obi</code></td>
+<td><code>string@ko</code></td>
+<td>OCR 원본 텍스트</td>
+</tr>
+<tr>
+<td><code>obi:ocrEngine</code></td>
+<td><code>obi:Obi</code></td>
+<td><code>string</code></td>
+<td>OCR 엔진 (gemini-2.5-flash)</td>
+</tr>
+<tr>
+<td><code>obi:ocrExtractedAt</code></td>
+<td><code>obi:Obi</code></td>
+<td><code>dateTime</code></td>
+<td>OCR 추출 일시</td>
+</tr>
+</tbody>
+</table>
+<h4 id="623">6.2.3 마케팅 블록 텍스트 필드</h4>
+<table>
+<thead>
+<tr>
+<th>속성</th>
+<th>xsd 형</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>obi:contentText</code></td>
+<td><code>string@ko</code></td>
+<td><strong>필수</strong> — 띠지에 인쇄된 텍스트</td>
+</tr>
+<tr>
+<td><code>obi:sourceText</code></td>
+<td><code>string@ko</code></td>
+<td>외부 원본 출처 (작품명·인터뷰·신문명 등)</td>
+</tr>
+<tr>
+<td><code>obi:awardName</code></td>
+<td><code>string@ko</code></td>
+<td>상명 (예: "노벨문학상")</td>
+</tr>
+<tr>
+<td><code>obi:awardYear</code></td>
+<td><code>gYear</code></td>
+<td>수상 연도</td>
+</tr>
+<tr>
+<td><code>obi:awardEdition</code></td>
+<td><code>positiveInteger</code></td>
+<td>수상 회차 (예: 39)</td>
+</tr>
+<tr>
+<td><code>obi:selectionCategory</code></td>
+<td><code>string@ko</code></td>
+<td>선정 카테고리</td>
+</tr>
+<tr>
+<td><code>obi:selectionYear</code></td>
+<td><code>gYear</code></td>
+<td>선정 연도</td>
+</tr>
+<tr>
+<td><code>obi:selectionScope</code></td>
+<td><code>string@ko</code></td>
+<td>선정 범위</td>
+</tr>
+<tr>
+<td><code>obi:salesMilestone</code></td>
+<td><code>string</code>/<code>integer</code></td>
+<td>판매 실적</td>
+</tr>
+<tr>
+<td><code>obi:citationYear</code></td>
+<td><code>gYear</code></td>
+<td>언론 평·매체 언급 시점</td>
+</tr>
+</tbody>
+</table>
+<h4 id="624-provenance">6.2.4 외부 링크 provenance·신뢰도</h4>
+<p>각 <code>foaf:Person</code>·<code>foaf:Organization</code> 의 외부 LOD 링크 상태·근거·신뢰도를 자기기록(self-documenting)하는 주석 속성. 상세 의미는 §8.2 참조.</p>
+<table>
+<thead>
+<tr>
+<th>속성</th>
+<th>도메인</th>
+<th>xsd 형</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>obi:linkageStatus</code></td>
+<td><code>foaf:Person</code>/<code>Organization</code></td>
+<td><code>string</code></td>
+<td>링크 상태 8종 (linked_nlk · linked_external · not_in_nlk · ambiguous_homonym · foreign_nonkorean · corporate_body · collective)</td>
+</tr>
+<tr>
+<td><code>obi:linkageMethod</code></td>
+<td><code>foaf:Person</code>/<code>Organization</code></td>
+<td><code>string</code></td>
+<td>매칭 방법(다중 가능). 예: local_kac_kmo · aladin_bio · bio_worktitle · manual_verified</td>
+</tr>
+<tr>
+<td><code>obi:linkageConfidence</code></td>
+<td><code>foaf:Person</code>/<code>Organization</code></td>
+<td><code>string</code></td>
+<td>신뢰도 3등급 (high · medium · review)</td>
+</tr>
+<tr>
+<td><code>obi:linkageEvidence</code></td>
+<td><code>foaf:Person</code>/<code>Organization</code></td>
+<td><code>integer</code></td>
+<td>동명이인 NLK 후보 수 (미링크 분류의 증거)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="7-11">7. 마케팅 카피 블록 11종 상세</h2>
+<p>띠지에 인쇄되는 마케팅 텍스트는 의미에 따라 11종 블록으로 분류된다. 각 블록은 공통 필드(<code>contentText</code>)와 블록별 고유 필드(추천사라면 <code>endorsedBy</code>·<code>endorserRole</code>, 수상이라면 <code>awardName</code>·<code>awardStatus</code> 등)를 갖는다.</p>
+<h3 id="71">7.1 블록별 필드 사용 매트릭스</h3>
+<p>각 블록 유형에서 어떤 필드를 사용하는지 정리한다. <strong>✓ = 필수, ◐ = 선택</strong>.</p>
+<table>
+<thead>
+<tr>
+<th>블록</th>
+<th>content</th>
+<th>source</th>
+<th>issuedBy</th>
+<th>endorsedBy</th>
+<th>endorserRole</th>
+<th>endorserAffil</th>
+<th>authoredBy</th>
+<th>aggregated</th>
+<th>award*</th>
+<th>selection*</th>
+<th>sales</th>
+<th>adaptation</th>
+<th>refers</th>
+<th>citation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>① 출판사 카피</td>
+<td>✓</td>
+<td>◐</td>
+<td>◐</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>② 추천사</td>
+<td>✓</td>
+<td>◐</td>
+<td></td>
+<td>◐</td>
+<td>◐</td>
+<td>◐</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>③ 언론 평</td>
+<td>✓</td>
+<td>◐</td>
+<td>◐</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>◐</td>
+</tr>
+<tr>
+<td>④ 매체 언급</td>
+<td>✓</td>
+<td>◐</td>
+<td>◐</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>◐</td>
+</tr>
+<tr>
+<td>⑤ 수상</td>
+<td>✓</td>
+<td>◐</td>
+<td>◐</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>✓</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>⑥ 선정</td>
+<td>✓</td>
+<td>◐</td>
+<td>◐</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>✓</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>⑦ 판매 실적</td>
+<td>✓</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>◐</td>
+<td></td>
+<td></td>
+<td>✓</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>⑧ 영상화</td>
+<td>✓</td>
+<td>◐</td>
+<td>◐</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>✓</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>⑨ 시리즈 표기</td>
+<td>✓</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>✓</td>
+<td></td>
+</tr>
+<tr>
+<td>⑩ 작가의 말</td>
+<td>✓</td>
+<td>◐</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>◐</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>⑪ 본문 발췌</td>
+<td>✓</td>
+<td>◐</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="72-5-skos-concept-schemes">7.2 분류 체계 5종 (SKOS Concept Schemes)</h3>
+<p>마케팅 블록에서 발화자의 직군·영상화 유형·시리즈 유형 등을 표현하기 위한 표준 분류 체계 5종.</p>
+<p><strong>EndorserRoleScheme (추천인 직군 분류)</strong>
+추천 블록의 <code>endorserRole</code> 값. 다중 직위 부착 가능 (예: 평론가 + 교수).
+예시: <code>obi:Role_소설가</code>, <code>obi:Role_평론가</code>, <code>obi:Role_교수</code>, <code>obi:Role_배우</code>, <code>obi:Role_시인</code>, <code>obi:Role_에세이스트</code>, <code>obi:Role_기자</code></p>
+<p><strong>AdaptationTypeScheme (영상화 유형 분류)</strong>
+<code>hasAdaptationMention</code> 블록의 <code>adaptationType</code> 값.
+예시: <code>obi:AdaptType_영화</code>, <code>obi:AdaptType_드라마</code>, <code>obi:AdaptType_뮤지컬</code>, <code>obi:AdaptType_오디오북</code></p>
+<p><strong>SeriesTypeScheme (시리즈 유형 분류)</strong>
+<code>obi:seriesType</code> 값. 3종.</p>
+<table>
+<thead>
+<tr>
+<th>Concept</th>
+<th>설명</th>
+<th>예</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>obi:SeriesType_저자연작</code></td>
+<td>한 저자의 연작</td>
+<td>해리포터</td>
+</tr>
+<tr>
+<td><code>obi:SeriesType_큐레이션시리즈</code></td>
+<td>출판사 기획 시리즈</td>
+<td>위픽 시리즈, 문학동네 시인선</td>
+</tr>
+<tr>
+<td><code>obi:SeriesType_전집</code></td>
+<td>번역·고전 중심 완결 세트</td>
+<td>열린책들 세계문학전집</td>
+</tr>
+</tbody>
+</table>
+<p><strong>AwardStatusScheme (수상 상태 분류)</strong>
+3종: <code>obi:AwardStatus_수상</code>, <code>obi:AwardStatus_최종후보</code>, <code>obi:AwardStatus_후보</code></p>
+<p><strong>OrganizationRoleScheme (기관 역할 분류)</strong>
+한 기관 다중 역할 가능 (예: 창비 = 출판사 + 수상주체).
+예시: <code>obi:OrgRole_출판사</code>, <code>obi:OrgRole_언론</code>, <code>obi:OrgRole_수상주체</code>, <code>obi:OrgRole_집계기관</code>, <code>obi:OrgRole_기획레이블</code>, <code>obi:OrgRole_제작사</code></p>
+<hr />
+<h2 id="8-lod">8. 외부 LOD 매핑 정책</h2>
+<p>OBI 의 인물·기관·작품·판본은 가능한 한 외부 LOD 자원에 연결된다. 매핑 술어는 자원의 의미적 동등성에 따라 신중히 선택된다.</p>
+<h3 id="81">8.1 매핑 술어</h3>
+<table>
+<thead>
+<tr>
+<th>대상 클래스</th>
+<th>매핑 술어</th>
+<th>외부 LOD</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>foaf:Person</code></td>
+<td><code>owl:sameAs</code></td>
+<td>NLK KAC (1차 매핑). KAC 자체가 Wikidata · VIAF · ISNI · GND · BNF · BNE · NDL · LoC · DBpedia · Libris · WorldCat · IDref 와 매핑되어 있어, 한 작가에 대해 10여 개 외부 자원이 자동 연결된다.</td>
+</tr>
+<tr>
+<td><code>foaf:Organization</code></td>
+<td><code>owl:sameAs</code></td>
+<td>NLK KAB · Wikidata · VIAF · ISNI</td>
+</tr>
+<tr>
+<td><code>obi:Work</code></td>
+<td><code>owl:sameAs</code></td>
+<td>Wikidata Q-id (NLK 측 Work 단위 자원 없음)</td>
+</tr>
+<tr>
+<td><code>obi:Manifestation</code></td>
+<td><code>skos:closeMatch</code></td>
+<td>NLK KMO. <code>owl:sameAs</code> 대신 <code>closeMatch</code> 를 쓰는 이유: KMO 는 MARC 서지 record 로 한 KMO 가 여러 ISBN 을 묶을 수 있어 카디널리티가 1:1 이 아니다. <code>sameAs</code> 적용 시 reasoner 가 두 Manifestation 을 잘못 동일시할 위험이 있다.</td>
+</tr>
+<tr>
+<td>주제</td>
+<td><code>dcterms:subject</code></td>
+<td>NLK KSH URI 직접 값</td>
+</tr>
+<tr>
+<td>장르</td>
+<td><code>schema:genre</code></td>
+<td>Wikidata Q-id 직접 값</td>
+</tr>
+</tbody>
+</table>
+<p><strong>기관 간 계층은 모델링하지 않는다.</strong> 모회사·자회사·imprint 관계는 한국 출판업계 자료가 부족하고 시기별 변동이 심해, 외부 권위 데이터(Wikidata·VIAF)에 위임한다.</p>
+<h3 id="82-provenance">8.2 링크 상태·신뢰도 (provenance 주석)</h3>
+<p>모든 <code>foaf:Person</code>·<code>foaf:Organization</code> 은 외부 링크 상태를 <code>obi:linkageStatus</code> 로 자기기록한다. 설계 원칙은 <strong>"링크 가능한 건 전부 링크, 불가능한 건 전부 사유 범주화"</strong> — 미분류 인스턴스는 0건이다. 이로써 사용자는 "왜 이 인물은 KAC 가 없는가"를 추측하지 않고 그래프에서 직접 읽을 수 있다.</p>
+<p><strong>링크 상태 8종 (<code>obi:linkageStatus</code>)</strong></p>
+<table>
+<thead>
+<tr>
+<th>값</th>
+<th>의미</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>linked_nlk</code></td>
+<td>NLK 권위(KAC/KAB) 직결</td>
+</tr>
+<tr>
+<td><code>linked_external</code></td>
+<td>NLK 없음, 알라딘/Wikidata/VIAF/ISNI 등 외부만 보유</td>
+</tr>
+<tr>
+<td><code>ambiguous_homonym</code></td>
+<td>미링크 + NLK 동명이인 후보 2+ (수동 영역). 후보 수는 <code>obi:linkageEvidence</code></td>
+</tr>
+<tr>
+<td><code>not_in_nlk</code></td>
+<td>미링크 + NLK 미수록 (외국 표기·필명 포함)</td>
+</tr>
+<tr>
+<td><code>foreign_nonkorean</code></td>
+<td>미링크 + 비한글 표기</td>
+</tr>
+<tr>
+<td><code>corporate_body</code></td>
+<td>단체·법인-저자</td>
+</tr>
+<tr>
+<td><code>collective</code></td>
+<td>복수 인명 결합 문자열</td>
+</tr>
+</tbody>
+</table>
+<p><strong>신뢰도 3등급 (<code>obi:linkageConfidence</code>)</strong> — KAC 매칭의 근거 강도</p>
+<table>
+<thead>
+<tr>
+<th>등급</th>
+<th>의미</th>
+<th>주요 방법</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>high</code></td>
+<td>작품(KMO)겹침·생년·대표작·사람검증 등 강증거</td>
+<td>local_kac_kmo · aladin_bio · bio_worktitle · manual_verified</td>
+</tr>
+<tr>
+<td><code>medium</code></td>
+<td>단일 비문학 후보·직업 유일생존 등 보조 증거</td>
+<td>local_kac_single · coauthor · kn_*</td>
+</tr>
+<tr>
+<td><code>review</code></td>
+<td>저정밀 자동매칭·모호 — 수동 검토 권장</td>
+<td>kmo_title · local_kac_ambiguous</td>
+</tr>
+</tbody>
+</table>
+<p><code>obi:linkageMethod</code> 는 매칭이 어느 경로로 이뤄졌는지 기록하며(다중 가능), 검수 우선순위 판단·재현에 쓰인다.</p>
+<h3 id="83-disambiguation">8.3 동명이인 disambiguation 방법론</h3>
+<p>동명이인 해소는 다음 신호를 <strong>증거 강도 순</strong>으로 결합한다. 모두 사람의 주관이 아닌 데이터 증거에 기반한다.</p>
+<ol>
+<li><strong>KMO 작품 겹침</strong> — NLK 후보의 등록작(KMO)이 ABox 판본의 KMO 와 일치 (최강)</li>
+<li><strong>생년 일치</strong> — 알라딘 작가 bio 의 출생연도 ↔ NLK <code>birthYear</code></li>
+<li><strong>대표작 제목 일치</strong> — bio 의 대표작(《》) ↔ 후보의 등록작 제목(book.json title)</li>
+<li><strong>직업 일치</strong> — bio 의 직업 ↔ NLK <code>fieldOfActivity</code>/<code>jobTitle</code>. 영화감독·가수·사진가 등 비문학 창작자(추천·원작 역할)도 포함</li>
+</ol>
+<p><strong>알라딘 bio 활용</strong>: 알라딘 <code>authors[].authorInfo</code>(작가 소개)에 담긴 생년·직업·대표작은 동명이인 해소의 핵심 단서다. 유명도 추정 같은 휴리스틱보다 안전하며, 잘못 붙은 링크를 자동 교정하는 데에도 쓰였다.</p>
+<p><strong>사람 검수 루프</strong>: 자동 매칭 결과는 인터랙티브 HTML 검수 도구로 사람이 승인/반려/수정할 수 있으며, 확정분은 <code>manual_verified</code>(high)로 기록되고 잘못된 링크는 제거된다.</p>
+<hr />
+<h2 id="9">9. 직렬화 변이</h2>
+<p>OBI 는 같은 정보를 두 가지 RDF 직렬화 형식으로 제공한다.</p>
+<table>
+<thead>
+<tr>
+<th>파일</th>
+<th>직렬화</th>
+<th>마케팅 카피 표현</th>
+<th>호환성</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>obi_0428_emptynode.owl</code></td>
+<td>RDF/XML (표준 OWL 2)</td>
+<td>blank node + DP/OP</td>
+<td>Protégé 호환</td>
+</tr>
+<tr>
+<td><code>obi_0428_rdfstar.ttl</code></td>
+<td>Turtle-star</td>
+<td>rdf-star reification</td>
+<td>Jena 4.x / rdflib 6+ 필요. Protégé 미지원</td>
+</tr>
+</tbody>
+</table>
+<p><strong>표준 작업은 emptynode 버전을 사용한다.</strong> rdf-star 변이는 추후 reification 패턴 비교 연구용으로 함께 제공된다.</p>
+<hr />
+<h2 id="10">10. 명명 규약</h2>
+<h3 id="101-uri-slug">10.1 URI Slug 생성 룰</h3>
+<p>자원 이름에서 한글·영문·숫자만 남기고 공백·특수문자를 제거한다.</p>
+<pre><code class="language-python">def slugify(name: str) -&gt; str:
+    return re.sub(r&quot;[^가-힣A-Za-z0-9]&quot;, &quot;&quot;, name or &quot;&quot;)
+</code></pre>
+<p>예: <code>"문학과 지성사"</code> → <code>obi:Org_문학과지성사</code></p>
+<h3 id="102">10.2 라벨 부착 정책</h3>
+<p>한 자원에 같은 언어의 라벨이 여럿 있을 때 <code>rdfs:label</code> 을 중복 선언하지 않는다. 대표 이름만 <code>rdfs:label</code> + <code>skos:prefLabel</code>, 이명은 <code>skos:altLabel</code> 로 분리한다.</p>
+<p>예: <code>obi:Org_창비</code> → prefLabel "창비"@ko, altLabel "창작과비평사"@ko</p>
+<h3 id="103">10.3 출판사 정규화</h3>
+<p>메타 publisher 문자열의 <code>X(Y)</code> 패턴 (예: <code>"알에이치코리아(RHK)"</code>) 은 4 유형으로 분류된다.</p>
+<table>
+<thead>
+<tr>
+<th>유형</th>
+<th>정책</th>
+<th>예</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Type a — 풀네임/약자 같은 entity</td>
+<td>출판업계 통용 표기를 slug + 다른 표기를 <code>skos:altLabel</code></td>
+<td><code>Org_RHK</code> + altLabel "알에이치코리아"</td>
+</tr>
+<tr>
+<td>Type b — 표기 변이</td>
+<td>같은 entity, altLabel 부착</td>
+<td><code>Org_한즈미디어</code> + altLabel "한스미디어"</td>
+</tr>
+<tr>
+<td>Type c — imprint/모회사</td>
+<td>X 만 slug, Y 는 <code>rdfs:comment</code> 로 보존</td>
+<td><code>Org_퍼플레인</code> + comment "메타데이터 원문: 퍼플레인(갈매나무)"</td>
+</tr>
+<tr>
+<td>Type d — 법인 접미</td>
+<td>X 만 사용, "(주)" 무시</td>
+<td><code>Org_데이즈엔터</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="104-ocr">10.4 OCR 변이·표기 변이 자동 통합</h3>
+<p>LLM 이 추출한 OCR 오인식 표기는 사전 정의된 매핑(<code>publisher_normalizer.py</code> 의 <code>_OCR_VARIANT_MAP</code>·<code>_AWARD_BODY_MAP</code>)으로 canonical slug 에 자동 매핑된다.</p>
+<p>예:
+- "문학과의 지성사" → <code>Org_문학과지성사</code>
+- "엘리시트" / "엘리시온" → <code>Org_엘릭시르</code>
+- "서울대학교" → <code>Org_서울대</code>
+- "한겨레신문사" → <code>Org_한겨레</code>
+- "부커상 위원회" → <code>Org_부커상재단</code></p>
+<hr />
+<h2 id="11-sparql">11. SPARQL 사용 예시</h2>
+<p>외부 사용자가 자주 쓸 만한 분석 패턴 5종.</p>
+<h3 id="111">11.1 한 작가의 모든 띠지 시점</h3>
+<pre><code class="language-sparql">PREFIX obi: &lt;http://aks.ac.kr/ontologies/obi#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+PREFIX bibo: &lt;http://purl.org/ontology/bibo/&gt;
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+
+SELECT ?work_label ?isbn ?year WHERE {
+  obi:Person_한강 ^dcterms:creator ?work .
+  ?work rdfs:label ?work_label ;
+        obi:hasManifestation ?mani .
+  ?mani bibo:isbn13 ?isbn ;
+        obi:hasImage ?img .
+  ?img obi:hasObi/obi:collectionDate ?year .
+}
+ORDER BY ?work_label ?year
+</code></pre>
+<h3 id="112">11.2 영상화된 작품의 추천인 직군 분포</h3>
+<pre><code class="language-sparql">PREFIX obi: &lt;http://aks.ac.kr/ontologies/obi#&gt;
+PREFIX skos: &lt;http://www.w3.org/2004/02/skos/core#&gt;
+
+SELECT ?role (COUNT(*) AS ?n) WHERE {
+  ?work obi:hasManifestation/obi:hasImage/obi:hasObi ?obi .
+  ?obi obi:hasAdaptationMention [] .
+  ?obi obi:hasEndorsement/obi:endorserRole/skos:prefLabel ?role .
+}
+GROUP BY ?role ORDER BY DESC(?n)
+</code></pre>
+<h3 id="113">11.3 출판사별 추천인 직군 다양성</h3>
+<pre><code class="language-sparql">PREFIX obi: &lt;http://aks.ac.kr/ontologies/obi#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+PREFIX skos: &lt;http://www.w3.org/2004/02/skos/core#&gt;
+PREFIX foaf: &lt;http://xmlns.com/foaf/0.1/&gt;
+
+SELECT ?publisher (COUNT(DISTINCT ?role) AS ?role_diversity) WHERE {
+  ?mani dcterms:publisher/foaf:name ?publisher ;
+        obi:hasImage/obi:hasObi/obi:hasEndorsement/obi:endorserRole/skos:prefLabel ?role .
+}
+GROUP BY ?publisher
+ORDER BY DESC(?role_diversity)
+LIMIT 20
+</code></pre>
+<h3 id="114">11.4 시리즈별 마케팅 카피 패턴</h3>
+<pre><code class="language-sparql">PREFIX obi: &lt;http://aks.ac.kr/ontologies/obi#&gt;
+PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+PREFIX dcterms: &lt;http://purl.org/dc/terms/&gt;
+
+SELECT ?block_type (COUNT(*) AS ?n) WHERE {
+  obi:Series_위픽시리즈 dcterms:hasPart ?work .
+  ?work obi:hasManifestation/obi:hasImage/obi:hasObi ?obi .
+  ?obi ?p ?b .
+  ?p rdfs:subPropertyOf+ obi:hasMarketingCopy .
+  BIND(REPLACE(STR(?p), &quot;^.*#&quot;, &quot;&quot;) AS ?block_type)
+}
+GROUP BY ?block_type ORDER BY DESC(?n)
+</code></pre>
+<h3 id="115">11.5 다년도 띠지 변화 추적</h3>
+<p>같은 ISBN 의 책이 여러 해에 걸쳐 다른 띠지를 두른 경우를 식별한다.</p>
+<pre><code class="language-sparql">PREFIX obi: &lt;http://aks.ac.kr/ontologies/obi#&gt;
+PREFIX bibo: &lt;http://purl.org/ontology/bibo/&gt;
+
+SELECT ?isbn (COUNT(DISTINCT ?obi) AS ?n_obi) WHERE {
+  ?mani bibo:isbn13 ?isbn ;
+        obi:hasImage/obi:hasObi ?obi .
+}
+GROUP BY ?isbn
+HAVING (COUNT(DISTINCT ?obi) &gt; 1)
+ORDER BY DESC(?n_obi)
+</code></pre>
+<h3 id="116">11.6 신뢰도 높은 인물 링크만 선별</h3>
+<p>분석·시각화 시 저신뢰(review) 노드를 제외하고 검증된 링크만 사용한다.</p>
+<pre><code class="language-sparql">PREFIX obi: &lt;http://aks.ac.kr/ontologies/obi#&gt;
+PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;
+PREFIX foaf: &lt;http://xmlns.com/foaf/0.1/&gt;
+
+SELECT ?person ?name ?kac WHERE {
+  ?person a foaf:Person ;
+          obi:linkageConfidence &quot;high&quot; ;
+          foaf:name ?name ;
+          owl:sameAs ?kac .
+  FILTER(CONTAINS(STR(?kac), &quot;/resource/KAC&quot;))
+}
+</code></pre>
+<p>미검수 대상(수동 검토 큐)만 뽑으려면 <code>obi:linkageConfidence "review"</code> 로 바꾼다.</p>
+<hr />
+<h2 id="12-2026-06-23-rdflib-76">12. 데이터 통계 (2026-06-23 기준, rdflib 7.6 파싱 검증)</h2>
+<blockquote>
+<p>본 절 수치는 최종본 <code>.ttl</code>/<code>.owl</code> 파일을 rdflib 로 직접 파싱해 재계산했다. 5개 파일 전부 파싱 정상(구문 오류 0).</p>
+</blockquote>
+<h3 id="121">12.1 인스턴스 수 (통합그래프)</h3>
+<table>
+<thead>
+<tr>
+<th>클래스</th>
+<th>수</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>obi:Work</code></td>
+<td>2,211</td>
+</tr>
+<tr>
+<td><code>obi:Manifestation</code></td>
+<td>2,382</td>
+</tr>
+<tr>
+<td><code>obi:Image</code></td>
+<td>2,933</td>
+</tr>
+<tr>
+<td><code>obi:Obi</code></td>
+<td>2,935</td>
+</tr>
+<tr>
+<td><code>obi:Series</code></td>
+<td>103</td>
+</tr>
+<tr>
+<td><code>foaf:Person</code></td>
+<td>2,505</td>
+</tr>
+<tr>
+<td><code>foaf:Organization</code></td>
+<td>783</td>
+</tr>
+<tr>
+<td><code>skos:Concept</code></td>
+<td>144</td>
+</tr>
+<tr>
+<td><code>skos:ConceptScheme</code></td>
+<td>5</td>
+</tr>
+<tr>
+<td><code>obi:AnonymousReader</code></td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><code>obi:AnonymousReader</code> 1건(<code>obi:AnonymousReader_000001</code>)은 익명 독자·리뷰어 발화(알라딘 마스킹 닉네임 "bri<strong><em>"·"무지개님" 등)를 통합 표상하는 placeholder 인스턴스다. <code>obi:AnonymousReader rdfs:subClassOf foaf:Agent</code> 로 정의되어 </em>*의도적으로 <code>foaf:Person</code> 이 아니다</strong>(식별 가능한 한 사람이 아니라 익명 집단이므로). <code>endorsedBy</code> 대상 중 유일하게 <code>foaf:Person</code> 이 아닌 노드이며, 닉네임 원문은 각 추천 블록의 <code>rdfs:comment</code> 에 보존된다. 데이터 오류가 아니라 설계상 정상이다.</p>
+</blockquote>
+<h3 id="122">12.2 외부 링크 현황</h3>
+<p>외부 자원 매칭은 <strong>인물(Person) 매칭을 최우선</strong>으로 한다. NLK 인물 전거(KAC)를 1차 앵커로 연결한 뒤, 그 전거 클러스터를 통해 ISNI·VIAF·Wikidata 등 국제 식별자를 함께 끌어온다.</p>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Person KAC(NLK 인물전거) 보유</td>
+<td>1,499 / 2,505 (<strong>59.8%</strong>)</td>
+</tr>
+<tr>
+<td>Person 외부링크(KAC 외 포함) 보유</td>
+<td>1,614 / 2,505 (<strong>64.4%</strong>)</td>
+</tr>
+<tr>
+<td>사람 검증(<code>manual_verified</code>)</td>
+<td>266건</td>
+</tr>
+<tr>
+<td>신뢰도 분포(<code>linkageConfidence</code>)</td>
+<td>high 1,208 · medium 113 · review 106</td>
+</tr>
+<tr>
+<td><code>linkageStatus</code> 미분류</td>
+<td><strong>0건</strong> (전 Person·Org 3,288개체 링크 또는 사유 범주화)</td>
+</tr>
+</tbody>
+</table>
+<p><code>owl:sameAs</code> 외부 도메인 분포(상위): KAC 1,499 · ISNI 1,234 · VIAF 1,139 · Wikidata 818 · LoC 487 · DNB 400 · DBpedia 325 · OCLC 276 · BnF 271 · IdRef 263 · NDL(일) 256 · KAB 169 등. 즉 한 인물이 KAC 앵커를 중심으로 평균 여러 국제 전거에 동시 연결된다.</p>
+<h3 id="123">12.3 무결성</h3>
+<table>
+<thead>
+<tr>
+<th>검증 항목</th>
+<th>결과</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>도메인/레인지 위반</td>
+<td>0건 (모든 단계 일관)</td>
+</tr>
+<tr>
+<td>KAC 매핑 정확도 (Wikidata cross-source 검증)</td>
+<td>94.3% PASS (314건 기준)</td>
+</tr>
+<tr>
+<td>잘못된 링크 제거 (사람 검수)</td>
+<td>20건</td>
+</tr>
+</tbody>
+</table>
+<h3 id="124">12.4 통합 그래프</h3>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>총 트리플 (TBox + ABox)</td>
+<td><strong>137,956</strong></td>
+</tr>
+<tr>
+<td>TBox 트리플 (<code>띠지온톨로지_TBox.owl</code>)</td>
+<td><strong>352</strong></td>
+</tr>
+<tr>
+<td>통합 파일</td>
+<td><code>OBI_통합그래프_전수.ttl</code></td>
+</tr>
+<tr>
+<td>ISBN13 중복</td>
+<td>0건 (2,382개 전부 유일)</td>
+</tr>
+<tr>
+<td><code>hasObi</code>·<code>hasBCover</code> 끊긴 참조</td>
+<td>0건</td>
+</tr>
+</tbody>
+</table>
+<h3 id="125-bcover">12.5 뒷표지(BCover) 확장 통계</h3>
+<p>뒷표지 권위 ABox(<code>뒷표지_ABox.ttl</code>) — 전체 뒷표지 비전 OCR(Gemini) 기반.</p>
+<p>블록 수치는 rdflib 트리플 기준(한 블록 속성이 쉼표로 다중 값을 가지므로 텍스트 줄 수와 다름).</p>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>obi:BCover</code> 인스턴스</td>
+<td>587 책 (전부 <code>hasBCover</code> 로 Image 연결, 고아 0)</td>
+</tr>
+<tr>
+<td>마케팅 블록(총)</td>
+<td><strong>2,175</strong></td>
+</tr>
+<tr>
+<td>├ <code>hasEndorsement</code> (추천·권위)</td>
+<td>730</td>
+</tr>
+<tr>
+<td>├ <code>hasPublisherCopy</code> (출판사 카피)</td>
+<td>634</td>
+</tr>
+<tr>
+<td>├ <code>hasTextExcerpt</code> (본문 발췌)</td>
+<td>521</td>
+</tr>
+<tr>
+<td>├ <code>hasAuthorNote</code> (작가의 말)</td>
+<td>135</td>
+</tr>
+<tr>
+<td>├ <code>hasPressCitation</code> (언론 인용)</td>
+<td>82</td>
+</tr>
+<tr>
+<td>├ <code>hasAwardMention</code> (수상)</td>
+<td>44</td>
+</tr>
+<tr>
+<td>└ 기타(선정 9·영상화 7·시리즈 6·판매 6·미디어 1)</td>
+<td>29</td>
+</tr>
+<tr>
+<td>위치 분류 <code>printedOn</code></td>
+<td>전량 <code>Surface_뒷표지</code></td>
+</tr>
+<tr>
+<td>물질성 <code>isEphemeral</code></td>
+<td><code>false</code> (영구·비평적 정당화 면)</td>
+</tr>
+</tbody>
+</table>
+<h4 id="person">뒷표지 추천인의 외부 자원 매칭 (Person 우선, 일부 추가 매칭 예정)</h4>
+<p>뒷표지에서도 인물 매칭을 우선한다. 추천인은 가능한 한 통합그래프의 기존 <code>foaf:Person</code> URI 를 <strong>재사용</strong>하여 기존 KAC/bio 매칭 결과를 그대로 상속하고, 신규 인물만 별도로 KAC 연결한다.</p>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>값</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>뒷표지 <code>endorsedBy</code> 발화주체 참조</td>
+<td>342</td>
+</tr>
+<tr>
+<td>├ 기존 엔티티 재사용(=KAC 인프라 상속)</td>
+<td>217 (Person 216 + 익명독자 placeholder 1)</td>
+</tr>
+<tr>
+<td>└ 신규 인물</td>
+<td>125 (<strong>전부 <code>foaf:Person</code> 타이핑</strong> ✓, 미타이핑 0)</td>
+</tr>
+<tr>
+<td>신규 인물 중 KAC 연결 완료(<code>뒷표지_인물KAC.ttl</code>)</td>
+<td><strong>56 / 125</strong> (직군↔NLK occupation 대조)</td>
+</tr>
+<tr>
+<td>신규 인물 중 <strong>추가 매칭 예정</strong></td>
+<td><strong>69 / 125</strong> (KAC 미연결 — 후속 작업)</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>발화주체 342건 중 1건은 일반 추천인이 아니라 익명 독자 placeholder <code>obi:AnonymousReader_000001</code>(§12.1)로, 통합그래프에 <code>a obi:AnonymousReader</code>(⊂ <code>foaf:Agent</code>)로 정상 타이핑된 <strong>기존 공유 인스턴스</strong>다. 따라서 실제 신규 <em>인물</em> 은 125명이며 모두 <code>foaf:Person</code> 으로 타이핑돼 있다(미타이핑 0 — 데이터 오류 없음).</p>
+<p>⚠️ 뒷표지 신규 추천인 125명 중 56명은 KAC 외부연결이 완료되었고, 나머지 <strong>69명은 추가 인물 매칭 예정</strong>이다(기존 <code>step9_local_kac</code>·<code>build_bio_disambiguation</code> 파이프라인에 증분 투입 계획).</p>
+<p><strong>표면별 권위 분업 발견</strong>(분석 출처: <code>DH2026/11_표면별권위분업/</code>): 비평(평론가) 권위 블록은 띠지만 보면 82건이나 뒷표지 포함 시 320건으로 늘어, 평론가 권위 비중이 11%→21%(약 4배)로 재평가된다. 뒷표지 총 권위(759)는 띠지(752)와 사실상 동등하다. 즉 띠지=동료추천+수상(선언), 뒷표지=동료+비평(논증)으로 권위 양식이 분업된다. (이 분업 수치는 역할 필터 기반 분석 산출물로, 위 블록 총량 통계와 집계 단위가 다름.)</p>
+</blockquote>
+<hr />
+<h2 id="13_1">13. 다운로드·인용</h2>
+<h3 id="131">13.1 파일 일람</h3>
+<table>
+<thead>
+<tr>
+<th>자원</th>
+<th>파일</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TBox (RDF/XML, 표준, 과제 제출본)</td>
+<td><code>2_스키마/띠지온톨로지_TBox.owl</code></td>
+</tr>
+<tr>
+<td>표지권위 확장 스키마 (Turtle)</td>
+<td><code>2_스키마/표지권위_확장스키마.ttl</code></td>
+</tr>
+<tr>
+<td>통합 ABox+TBox (띠지 전수)</td>
+<td><code>1_데이터/OBI_통합그래프_전수.ttl</code></td>
+</tr>
+<tr>
+<td>뒷표지 권위 ABox</td>
+<td><code>1_데이터/뒷표지_ABox.ttl</code></td>
+</tr>
+<tr>
+<td>뒷표지 신규 인물 KAC 링크</td>
+<td><code>1_데이터/뒷표지_인물KAC.ttl</code></td>
+</tr>
+<tr>
+<td>데이터 모델 개념도</td>
+<td><code>OBI_온톨로지_개념도/</code></td>
+</tr>
+<tr>
+<td>본 명세서</td>
+<td><code>3_문서/온톨로지_명세서.md</code></td>
+</tr>
+<tr>
+<td>표지권위 확장 설계 설명</td>
+<td><code>3_문서/표지권위_스키마설명.md</code></td>
+</tr>
+<tr>
+<td>SPARQL 질의 모음</td>
+<td><code>5_쿼리/*.rq</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="132">13.2 외부 자료 의존성</h3>
+<p>본 ABox 의 메타데이터·외부 매핑은 다음 자료에 의존한다.</p>
+<ul>
+<li>알라딘 OpenAPI (도서 메타·이미지)</li>
+<li>국립중앙도서관 LOD (KAC·KAB·KMO·KSH JSON dump, https://lod.nl.go.kr/)</li>
+<li>Wikidata SPARQL endpoint (https://query.wikidata.org/sparql)</li>
+<li>Gemini 2.5 Flash (OCR + 마케팅 블록 의미 분류)</li>
+</ul>
+<h3 id="133">13.3 인용</h3>
+<p>본 데이터 또는 명세서 인용 시 다음 형식을 권장한다 (DOI 부여 후 갱신).</p>
+<pre><code>한국학중앙연구원. (2026). OBI 띠지·표지 권위 온톨로지 (Version 2.3) [Dataset].
+http://aks.ac.kr/ontologies/obi#
+</code></pre>
+<hr />
+<h2 id="14-cover-authority-extension">14. 표지 권위 확장 (Cover-Authority Extension)</h2>
+<p>v2.3 에서 띠지 전용 모델을 <strong>표지 전체 권위</strong> 로 확장했다. 설계 전문·검증·ABox 작업법은 별도 문서 <code>표지권위_스키마설명.md</code> 와 스키마 <code>2_스키마/표지권위_확장스키마.ttl</code> 을 참조한다. 핵심만 요약한다.</p>
+<h3 id="141-obicovercopy">14.1 상속 뿌리 <code>obi:CoverCopy</code></h3>
+<pre><code>obi:CoverCopy (표지 텍스트 산물)            ← 신설 상위(상속 뿌리)
+ ├ obi:Obi    (띠지,   isEphemeral=true)    ← 소모성·즉각 마케팅
+ └ obi:BCover (뒷표지, isEphemeral=false)   ← 영구·비평적 정당화
+</code></pre>
+<p>11종 마케팅 블록 속성(<code>hasEndorsement</code>·<code>hasPressCitation</code> 등)의 domain 을 <code>obi:CoverCopy</code> 에 둠으로써 띠지·뒷표지가 <strong>동일 어휘를 공유 상속</strong>한다. 인물(<code>foaf:Person</code>)·작품(<code>obi:Work</code>)·기관(<code>foaf:Organization</code>)은 그대로 재사용하여 기존 KAC/bio 매칭·신뢰도 인프라를 뒷표지 추천인에도 동일 적용한다.</p>
+<h3 id="142-surface-2">14.2 위치(surface) 2계층 · 물질성</h3>
+<ul>
+<li><strong>거친 위치</strong>(띠지 vs 뒷표지) = 캐리어 클래스(<code>Obi</code>/<code>BCover</code>)가 인코딩.</li>
+<li><strong>미세 위치</strong>(앞면/뒷면/날개) = <code>obi:printedOn</code> → <code>obi:SurfaceScheme</code>(SKOS) Concept. 클래스 계층은 불변, 값만 분류.</li>
+<li><strong>물질성</strong> = <code>obi:isEphemeral</code> (소모성/영구성)을 캐리어 클래스에 인코딩 → "교체되는 마케팅 면 vs 영구 정당화 면" 분석.</li>
+</ul>
+<h3 id="143-reasoner-materialize">14.3 무(無)reasoner 주의 (materialize)</h3>
+<p>OBI 도구는 reasoner 없이 <code>rdf:type</code> 만 직접 본다. 상속을 데이터에 실체화하려면 BCover/Obi 인스턴스를 <code>obi:CoverCopy</code> 로도 함께 타이핑한다(뒷표지 ABox 는 이미 적용됨 — <code>?x a obi:CoverCopy</code> 즉시 작동). 상속 속성 경로 질의는 <code>rdfs:subPropertyOf*</code> 를 명시한다(§5_쿼리 07번 참조).</p>
+<hr />
+<p><strong>문서 끝.</strong></p></article>
+</main>
+
+<footer>
+  OBI 띠지·표지 권위 온톨로지 v2.3 · 한국학중앙연구원 기반 URI <code>http://aks.ac.kr/ontologies/obi#</code><br>
+  본 페이지는 설계 명세서(<code>띠지 온톨로지 명세서_최종.docx</code>)의 내용을 웹으로 소개합니다.
+</footer>
+</body>
+</html>
