@@ -74,7 +74,7 @@ footer{max-width:1180px;margin:0 auto;padding:24px 20px 60px;color:var(--muted);
 <a href="#6">6. 속성 정의</a>
 <a href="#7-11">7. 마케팅 카피 블록 11종 상세</a>
 <a href="#8-lod">8. 외부 LOD 매핑 정책</a>
-<a href="#9">9. 직렬화 변이</a>
+<a href="#9">9. 직렬화</a>
 <a href="#10">10. 명명 규약</a>
 <a href="#11-sparql">11. SPARQL 사용 예시</a>
 <a href="#12-2026-06-23-rdflib-76">12. 데이터 통계 (2026-06-23 기준, rdflib 7.6 파싱 검증)</a>
@@ -1282,8 +1282,8 @@ footer{max-width:1180px;margin:0 auto;padding:24px 20px 60px;color:var(--muted);
 <p><strong>알라딘 bio 활용</strong>: 알라딘 <code>authors[].authorInfo</code>(작가 소개)에 담긴 생년·직업·대표작은 동명이인 해소의 핵심 단서다. 유명도 추정 같은 휴리스틱보다 안전하며, 잘못 붙은 링크를 자동 교정하는 데에도 쓰였다.</p>
 <p><strong>사람 검수 루프</strong>: 자동 매칭 결과는 인터랙티브 HTML 검수 도구로 사람이 승인/반려/수정할 수 있으며, 확정분은 <code>manual_verified</code>(high)로 기록되고 잘못된 링크는 제거된다.</p>
 <hr />
-<h2 id="9">9. 직렬화 변이</h2>
-<p>OBI 는 같은 정보를 두 가지 RDF 직렬화 형식으로 제공한다.</p>
+<h2 id="9">9. 직렬화</h2>
+<p>과제 제출 스키마는 표준 <strong>RDF/XML (OWL 2)</strong> 한 가지로 제공된다.</p>
 <table>
 <thead>
 <tr>
@@ -1295,20 +1295,14 @@ footer{max-width:1180px;margin:0 auto;padding:24px 20px 60px;color:var(--muted);
 </thead>
 <tbody>
 <tr>
-<td><code>obi_0428_emptynode.owl</code></td>
+<td><code>OBI_온톨로지_스키마.owl</code></td>
 <td>RDF/XML (표준 OWL 2)</td>
 <td>blank node + DP/OP</td>
 <td>Protégé 호환</td>
 </tr>
-<tr>
-<td><code>obi_0428_rdfstar.ttl</code></td>
-<td>Turtle-star</td>
-<td>rdf-star reification</td>
-<td>Jena 4.x / rdflib 6+ 필요. Protégé 미지원</td>
-</tr>
 </tbody>
 </table>
-<p><strong>표준 작업은 emptynode 버전을 사용한다.</strong> rdf-star 변이는 추후 reification 패턴 비교 연구용으로 함께 제공된다.</p>
+<p>마케팅 카피 블록은 표준 OWL 2 의 blank node + DP/OP 로 표현한다. (rdf-star(Turtle-star) reification 변이도 연구용으로 구성 가능하나 — Jena 4.x/rdflib 6+ 필요, Protégé 미지원 — 본 제출본에는 표준 RDF/XML 만 포함한다.)</p>
 <hr />
 <h2 id="10">10. 명명 규약</h2>
 <blockquote>
@@ -1575,16 +1569,16 @@ SELECT ?person ?name ?kac WHERE {
 </thead>
 <tbody>
 <tr>
-<td>총 트리플 (TBox + ABox)</td>
+<td>총 트리플 (띠지 통합그래프)</td>
 <td><strong>137,956</strong></td>
 </tr>
 <tr>
-<td>TBox 트리플 (<code>띠지온톨로지_TBox.owl</code>)</td>
-<td><strong>352</strong></td>
+<td>스키마(TBox) 트리플 (<code>OBI_온톨로지_스키마.owl</code>)</td>
+<td><strong>433</strong> (CoverCopy·BCover 확장 병합 후)</td>
 </tr>
 <tr>
-<td>통합 파일</td>
-<td><code>OBI_통합그래프_전수.ttl</code></td>
+<td>샘플 데이터 파일 (띠지+뒷표지 union)</td>
+<td><code>OBI_샘플데이터_ABox.ttl</code> (약 150,088 트리플)</td>
 </tr>
 <tr>
 <td>ISBN13 중복</td>
@@ -1597,7 +1591,7 @@ SELECT ?person ?name ?kac WHERE {
 </tbody>
 </table>
 <h3 id="125-bcover">12.5 뒷표지(BCover) 확장 통계</h3>
-<p>뒷표지 권위 ABox(<code>뒷표지_ABox.ttl</code>) — 전체 뒷표지 비전 OCR(Gemini) 기반.</p>
+<p>뒷표지 권위 ABox(샘플 데이터 <code>OBI_샘플데이터_ABox.ttl</code> 에 통합) — 전체 뒷표지 비전 OCR(Gemini) 기반.</p>
 <p>블록 수치는 rdflib 트리플 기준(한 블록 속성이 쉼표로 다중 값을 가지므로 텍스트 줄 수와 다름).</p>
 <table>
 <thead>
@@ -1676,7 +1670,7 @@ SELECT ?person ?name ?kac WHERE {
 <td>125 (<strong>전부 <code>foaf:Person</code> 타이핑</strong> ✓, 미타이핑 0)</td>
 </tr>
 <tr>
-<td>신규 인물 중 KAC 연결 완료(<code>뒷표지_인물KAC.ttl</code>)</td>
+<td>신규 인물 중 KAC 연결 완료(샘플 데이터에 통합)</td>
 <td><strong>56 / 125</strong> (직군↔NLK occupation 대조)</td>
 </tr>
 <tr>
@@ -1692,7 +1686,7 @@ SELECT ?person ?name ?kac WHERE {
 </blockquote>
 <hr />
 <h2 id="13_1">13. 다운로드·인용</h2>
-<h3 id="131">13.1 파일 일람</h3>
+<h3 id="131-4">13.1 파일 일람 (과제 제출본 — 4종)</h3>
 <table>
 <thead>
 <tr>
@@ -1702,43 +1696,26 @@ SELECT ?person ?name ?kac WHERE {
 </thead>
 <tbody>
 <tr>
-<td>TBox (RDF/XML, 표준, 과제 제출본)</td>
-<td><code>2_스키마/띠지온톨로지_TBox.owl</code></td>
+<td>① 온톨로지 스키마 (TBox, RDF/XML)</td>
+<td><code>OBI_온톨로지_스키마.owl</code></td>
 </tr>
 <tr>
-<td>표지권위 확장 스키마 (Turtle)</td>
-<td><code>2_스키마/표지권위_확장스키마.ttl</code></td>
+<td>② 온톨로지 설계 명세서 (본 문서)</td>
+<td><code>띠지 온톨로지 명세서_최종.docx</code></td>
 </tr>
 <tr>
-<td>통합 ABox+TBox (띠지 전수)</td>
-<td><code>1_데이터/OBI_통합그래프_전수.ttl</code></td>
+<td>③ 샘플 데이터 (ABox, Turtle, 통합)</td>
+<td><code>OBI_샘플데이터_ABox.ttl</code></td>
 </tr>
 <tr>
-<td>뒷표지 권위 ABox</td>
-<td><code>1_데이터/뒷표지_ABox.ttl</code></td>
-</tr>
-<tr>
-<td>뒷표지 신규 인물 KAC 링크</td>
-<td><code>1_데이터/뒷표지_인물KAC.ttl</code></td>
-</tr>
-<tr>
-<td>데이터 모델 개념도</td>
-<td><code>OBI_온톨로지_개념도/</code></td>
-</tr>
-<tr>
-<td>본 명세서</td>
-<td><code>3_문서/온톨로지_명세서.md</code></td>
-</tr>
-<tr>
-<td>표지권위 확장 설계 설명</td>
-<td><code>3_문서/표지권위_스키마설명.md</code></td>
-</tr>
-<tr>
-<td>SPARQL 질의 모음</td>
-<td><code>5_쿼리/*.rq</code></td>
+<td>④ SPARQL 질의 모음 (7종)</td>
+<td><code>OBI_SPARQL질의.rq</code></td>
 </tr>
 </tbody>
 </table>
+<blockquote>
+<p>스키마 <code>.owl</code> 은 띠지 TBox 와 표지권위 확장(CoverCopy·BCover·SurfaceScheme·printedOn·isEphemeral)을 단일 파일로 병합한 것이다. 샘플 데이터 <code>.ttl</code> 은 띠지 통합그래프 + 뒷표지 ABox + 뒷표지 인물 KAC 링크를 하나로 합친 union(약 15만 트리플)이다. 개념도는 본 명세서 §2 에 포함되어 있다.</p>
+</blockquote>
 <h3 id="132">13.2 외부 자료 의존성</h3>
 <p>본 ABox 의 메타데이터·외부 매핑은 다음 자료에 의존한다.</p>
 <ul>
@@ -1754,7 +1731,7 @@ http://aks.ac.kr/ontologies/obi#
 </code></pre>
 <hr />
 <h2 id="14-cover-authority-extension">14. 표지 권위 확장 (Cover-Authority Extension)</h2>
-<p>이 온톨로지는 띠지 전용 모델을 <strong>표지 전체 권위</strong> 로 확장한다. 설계 전문·검증·ABox 작업법은 별도 문서 <code>표지권위_스키마설명.md</code> 와 스키마 <code>2_스키마/표지권위_확장스키마.ttl</code> 을 참조한다. 핵심만 요약한다.</p>
+<p>이 온톨로지는 띠지 전용 모델을 <strong>표지 전체 권위</strong> 로 확장한다. 확장 어휘(CoverCopy·BCover·SurfaceScheme·printedOn·isEphemeral)는 제출 스키마 <code>OBI_온톨로지_스키마.owl</code> 에 통합되어 있다. 핵심만 요약한다.</p>
 <h3 id="141-obicovercopy">14.1 상속 뿌리 <code>obi:CoverCopy</code></h3>
 <pre><code>obi:CoverCopy (표지 텍스트 산물)            ← 신설 상위(상속 뿌리)
  ├ obi:Obi    (띠지,   isEphemeral=true)    ← 소모성·즉각 마케팅
@@ -1768,7 +1745,7 @@ http://aks.ac.kr/ontologies/obi#
 <li><strong>물질성</strong> = <code>obi:isEphemeral</code> (소모성/영구성)을 캐리어 클래스에 인코딩 → "교체되는 마케팅 면 vs 영구 정당화 면" 분석.</li>
 </ul>
 <h3 id="143-reasoner-materialize">14.3 무(無)reasoner 주의 (materialize)</h3>
-<p>OBI 도구는 reasoner 없이 <code>rdf:type</code> 만 직접 본다. 상속을 데이터에 실체화하려면 BCover/Obi 인스턴스를 <code>obi:CoverCopy</code> 로도 함께 타이핑한다(뒷표지 ABox 는 이미 적용됨 — <code>?x a obi:CoverCopy</code> 즉시 작동). 상속 속성 경로 질의는 <code>rdfs:subPropertyOf*</code> 를 명시한다(§5_쿼리 07번 참조).</p>
+<p>OBI 도구는 reasoner 없이 <code>rdf:type</code> 만 직접 본다. 상속을 데이터에 실체화하려면 BCover/Obi 인스턴스를 <code>obi:CoverCopy</code> 로도 함께 타이핑한다(뒷표지 ABox 는 이미 적용됨 — <code>?x a obi:CoverCopy</code> 즉시 작동). 상속 속성 경로 질의는 <code>rdfs:subPropertyOf*</code> 를 명시한다(<code>OBI_SPARQL질의.rq</code> 07번 참조).</p>
 <hr />
 <p><strong>문서 끝.</strong></p></article>
 </main>
