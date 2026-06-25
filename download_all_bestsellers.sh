@@ -8,8 +8,8 @@ echo "================================================="
 # 디렉토리 생성
 mkdir -p korean_novel_bestsellers_full
 
-# TTB Key
-TTB_KEY="ttbsun091252247001"
+# TTB Key (환경변수 ALADIN_TTB_KEY 에서 로드)
+TTB_KEY="$ALADIN_TTB_KEY"
 
 # 1-50위 데이터 수집
 echo "📚 1-50위 데이터 수집 중..."

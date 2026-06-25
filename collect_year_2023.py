@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+import os
 import sys
 from yearly_bestseller_scraper import YearlyBestsellerScraper
 
 def main():
-    TTB_KEY = "ttbsun091252247001"
+    TTB_KEY = os.environ["ALADIN_TTB_KEY"]
 
     # 2023년 베스트셀러 수집
     print("=" * 80)

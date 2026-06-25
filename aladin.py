@@ -282,8 +282,8 @@ def main():
     """
     사용 예시
     """
-    # TTB Key 설정
-    TTB_KEY = "ttbsun091252247001"
+    # TTB Key 설정 (환경변수에서 로드)
+    TTB_KEY = os.environ["ALADIN_TTB_KEY"]
 
     # 스크래퍼 초기화
     scraper = AladinCoverScraper(TTB_KEY, download_dir="book_covers")

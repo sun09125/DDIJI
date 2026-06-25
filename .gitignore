@@ -1,0 +1,15 @@
+# 비밀값 — 절대 커밋 금지
+.env
+.env.*
+*secret*
+*credential*
+secrets.json
+
+# 알라딘 TTBKey 등 API 키는 환경변수(ALADIN_TTB_KEY, GEMINI_API_KEY)로만 주입
+# 예) PowerShell:  $env:ALADIN_TTB_KEY = "..."
+
+# 파이썬
+__pycache__/
+*.pyc
+.venv/
+venv/

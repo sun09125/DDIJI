@@ -207,8 +207,8 @@ def main():
     """
     메인 실행 함수
     """
-    # TTB Key
-    TTB_KEY = "ttbsun091252247001"
+    # TTB Key (환경변수에서 로드)
+    TTB_KEY = os.environ["ALADIN_TTB_KEY"]
 
     # 스크래퍼 초기화 (2024년 연간 베스트셀러)
     scraper = BestsellerCoverScraper(TTB_KEY, download_dir="korean_novel_bestsellers_2024", year=2024)

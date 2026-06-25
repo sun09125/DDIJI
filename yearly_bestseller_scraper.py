@@ -3,6 +3,7 @@
 
 import requests
 import json
+import os
 import time
 from pathlib import Path
 from bs4 import BeautifulSoup
@@ -280,8 +281,8 @@ def main():
     """
     메인 실행 함수
     """
-    # TTB Key
-    TTB_KEY = "ttbsun091252247001"
+    # TTB Key (환경변수에서 로드)
+    TTB_KEY = os.environ["ALADIN_TTB_KEY"]
 
     # 스크래퍼 초기화 (2024년 연간 베스트셀러)
     scraper = YearlyBestsellerScraper(TTB_KEY, year=2024)
